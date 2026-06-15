@@ -4,11 +4,28 @@ import PageHero from '@/components/PageHero';
 import Breadcrumb from '@/components/Breadcrumb';
 import PageCTA from '@/components/PageCTA';
 import Footer from '@/components/Footer';
+import SchemaOrg, { orgSchema } from '@/components/SchemaOrg';
+
+const BASE = 'https://qithi.co.za';
 
 export const metadata: Metadata = {
-  title: 'Initiatives — AmaQithi',
+  title: 'AmaQithi Initiatives — Education, Trust, Genealogy and Skills Support for AmaQithi Families',
   description:
-    'Six active and forming initiatives exclusively for AmaQithi members: the Trust, education support, the Genomy project, skills development, cultural preservation, and the IsiQithi language programme.',
+    'Six initiatives exclusively for AmaQithi clan members: the AmaQithi Trust (forming), Education Support (active), AmaQithi Genomy DNA project (recruiting), Skills Development, Cultural Preservation, and the IsiQithi Language Programme. AmaQithi community support.',
+  keywords: [
+    'AmaQithi support', 'AmaQithi community initiatives', 'AmaQithi trust',
+    'AmaQithi education support', 'San community support Eastern Cape',
+    'AmaQithi bursaries', 'AmaQithi skills development', 'AmaQithi cultural preservation',
+    'AmaQithi membership', 'clan support Eastern Cape', 'IsiQithi language',
+  ],
+  openGraph: {
+    title: 'AmaQithi Initiatives — Community Support Exclusively for AmaQithi',
+    description:
+      'Six initiatives for AmaQithi families: Trust, Education, Genomy DNA project, Skills Directory, Cultural Preservation, and IsiQithi Language Programme.',
+    url: `${BASE}/initiatives`,
+    images: [{ url: `${BASE}/logo.png`, width: 1024, height: 1024, alt: 'AmaQithi initiatives' }],
+  },
+  alternates: { canonical: `${BASE}/initiatives` },
 };
 
 const section: React.CSSProperties = {
@@ -104,6 +121,7 @@ const tiers = [
 export default function InitiativesPage() {
   return (
     <>
+      <SchemaOrg schemas={[orgSchema]} />
       <Nav />
       <main style={{ background: '#1A0F0A', minHeight: '100vh' }}>
         <PageHero

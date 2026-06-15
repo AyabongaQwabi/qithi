@@ -4,16 +4,32 @@ import PageHero from '@/components/PageHero';
 import Breadcrumb from '@/components/Breadcrumb';
 import Footer from '@/components/Footer';
 import DirectoryInterestForm from '@/components/DirectoryInterestForm';
+import SchemaOrg, { orgSchema } from '@/components/SchemaOrg';
+
+const BASE = 'https://qithi.co.za';
 
 export const metadata: Metadata = {
-  title: 'Skills Directory — AmaQithi',
+  title: 'AmaQithi Skills Directory — Find AmaQithi Professionals First',
   description:
-    'The AmaQithi Skills Directory is coming. Register your profession now so that when it launches, AmaQithi families can find you first.',
+    'The AmaQithi Skills Directory: a verified, searchable listing of AmaQithi professionals across all trades and fields — plumbers, lawyers, nurses, developers, builders, teachers. Before hiring outside, look inside. Register your skills now.',
+  keywords: [
+    'AmaQithi skills directory', 'AmaQithi professionals', 'AmaQithi plumbers',
+    'AmaQithi lawyers Eastern Cape', 'San professionals South Africa',
+    'AmaQithi tradespeople', 'AmaQithi employment', 'AmaQithi skills development',
+  ],
+  openGraph: {
+    title: 'AmaQithi Skills Directory — AmaQithi Professionals',
+    description: 'Verified listing of AmaQithi members across all trades and professions. Before hiring outside, look inside.',
+    url: `${BASE}/directory`,
+    images: [{ url: `${BASE}/logo.png`, width: 1024, height: 1024, alt: 'AmaQithi directory' }],
+  },
+  alternates: { canonical: `${BASE}/directory` },
 };
 
 export default function DirectoryPage() {
   return (
     <>
+      <SchemaOrg schemas={[orgSchema]} />
       <Nav />
       <main style={{ background: '#1A0F0A', minHeight: '100vh' }}>
         <PageHero

@@ -5,11 +5,30 @@ import Breadcrumb from '@/components/Breadcrumb';
 import PageCTA from '@/components/PageCTA';
 import Footer from '@/components/Footer';
 import GenomySignupForm from '@/components/GenomySignupForm';
+import SchemaOrg, { orgSchema, genealogySchema } from '@/components/SchemaOrg';
+
+const BASE = 'https://qithi.co.za';
 
 export const metadata: Metadata = {
-  title: 'Genealogy Project — AmaQithi',
+  title: 'AmaQithi Genealogy — San DNA Mapping Project | AmaQithi Genomy',
   description:
-    'AmaQithi Genomy: the first scientific map of the AmaQithi San genetic profile. Voluntary DNA testing for verified AmaQithi members and those who believe they carry Qithi blood.',
+    'AmaQithi Genomy: the first scientific map of the AmaQithi San (AbaThwa) genetic profile. Voluntary DNA testing tracking L0 and L1 haplogroups — the oldest human mitochondrial lineages on Earth. Join the project to prove San ancestry through science.',
+  keywords: [
+    'AmaQithi genealogy', 'AmaQithi DNA project', 'AmaQithi Genomy',
+    'San DNA South Africa', 'AbaThwa genetic heritage', 'Khoisan DNA testing',
+    'L0 haplogroup San', 'L1 haplogroup southern Africa', 'San ancestry DNA',
+    'AmaQithi ancestry', 'Qwabi genealogy', 'San genetic heritage Eastern Cape',
+    'AmaQithi family tree', 'First People DNA South Africa',
+  ],
+  openGraph: {
+    title: 'AmaQithi Genealogy — San DNA Mapping Project',
+    description:
+      'The first scientific map of AmaQithi San genetic heritage. Voluntary DNA testing tracking L0 and L1 haplogroups. The oral history says we are San. The DNA project proves it.',
+    url: `${BASE}/genealogy`,
+    images: [{ url: `${BASE}/logo.png`, width: 1024, height: 1024, alt: 'AmaQithi Genomy' }],
+    type: 'article',
+  },
+  alternates: { canonical: `${BASE}/genealogy` },
 };
 
 const section: React.CSSProperties = {
@@ -76,6 +95,7 @@ const keyFacts = [
 export default function GenealogyPage() {
   return (
     <>
+      <SchemaOrg schemas={[orgSchema, genealogySchema]} />
       <Nav />
       <main style={{ background: '#1A0F0A', minHeight: '100vh' }}>
         <PageHero

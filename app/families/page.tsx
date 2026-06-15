@@ -4,11 +4,31 @@ import PageHero from '@/components/PageHero';
 import Breadcrumb from '@/components/Breadcrumb';
 import PageCTA from '@/components/PageCTA';
 import Footer from '@/components/Footer';
+import SchemaOrg, { orgSchema, familiesSchema } from '@/components/SchemaOrg';
+
+const BASE = 'https://qithi.co.za';
 
 export const metadata: Metadata = {
-  title: 'Families — AmaQithi',
+  title: 'AmaQithi Families — Surnames, Villages and Regions Across the Eastern Cape',
   description:
-    'Five regions, twenty villages, dozens of surnames. The AmaQithi families across Lady Frere, Ngcobo, Cofimvaba, Cala, and the Free State.',
+    'Complete listing of AmaQithi clan families by region: Lady Frere, Ngcobo, Cofimvaba, Engcobo, Cala and the Free State. Surnames include Qwabi, Manimani, Skampula, Mgengwana, Tshabe, Ngubo, Ngqela, Plata, and more. Villages from Qithi Village to Maqwathini.',
+  keywords: [
+    'AmaQithi families', 'AmaQithi surnames', 'AmaQithi villages',
+    'Qwabi family Eastern Cape', 'Manimani AmaQithi', 'Skampula clan',
+    'AmaQithi Lady Frere', 'AmaQithi Ngcobo', 'AmaQithi Cofimvaba',
+    'Qithi village location', 'AmaQithi Free State', 'Ngcongolo Mafilika',
+    'AmaQithi Engcobo', 'AmaQithi Cala', 'AmaQithi family names',
+    'San family Eastern Cape', 'AbaThwa families South Africa',
+  ],
+  openGraph: {
+    title: 'AmaQithi Families — Surnames, Villages and Regions',
+    description:
+      'Five regions, dozens of surnames, one San bloodline. Complete AmaQithi family listing from Lady Frere and Rhodana to Ngcobo, Cofimvaba, and the Free State.',
+    url: `${BASE}/families`,
+    images: [{ url: `${BASE}/logo.png`, width: 1024, height: 1024, alt: 'AmaQithi families' }],
+    type: 'article',
+  },
+  alternates: { canonical: `${BASE}/families` },
 };
 
 const section: React.CSSProperties = {
@@ -106,6 +126,7 @@ const wallOfRemembrance = [
 export default function FamiliesPage() {
   return (
     <>
+      <SchemaOrg schemas={[orgSchema, familiesSchema]} />
       <Nav />
       <main style={{ background: '#1A0F0A', minHeight: '100vh' }}>
         <PageHero

@@ -3,21 +3,56 @@ import type { MetadataRoute } from 'next';
 const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://qithi.co.za';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = [
-    { url: '/', priority: 1.0, changeFrequency: 'weekly' as const },
-    { url: '/who-we-are', priority: 0.9, changeFrequency: 'monthly' as const },
-    { url: '/families', priority: 0.9, changeFrequency: 'monthly' as const },
-    { url: '/initiatives', priority: 0.8, changeFrequency: 'monthly' as const },
-    { url: '/trust', priority: 0.8, changeFrequency: 'monthly' as const },
-    { url: '/genealogy', priority: 0.8, changeFrequency: 'monthly' as const },
-    { url: '/apply', priority: 0.9, changeFrequency: 'monthly' as const },
-    { url: '/directory', priority: 0.7, changeFrequency: 'monthly' as const },
-  ];
+  const now = new Date();
 
-  return routes.map(({ url, priority, changeFrequency }) => ({
-    url: `${BASE}${url}`,
-    lastModified: new Date(),
-    changeFrequency,
-    priority,
-  }));
+  return [
+    {
+      url: `${BASE}/`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 1.0,
+    },
+    {
+      url: `${BASE}/who-we-are`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.95,
+    },
+    {
+      url: `${BASE}/families`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${BASE}/genealogy`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${BASE}/initiatives`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${BASE}/trust`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${BASE}/apply`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: `${BASE}/directory`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.7,
+    },
+  ];
 }

@@ -4,11 +4,27 @@ import PageHero from '@/components/PageHero';
 import Breadcrumb from '@/components/Breadcrumb';
 import PageCTA from '@/components/PageCTA';
 import Footer from '@/components/Footer';
+import SchemaOrg, { orgSchema } from '@/components/SchemaOrg';
+
+const BASE = 'https://qithi.co.za';
 
 export const metadata: Metadata = {
-  title: 'The AmaQithi Trust — AmaQithi',
+  title: 'The AmaQithi Trust — Community Fund for AmaQithi Families',
   description:
-    'A formal trust pooling resources across all AmaQithi families — funding bursaries, seeding businesses, covering community infrastructure. Every contributing family holds a stake.',
+    'The AmaQithi Trust is a formal Deed of Trust pooling resources across all AmaQithi clan families — funding bursaries from Grade 6 through university, seeding AmaQithi-owned businesses, community infrastructure, and emergency relief. Every contributing member holds a governance stake.',
+  keywords: [
+    'AmaQithi trust', 'AmaQithi community fund', 'AmaQithi bursaries',
+    'AmaQithi financial support', 'San community trust South Africa',
+    'AmaQithi clan trust', 'AmaQithi support fund', 'AmaQithi membership benefits',
+  ],
+  openGraph: {
+    title: 'The AmaQithi Trust — Pooled Resource Fund for AmaQithi Families',
+    description:
+      'A formal trust funding bursaries, business seeding, and community infrastructure for AmaQithi families. Every contributing member holds a governance stake.',
+    url: `${BASE}/trust`,
+    images: [{ url: `${BASE}/logo.png`, width: 1024, height: 1024, alt: 'AmaQithi Trust' }],
+  },
+  alternates: { canonical: `${BASE}/trust` },
 };
 
 const section: React.CSSProperties = {
@@ -94,6 +110,7 @@ const faqs = [
 export default function TrustPage() {
   return (
     <>
+      <SchemaOrg schemas={[orgSchema]} />
       <Nav />
       <main style={{ background: '#1A0F0A', minHeight: '100vh' }}>
         <PageHero

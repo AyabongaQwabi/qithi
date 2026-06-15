@@ -4,11 +4,31 @@ import PageHero from '@/components/PageHero';
 import Breadcrumb from '@/components/Breadcrumb';
 import PageCTA from '@/components/PageCTA';
 import Footer from '@/components/Footer';
+import SchemaOrg, { orgSchema, whoWeAreSchema } from '@/components/SchemaOrg';
+
+const BASE = 'https://qithi.co.za';
 
 export const metadata: Metadata = {
-  title: 'Who We Are — AmaQithi',
+  title: 'AmaQithi History — Who Are the AmaQithi? San First People of the Eastern Cape',
   description:
-    'The history of the AmaQithi — San (AbaThwa) First People of the White Kei River basin. From Rhodana to Queen Nonesi, Mqithi, Qwabi Joka, and the click consonant that survived everything.',
+    'The complete history of the AmaQithi clan: San (AbaThwa) First People of the White Kei River basin, not Thembu by origin. Mqithi at Rhodana before 1841, Qwabi Joka (born 1842), the Q click consonant, Stanford\'s Silayi testimony, and the documented generational lineage.',
+  keywords: [
+    'who is Qithi', 'who are AmaQithi', 'AmaQithi history', 'AmaQithi clan history',
+    'Mqithi history', 'Mqithi San', 'Qwabi Joka', 'San Eastern Cape history',
+    'AbaThwa Eastern Cape', 'Rhodana history', 'Queen Nonesi Rhodana',
+    'San Thembu alliance', 'White Kei River San', 'click consonant San',
+    'Khoisan Eastern Cape', 'AmaQithi origin', 'Lady Frere San history',
+    'San First People Eastern Cape', 'San people South Africa history',
+  ],
+  openGraph: {
+    title: 'Who Are the AmaQithi? San (AbaThwa) First People of the Eastern Cape',
+    description:
+      'The AmaQithi are San (AbaThwa) First People of the White Kei River basin — not Thembu by origin. Full history from Mqithi at Rhodana (before 1841) to Qwabi Joka and the documented generational lineage. Primary source: Sir Walter Stanford (Macquarrie 1962:31).',
+    url: `${BASE}/who-we-are`,
+    images: [{ url: `${BASE}/logo.png`, width: 1024, height: 1024, alt: 'AmaQithi' }],
+    type: 'article',
+  },
+  alternates: { canonical: `${BASE}/who-we-are` },
 };
 
 const section: React.CSSProperties = {
@@ -96,6 +116,7 @@ const timelineItems = [
 export default function WhoWeArePage() {
   return (
     <>
+      <SchemaOrg schemas={[orgSchema, whoWeAreSchema]} />
       <Nav />
       <main style={{ background: '#1A0F0A', minHeight: '100vh' }}>
         <PageHero
