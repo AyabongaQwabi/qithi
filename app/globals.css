@@ -1,26 +1,98 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --deep-earth:    #1A0F0A;
+  --dark-earth:    #2C1810;
+  --ochre:         #C4622D;
+  --amber:         #E8A857;
+  --bone:          #F5E6C8;
+  --sand:          #D4A96A;
+  --smoke:         #9E8C7A;
+  --terracotta:    #8B4513;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
+/*
+  Cave wall grain — SVG noise filter applied as a data URI overlay.
+  The grain sits at ~3% opacity so it reads as texture, not noise.
+*/
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--dark-earth);
+  color: var(--bone);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
 }
+
+/* Grain overlay mixin — applied via pseudo-element on sections */
+.cave-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 300px 300px;
+}
+
+/* Sections need position: relative so ::before stacks correctly */
+.cave-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.cave-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+/*
+  Section divider — matches the warm glow of the logo's rope ring.
+  Shifts from transparent → ochre → amber → ochre → transparent.
+*/
+.section-rule {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(196, 98, 45, 0.6) 20%,
+    rgba(232, 168, 87, 0.8) 50%,
+    rgba(196, 98, 45, 0.6) 80%,
+    transparent 100%
+  );
+  border: none;
+  margin: 0;
+}
+
+/* No border-radius anywhere */
+button, input, textarea, select {
+  border-radius: 0 !important;
+}
+
+/* Ember glow on primary CTA buttons */
+.btn-primary {
+  background: var(--ochre);
+  color: var(--bone);
+  border: 1px solid var(--ochre);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.btn-primary:hover {
+  background: #B5571F;
+  border-color: #B5571F;
+  box-shadow: 0 0 16px rgba(196, 98, 45, 0.4);
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--deep-earth); }
+::-webkit-scrollbar-thumb { background: var(--ochre); }
