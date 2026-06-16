@@ -12,15 +12,16 @@ import SchemaOrg, { orgSchema, websiteSchema, homeFaqSchema } from '@/components
 const BASE = 'https://qithi.co.za';
 
 export const metadata: Metadata = {
-  title: 'AmaQithi — San (AbaThwa) First People of the White Kei River, Eastern Cape',
+  title: 'AmaQithi — San (AbaThwa) History, Families and Heritage | White Kei River, Eastern Cape',
   description:
-    'AmaQithi are San (AbaThwa) First People of the White Kei River basin, Lady Frere and the Cacadu mountains, Eastern Cape. The authoritative source on AmaQithi clan history, families, villages, and San heritage — not Thembu by origin.',
+    'AmaQithi are San (AbaThwa) people of the White Kei River basin in Lady Frere, Eastern Cape. Documented history of the AmaQithi clan — their origins at Rhodana, their role alongside the Thembu, their families across South Africa, and their ongoing work to preserve San identity through oral history and DNA research.',
   keywords: [
     'AmaQithi', 'Qithi clan', 'AmaQithi history', 'AmaQithi families', 'AmaQithi clan history',
     'Mqithi', 'Qwabi', 'San people Lady Frere', 'AbaThwa Eastern Cape',
     'White Kei River San', 'Cacadu mountains San history', 'Qithi village Lady Frere',
     'AmaQithi support', 'AmaQithi trust', 'San First People Eastern Cape',
-    'San Thembu history', 'Rhodana history', 'Queen Nonesi Rhodana',
+    'San Thembu history', 'Rhodana history', 'Queen Nonesi Rhodana', "Stormberg san people",
+    "Rhadu", "Mnono", "AmaLebe", "Amaqithi clan history", "Amaqithi clan families", "Amaqithi clan villages", "Amaqithi clan support", "Amaqithi clan trust", "Amaqithi clan initiatives", "Amaqithi clan genomy", "Amaqithi clan DNA", "Amaqithi clan heritage", "Amaqithi clan identity", "Amaqithi clan news", "Amaqithi clan events", "Amaqithi clan contact",
   ],
   openGraph: {
     title: 'AmaQithi — San (AbaThwa) First People of the White Kei River',

@@ -1,9 +1,11 @@
 'use client';
 
+import Image from 'next/image';
+
 const stats = [
-  { value: '5+', label: 'Regions' },
-  { value: '1842', label: 'Earliest documented ancestor' },
-  { value: '∞', label: 'Generations of San heritage' },
+  { value: '1841', label: 'Qithi at Rhodana — documented' },
+  { value: '5+', label: 'Provinces with AmaQithi families' },
+  { value: '180+', label: 'Years of recorded history' },
 ];
 
 export default function Hero() {
@@ -14,7 +16,6 @@ export default function Hero() {
       style={{
         position: 'relative',
         minHeight: '100vh',
-        /* Radial warm patch at 40% 60% — firelight on uneven rock */
         background: 'radial-gradient(ellipse at 40% 60%, #3D2010 0%, #2C1810 45%, #1A0F0A 100%)',
         display: 'flex',
         alignItems: 'center',
@@ -23,51 +24,28 @@ export default function Hero() {
       }}
       aria-labelledby="hero-heading"
     >
-      {/* San rock art watermark — ochre archer figure, matches logo San figures */}
+      {/* Cave painting background */}
       <div
         aria-hidden
         style={{
           position: 'absolute',
           inset: 0,
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'flex-end',
+          backgroundImage: 'url(/bg_rectangular.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center right',
+          backgroundRepeat: 'no-repeat',
+          opacity: 0.07,
           pointerEvents: 'none',
-          overflow: 'hidden',
         }}
-      >
-        <svg
-          width="640"
-          height="640"
-          viewBox="0 0 200 200"
-          style={{ opacity: 0.04, transform: 'translateX(18%)' }}
-          fill="#C4622D"
-          aria-hidden
-        >
-          {/* San archer — matches the logo's archer figure */}
-          <ellipse cx="100" cy="28" rx="11" ry="13" />
-          <line x1="100" y1="41" x2="100" y2="98" stroke="#C4622D" strokeWidth="6" />
-          <line x1="100" y1="58" x2="70" y2="82" stroke="#C4622D" strokeWidth="5" />
-          <line x1="100" y1="58" x2="130" y2="46" stroke="#C4622D" strokeWidth="5" />
-          <line x1="100" y1="98" x2="78" y2="148" stroke="#C4622D" strokeWidth="5" />
-          <line x1="100" y1="98" x2="124" y2="150" stroke="#C4622D" strokeWidth="5" />
-          <line x1="78" y1="148" x2="62" y2="175" stroke="#C4622D" strokeWidth="4" />
-          <line x1="124" y1="150" x2="140" y2="176" stroke="#C4622D" strokeWidth="4" />
-          {/* Bow */}
-          <path d="M130 46 Q154 34 142 74" stroke="#C4622D" strokeWidth="3.5" fill="none" />
-          <line x1="130" y1="46" x2="142" y2="74" stroke="#C4622D" strokeWidth="1.5" />
-          {/* Arrow */}
-          <line x1="70" y1="82" x2="118" y2="54" stroke="#C4622D" strokeWidth="1.5" />
-        </svg>
-      </div>
+      />
 
-      {/* Tonal vignette — deepens the cave edges */}
+      {/* Dark overlay for readability */}
       <div
         aria-hidden
         style={{
           position: 'absolute',
           inset: 0,
-          background: 'radial-gradient(ellipse at 50% 50%, transparent 40%, rgba(15, 7, 5, 0.5) 100%)',
+          background: 'linear-gradient(to right, rgba(26,15,10,0.92) 40%, rgba(26,15,10,0.65) 100%)',
           pointerEvents: 'none',
         }}
       />
@@ -96,7 +74,6 @@ export default function Hero() {
           width: '100%',
         }}
       >
-        {/* Subheading */}
         <p
           style={{
             fontFamily: 'var(--font-body), Inter, sans-serif',
@@ -108,10 +85,9 @@ export default function Hero() {
             marginBottom: '20px',
           }}
         >
-          AbaThwa · San People · Eastern Cape · Lady Frere
+          San (AbaThwa) · White Kei River · Lady Frere · Eastern Cape
         </p>
 
-        {/* H1 — full amber, no opacity */}
         <h1
           id="hero-heading"
           style={{
@@ -127,7 +103,6 @@ export default function Hero() {
           AmaQithi
         </h1>
 
-        {/* Italic subtitle — full amber, matches logo text weight */}
         <p
           style={{
             fontFamily: 'var(--font-display), Cormorant Garamond, serif',
@@ -135,87 +110,76 @@ export default function Hero() {
             fontStyle: 'italic',
             fontWeight: 400,
             color: '#E8A857',
-            marginBottom: '32px',
+            marginBottom: '36px',
+            maxWidth: '680px',
           }}
         >
-          The Clan. The Lineage. The Future.
+          When Queen Nonesi moved the Thembu Great Place to Rhodana in 1841, she found our people already there.
         </p>
 
-        {/* Body — warmer sand, not grey-brown */}
         <p
           style={{
             fontFamily: 'var(--font-body), Inter, sans-serif',
             fontSize: 'clamp(0.95rem, 1.5vw, 1.1rem)',
             color: '#D4A96A',
-            maxWidth: '600px',
-            lineHeight: 1.75,
-            marginBottom: '16px',
-          }}
-        >
-          The AmaQithi are San (AbaThwa) First People of the White Kei River basin — the Cacadu
-          mountains, Lady Frere, and the Eastern Cape. Mqithi was already at Rhodana before
-          Queen Nonesi arrived in 1841. The AmaQithi assimilated into the Thembu nation over
-          generations, but they are not Thembu by origin.
-        </p>
-
-        {/* Exclusivity notice */}
-        <p
-          style={{
-            fontFamily: 'var(--font-body), Inter, sans-serif',
-            fontSize: '0.85rem',
-            color: '#D4A96A',
-            maxWidth: '560px',
-            lineHeight: 1.65,
+            maxWidth: '580px',
+            lineHeight: 1.85,
             marginBottom: '44px',
-            borderLeft: '2px solid #C4622D',
-            paddingLeft: '16px',
           }}
         >
-          This platform is exclusively for AmaQithi families and verified descendants. If you
-          carry Qithi blood, you belong here. If you do not, this is not for you.
+          The AmaQithi are San (AbaThwa) people of the White Kei River basin. We were hunters, rainmakers, and frontier scouts — absorbed into the Thembu nation but never erased. Our names, our villages, and our oral history have kept the record. This site makes it accessible.
         </p>
 
-        {/* CTAs — ember glow on primary */}
+
+        {/* CTA buttons */}
         <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginBottom: '72px' }}>
           <a
-            href="#apply"
+            href="/apply"
             style={{
-              display: 'inline-block',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '8px',
               background: '#C4622D',
               color: '#F5E6C8',
               fontFamily: 'var(--font-body), Inter, sans-serif',
-              fontSize: '0.8rem',
+              fontSize: '0.85rem',
               fontWeight: 600,
-              letterSpacing: '0.1em',
+              letterSpacing: '0.08em',
               textTransform: 'uppercase',
               textDecoration: 'none',
               padding: '14px 32px',
               border: '1px solid #C4622D',
-              transition: 'background 0.2s, box-shadow 0.2s, border-color 0.2s',
+              transition: 'background 0.2s, box-shadow 0.2s',
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.background = '#B5571F';
-              e.currentTarget.style.borderColor = '#B5571F';
-              e.currentTarget.style.boxShadow = '0 0 16px rgba(196, 98, 45, 0.4)';
+              e.currentTarget.style.boxShadow = '0 0 20px rgba(196, 98, 45, 0.45)';
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.background = '#C4622D';
-              e.currentTarget.style.borderColor = '#C4622D';
               e.currentTarget.style.boxShadow = 'none';
             }}
           >
-            Join the Clan Portal
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <line x1="19" y1="8" x2="19" y2="14" />
+              <line x1="22" y1="11" x2="16" y2="11" />
+            </svg>
+            Join the Clan
           </a>
           <a
-            href="#who-we-are"
+            href="/who-we-are"
             style={{
-              display: 'inline-block',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '8px',
               background: 'transparent',
               color: '#E8A857',
               fontFamily: 'var(--font-body), Inter, sans-serif',
-              fontSize: '0.8rem',
+              fontSize: '0.85rem',
               fontWeight: 600,
-              letterSpacing: '0.1em',
+              letterSpacing: '0.08em',
               textTransform: 'uppercase',
               textDecoration: 'none',
               padding: '14px 32px',
@@ -231,6 +195,10 @@ export default function Hero() {
               e.currentTarget.style.borderColor = 'rgba(232, 168, 87, 0.6)';
             }}
           >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+            </svg>
             Our History
           </a>
         </div>
@@ -262,9 +230,9 @@ export default function Hero() {
               <div
                 style={{
                   fontFamily: 'var(--font-body), Inter, sans-serif',
-                  fontSize: '0.7rem',
+                  fontSize: '0.72rem',
                   fontWeight: 500,
-                  letterSpacing: '0.12em',
+                  letterSpacing: '0.1em',
                   textTransform: 'uppercase',
                   color: '#9E8C7A',
                 }}

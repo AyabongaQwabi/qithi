@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 const surnames = [
   'Qwabi', 'Tshabe', 'Manimani', 'Skampula', 'Mgengwana',
@@ -6,99 +7,226 @@ const surnames = [
   'Ngqela', 'Plata',
 ];
 
+const regions = [
+  { name: 'Lady Frere', detail: 'Rhodana, Cacadu' },
+  { name: 'Ngcobo', detail: 'Ngcingwana, Mthontsi' },
+  { name: 'Cofimvaba', detail: 'Ngqoko, Mafilika' },
+  { name: 'Free State', detail: 'Scattered families' },
+  { name: 'Eastern Cape towns', detail: 'East London, Queenstown' },
+];
+
 export default function FamiliesTeaser() {
   return (
     <section
       className="cave-section cave-bg"
-      style={{ background: '#2C1810', padding: '88px 0', position: 'relative' }}
+      style={{ background: '#1A0F0A', padding: '88px 0', position: 'relative', overflow: 'hidden' }}
     >
-      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px' }}>
-        <p
-          style={{
-            fontFamily: 'var(--font-body), Inter, sans-serif',
-            fontSize: '0.68rem',
-            fontWeight: 500,
-            letterSpacing: '0.22em',
-            textTransform: 'uppercase',
-            color: '#C4622D',
-            marginBottom: '16px',
-          }}
-        >
-          Families
-        </p>
-        <h2
-          style={{
-            fontFamily: 'var(--font-display), Cormorant Garamond, serif',
-            fontSize: 'clamp(1.8rem, 4vw, 2.8rem)',
-            fontWeight: 600,
-            color: '#E8A857',
-            lineHeight: 1.1,
-            marginBottom: '20px',
-          }}
-        >
-          The AmaQithi are not one village.
-        </h2>
-        <p
-          style={{
-            fontFamily: 'var(--font-body), Inter, sans-serif',
-            fontSize: '1rem',
-            color: '#D4A96A',
-            lineHeight: 1.7,
-            maxWidth: '600px',
-            marginBottom: '36px',
-          }}
-        >
-          Five regions. Twenty villages. Dozens of surnames. Different branches, same blood —
-          from Lady Frere and Cacadu to Ngcobo, Cofimvaba, and the Free State.
-        </p>
+      {/* Cave art background — full section, very subtle */}
+      <div
+        aria-hidden
+        style={{
+          position: 'absolute',
+          inset: 0,
+          backgroundImage: 'url(/bg_rectangular.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          opacity: 0.05,
+          pointerEvents: 'none',
+        }}
+      />
+      <div
+        aria-hidden
+        style={{
+          position: 'absolute',
+          inset: 0,
+          background: 'rgba(26, 15, 10, 0.88)',
+          pointerEvents: 'none',
+        }}
+      />
 
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '40px' }}>
-          {surnames.map((s) => (
-            <span
-              key={s}
+      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px', position: 'relative', zIndex: 1 }}>
+        {/* Logo + headline row */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '20px', marginBottom: '48px' }}>
+          <Image
+            src="/logo_transparent.png"
+            alt="AmaQithi"
+            width={64}
+            height={64}
+            style={{ borderRadius: '50%', border: '1px solid rgba(196, 98, 45, 0.3)', flexShrink: 0 }}
+          />
+          <div>
+            <p
               style={{
                 fontFamily: 'var(--font-body), Inter, sans-serif',
-                fontSize: '0.82rem',
+                fontSize: '0.68rem',
                 fontWeight: 500,
+                letterSpacing: '0.22em',
+                textTransform: 'uppercase',
                 color: '#C4622D',
-                background: 'rgba(196, 98, 45, 0.07)',
-                border: '1px solid rgba(196, 98, 45, 0.4)',
-                padding: '5px 14px',
-                letterSpacing: '0.04em',
+                marginBottom: '6px',
               }}
             >
-              {s}
-            </span>
-          ))}
-          <span
-            style={{
-              fontFamily: 'var(--font-body), Inter, sans-serif',
-              fontSize: '0.82rem',
-              color: '#9E8C7A',
-              padding: '5px 14px',
-              fontStyle: 'italic',
-            }}
-          >
-            and many more…
-          </span>
+              Our Families
+            </p>
+            <h2
+              style={{
+                fontFamily: 'var(--font-display), Cormorant Garamond, serif',
+                fontSize: 'clamp(1.8rem, 4vw, 2.8rem)',
+                fontWeight: 600,
+                color: '#E8A857',
+                lineHeight: 1.1,
+              }}
+            >
+              One clan. Different towns. Same story going back to the White Kei.
+            </h2>
+          </div>
         </div>
 
-        <Link
-          href="/families"
-          style={{
-            fontFamily: 'var(--font-body), Inter, sans-serif',
-            fontSize: '0.8rem',
-            fontWeight: 600,
-            letterSpacing: '0.1em',
-            textTransform: 'uppercase',
-            color: '#C4622D',
-            textDecoration: 'none',
-            borderBottom: '1px solid #C4622D',
-            paddingBottom: '2px',
-          }}
-        >
-          See all families and villages →
-        </Link>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '64px' }}>
+          {/* Left */}
+          <div>
+            <p
+              style={{
+                fontFamily: 'var(--font-body), Inter, sans-serif',
+                fontSize: '1rem',
+                color: '#D4A96A',
+                lineHeight: 1.8,
+                marginBottom: '12px',
+              }}
+            >
+              The AmaQithi started in Lady Frere — in Agnes, Qithi Village, Mkapusi, and the farms and valleys along the White Kei River. But work, war, and displacement moved families across the country. Cofimvaba, Ngcobo, Queenstown, the Free State. Some went to the mines. Some never came back. The surnames below are the ones we have traced so far.
+            </p>
+            <p
+              style={{
+                fontFamily: 'var(--font-body), Inter, sans-serif',
+                fontSize: '1rem',
+                color: '#D4A96A',
+                lineHeight: 1.8,
+                marginBottom: '28px',
+              }}
+            >
+              If one of these is your name — or your grandmother&apos;s name — you are likely looking at your own history. The list is not complete. There are families we have not found yet. If you know one, tell us.
+            </p>
+
+            {/* Surname chips */}
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '36px' }}>
+              {surnames.map((s) => (
+                <span
+                  key={s}
+                  style={{
+                    fontFamily: 'var(--font-body), Inter, sans-serif',
+                    fontSize: '0.82rem',
+                    fontWeight: 500,
+                    color: '#C4622D',
+                    background: 'rgba(196, 98, 45, 0.07)',
+                    border: '1px solid rgba(196, 98, 45, 0.4)',
+                    padding: '5px 14px',
+                    letterSpacing: '0.04em',
+                  }}
+                >
+                  {s}
+                </span>
+              ))}
+              <span
+                style={{
+                  fontFamily: 'var(--font-body), Inter, sans-serif',
+                  fontSize: '0.82rem',
+                  color: '#9E8C7A',
+                  padding: '5px 4px',
+                  fontStyle: 'italic',
+                }}
+              >
+                and more…
+              </span>
+            </div>
+
+            <Link
+              href="/families"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '6px',
+                fontFamily: 'var(--font-body), Inter, sans-serif',
+                fontSize: '0.82rem',
+                fontWeight: 600,
+                letterSpacing: '0.08em',
+                textTransform: 'uppercase',
+                color: '#C4622D',
+                textDecoration: 'none',
+                borderBottom: '1px solid #C4622D',
+                paddingBottom: '2px',
+              }}
+            >
+              See all families and villages →
+            </Link>
+          </div>
+
+          {/* Right — region list */}
+          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+            <p
+              style={{
+                fontFamily: 'var(--font-body), Inter, sans-serif',
+                fontSize: '0.68rem',
+                fontWeight: 500,
+                letterSpacing: '0.22em',
+                textTransform: 'uppercase',
+                color: '#C4622D',
+                marginBottom: '20px',
+              }}
+            >
+              Where We Are
+            </p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+              {regions.map((r, i) => (
+                <div
+                  key={r.name}
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    padding: '16px 0',
+                    borderBottom: '1px solid rgba(196, 98, 45, 0.12)',
+                    gap: '12px',
+                  }}
+                >
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+                    <span
+                      style={{
+                        fontFamily: 'var(--font-body), Inter, sans-serif',
+                        fontSize: '0.65rem',
+                        color: '#C4622D',
+                        fontWeight: 600,
+                        minWidth: '18px',
+                      }}
+                    >
+                      {String(i + 1).padStart(2, '0')}
+                    </span>
+                    <span
+                      style={{
+                        fontFamily: 'var(--font-display), Cormorant Garamond, serif',
+                        fontSize: '1.15rem',
+                        fontWeight: 600,
+                        color: '#E8A857',
+                      }}
+                    >
+                      {r.name}
+                    </span>
+                  </div>
+                  <span
+                    style={{
+                      fontFamily: 'var(--font-body), Inter, sans-serif',
+                      fontSize: '0.78rem',
+                      color: '#9E8C7A',
+                      textAlign: 'right',
+                    }}
+                  >
+                    {r.detail}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

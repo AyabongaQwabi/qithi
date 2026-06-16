@@ -5,12 +5,36 @@ export default function GenomyTeaser() {
     <section
       className="cave-section cave-bg"
       style={{
-        background: 'radial-gradient(ellipse at 60% 40%, #3D2010 0%, #2C1810 50%, #1A0F0A 100%)',
-        padding: '96px 0',
         position: 'relative',
+        padding: '96px 0',
+        overflow: 'hidden',
       }}
     >
-      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px' }}>
+      {/* Cave art — full background */}
+      <div
+        aria-hidden
+        style={{
+          position: 'absolute',
+          inset: 0,
+          backgroundImage: 'url(/bg-square.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          opacity: 0.12,
+          pointerEvents: 'none',
+        }}
+      />
+      {/* Dark radial overlay */}
+      <div
+        aria-hidden
+        style={{
+          position: 'absolute',
+          inset: 0,
+          background: 'radial-gradient(ellipse at 60% 40%, rgba(61,32,16,0.92) 0%, rgba(44,24,16,0.96) 50%, rgba(26,15,10,0.98) 100%)',
+          pointerEvents: 'none',
+        }}
+      />
+
+      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px', position: 'relative', zIndex: 1 }}>
         <div
           style={{
             display: 'grid',
@@ -20,6 +44,24 @@ export default function GenomyTeaser() {
           }}
         >
           <div>
+            {/* DNA icon */}
+            <div style={{ marginBottom: '20px' }}>
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#C4622D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M2 15c6.667-6 13.333 0 20-6" />
+                <path d="M9 22c1.798-1.998 2.518-3.995 2.807-5.993" />
+                <path d="M15 2c-1.798 1.998-2.518 3.995-2.807 5.993" />
+                <path d="m17 6-2.5-2.5" />
+                <path d="m14 8-1-1" />
+                <path d="m7 18 2.5 2.5" />
+                <path d="m3.5 14.5.5.5" />
+                <path d="m20 9 .5.5" />
+                <path d="m6.5 12.5 1 1" />
+                <path d="m16.5 10.5 1 1" />
+                <path d="m10 16 1.5 1.5" />
+                <path d="M2 9c6.667 6 13.333 0 20 6" />
+              </svg>
+            </div>
+
             <p
               style={{
                 fontFamily: 'var(--font-body), Inter, sans-serif',
@@ -31,7 +73,7 @@ export default function GenomyTeaser() {
                 marginBottom: '16px',
               }}
             >
-              AmaQithi Genomy
+              AmaQithi Genomy — DNA Project
             </p>
             <h2
               style={{
@@ -39,83 +81,105 @@ export default function GenomyTeaser() {
                 fontSize: 'clamp(2rem, 4.5vw, 3rem)',
                 fontWeight: 600,
                 color: '#E8A857',
-                lineHeight: 1.05,
+                lineHeight: 1.1,
                 marginBottom: '24px',
               }}
             >
-              We are mapping<br />the AmaQithi<br />bloodline.
+              The oral history has always been there. Now the science is catching up.
             </h2>
             <p
               style={{
                 fontFamily: 'var(--font-body), Inter, sans-serif',
                 fontSize: '1rem',
                 color: '#D4A96A',
-                lineHeight: 1.75,
+                lineHeight: 1.8,
                 marginBottom: '16px',
               }}
             >
-              The AmaQithi Genomy project is building the first scientific map of San genetic heritage
-              within the AmaQithi clan — using voluntary DNA tests submitted by verified family members.
+              AmaQithi elders have told the same story for generations: San people, White Kei River, Lady Frere. Colonial records from 1839 and 1842 place San families exactly where those stories say they were. Place names, click consonants, and oral history all point the same direction.
+            </p>
+            <p
+              style={{
+                fontFamily: 'var(--font-body), Inter, sans-serif',
+                fontSize: '1rem',
+                color: '#D4A96A',
+                lineHeight: 1.8,
+                marginBottom: '16px',
+              }}
+            >
+              The Genomy project adds a fourth layer: DNA. We are building a genetic map of AmaQithi San ancestry — focusing on the L0 and L1 haplogroups that researchers connect to the oldest human lineages on earth. Each family member who takes part makes the record stronger and harder to dismiss.
             </p>
             <p
               style={{
                 fontFamily: 'var(--font-body), Inter, sans-serif',
                 fontSize: '1rem',
                 color: '#9E8C7A',
-                lineHeight: 1.75,
+                lineHeight: 1.8,
                 marginBottom: '36px',
               }}
             >
-              The oral history says we are San. The genetic record will prove it — and show how
-              far the bloodline has spread across generations and geography.
+              Participation is voluntary. Your results belong to you. The data stays within the AmaQithi community — it is never sold or shared with outside parties.
             </p>
             <Link
               href="/genealogy"
               style={{
-                display: 'inline-block',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '10px',
                 fontFamily: 'var(--font-body), Inter, sans-serif',
-                fontSize: '0.78rem',
+                fontSize: '0.85rem',
                 fontWeight: 600,
-                letterSpacing: '0.12em',
+                letterSpacing: '0.1em',
                 textTransform: 'uppercase',
-                color: '#1A0F0A',
+                color: '#F5E6C8',
                 background: '#C4622D',
-                padding: '12px 28px',
+                padding: '14px 30px',
                 textDecoration: 'none',
-                boxShadow: '0 0 16px rgba(196, 98, 45, 0.4)',
+                boxShadow: '0 0 20px rgba(196, 98, 45, 0.4)',
               }}
             >
-              Join the Genomy Project
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19" />
+                <polyline points="19 12 12 19 5 12" />
+              </svg>
+              Join the Project
             </Link>
           </div>
 
+          {/* Status panel */}
           <div>
             <div
               style={{
                 border: '1px solid rgba(196, 98, 45, 0.35)',
                 padding: '36px',
-                background: 'rgba(26, 15, 10, 0.6)',
+                background: 'rgba(26, 15, 10, 0.7)',
               }}
             >
-              <p
-                style={{
-                  fontFamily: 'var(--font-body), Inter, sans-serif',
-                  fontSize: '0.62rem',
-                  fontWeight: 600,
-                  letterSpacing: '0.18em',
-                  textTransform: 'uppercase',
-                  color: '#C4622D',
-                  marginBottom: '20px',
-                }}
-              >
-                Project Status
-              </p>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '24px' }}>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C4622D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+                <p
+                  style={{
+                    fontFamily: 'var(--font-body), Inter, sans-serif',
+                    fontSize: '0.65rem',
+                    fontWeight: 600,
+                    letterSpacing: '0.18em',
+                    textTransform: 'uppercase',
+                    color: '#C4622D',
+                    margin: 0,
+                  }}
+                >
+                  Project Status
+                </p>
+              </div>
               {[
-                { label: 'Phase', value: 'Recruitment open' },
-                { label: 'Participants enrolled', value: '—' },
-                { label: 'Haplogroups tracked', value: 'L0, L1 (San lineages)' },
-                { label: 'Kit', value: 'Voluntary · AmaQithi members only' },
-                { label: 'Data ownership', value: 'Participant + AmaQithi Trust' },
+                { label: 'Current phase', value: 'Open — accepting sign-ups' },
+                { label: 'People signed up', value: 'Recruiting now' },
+                { label: 'DNA lineages tracked', value: 'L0 and L1 (San ancestry)' },
+                { label: 'How to join', value: 'Free · AmaQithi members only' },
+                { label: 'Who owns the data', value: 'You + the AmaQithi Trust' },
               ].map(({ label, value }) => (
                 <div
                   key={label}
@@ -124,14 +188,14 @@ export default function GenomyTeaser() {
                     justifyContent: 'space-between',
                     alignItems: 'flex-start',
                     gap: '16px',
-                    padding: '10px 0',
+                    padding: '12px 0',
                     borderBottom: '1px solid rgba(196, 98, 45, 0.1)',
                   }}
                 >
                   <span
                     style={{
                       fontFamily: 'var(--font-body), Inter, sans-serif',
-                      fontSize: '0.75rem',
+                      fontSize: '0.78rem',
                       color: '#9E8C7A',
                       flexShrink: 0,
                     }}
@@ -141,7 +205,7 @@ export default function GenomyTeaser() {
                   <span
                     style={{
                       fontFamily: 'var(--font-body), Inter, sans-serif',
-                      fontSize: '0.8rem',
+                      fontSize: '0.82rem',
                       color: '#D4A96A',
                       textAlign: 'right',
                     }}
