@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 const links = [
@@ -61,15 +62,31 @@ export default function Nav() {
         <Link
           href="/"
           style={{
-            fontFamily: 'var(--font-display), Cormorant Garamond, serif',
-            fontSize: '1.6rem',
-            fontWeight: 600,
-            color: '#E8A857',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '10px',
             textDecoration: 'none',
-            letterSpacing: '0.02em',
           }}
         >
-          AmaQithi
+          <Image
+            src="/logo_transparent.png"
+            alt="AmaQithi"
+            width={40}
+            height={40}
+            style={{ borderRadius: '50%' }}
+            priority
+          />
+          <span
+            style={{
+              fontFamily: 'var(--font-display), Cormorant Garamond, serif',
+              fontSize: '1.6rem',
+              fontWeight: 600,
+              color: '#E8A857',
+              letterSpacing: '0.02em',
+            }}
+          >
+            AmaQithi
+          </span>
         </Link>
 
         {/* Desktop links */}

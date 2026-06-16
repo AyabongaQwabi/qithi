@@ -74,7 +74,7 @@ export const homeFaqSchema = {
       name: 'Who are the AmaQithi?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The AmaQithi are San (AbaThwa) First People indigenous to the White Kei River basin in the Eastern Cape, South Africa. They are not of Thembu origin — they were integrated into the Thembu nation through political alliance with Queen Nonesi at Rhodana from 1841, not by conquest. The San leader Mqithi was already at Rhodana before the Thembu arrived. Every foundational AmaQithi surname — Qwabi, Qithi, Mqithi — carries the Q palatal click consonant, a Khoisan linguistic marker absent from original Bantu languages. According to testimony recorded by Sir Walter Stanford (Macquarrie 1962:31), Thembu groups on the White Kei were "on comparatively friendly terms with San families and clans" in the area circa 1850.',
+        text: 'The AmaQithi are San (AbaThwa) First People indigenous to the White Kei River basin in the Eastern Cape, South Africa. They are not of Thembu origin — they were integrated into the Thembu nation through political alliance with Queen Nonesi at Rhodana from 1841, not by conquest. The San leader Mqithi was already at Rhodana before the Thembu arrived. Every foundational AmaQithi surname — Qwabi, Nqabayo, Mqithi — carries the Q palatal click consonant, a Khoisan linguistic marker absent from original Bantu languages. According to testimony recorded by Sir Walter Stanford (Macquarrie 1962:31), Thembu groups on the White Kei were "on comparatively friendly terms with San families and clans" in the area circa 1850.',
       },
     },
     {
@@ -90,7 +90,7 @@ export const homeFaqSchema = {
       name: 'What are the AmaQithi family surnames?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'AmaQithi clan surnames include: Qwabi, Qithi, Mqithi, Manimani, Skampula, Mgengwana, Tshabe, Mbaba, Ngubo, Shumana, Khethelo, Mhlungulwa, Ngqela, Plata, Mfumba, Silimela, Ntulo Limba, Gobelo, Titi, Kula, Msebe, Matho, Fanakho, Bambatha, Mtshabe, Skeyi, Sokoti, and others. The Q click consonant is the phonetic marker of San origin — any surname carrying the Q click is a candidate for AmaQithi lineage.',
+        text: 'AmaQithi clan surnames include: Qwabi, Nqabayo, Mqithi, Manimani, Skampula, Mgengwana, Tshabe, Mbaba, Ngubo, Shumana, Khethelo, Mhlungulwa, Ngqela, Plata, Mfumba, Silimela, Ntulo Limba, Gobelo, Titi, Kula, Msebe, Matho, Fanakho, Bambatha, Mtshabe, Skeyi, Sokoti, and others. The Q click consonant is the phonetic marker of San origin — any surname carrying the Q click is a candidate for AmaQithi lineage.',
       },
     },
     {

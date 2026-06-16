@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 const linkGroups = [
   {
@@ -61,16 +62,30 @@ export default function Footer() {
             <Link
               href="/"
               style={{
-                fontFamily: 'var(--font-display), Cormorant Garamond, serif',
-                fontSize: '2rem',
-                fontWeight: 600,
-                color: '#E8A857',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '12px',
                 textDecoration: 'none',
-                display: 'block',
                 marginBottom: '12px',
               }}
             >
-              AmaQithi
+              <Image
+                src="/logo_transparent.png"
+                alt="AmaQithi"
+                width={52}
+                height={52}
+                style={{ borderRadius: '50%', border: '1px solid rgba(196, 98, 45, 0.25)' }}
+              />
+              <span
+                style={{
+                  fontFamily: 'var(--font-display), Cormorant Garamond, serif',
+                  fontSize: '2rem',
+                  fontWeight: 600,
+                  color: '#E8A857',
+                }}
+              >
+                AmaQithi
+              </span>
             </Link>
             <p
               style={{
@@ -93,7 +108,7 @@ export default function Footer() {
                 color: 'rgba(158,140,122,0.5)',
               }}
             >
-              For AmaQithi families and verified descendants only.
+              A home for AmaQithi families — wherever they are.
             </p>
           </div>
 
@@ -173,14 +188,32 @@ export default function Footer() {
             justifyContent: 'space-between',
             alignItems: 'center',
             flexWrap: 'wrap',
-            gap: '12px',
+            gap: '16px',
           }}
         >
           <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.72rem', color: 'rgba(158,140,122,0.4)' }}>
             © {year} AmaQithi. San (AbaThwa) First People of the Eastern Cape.
           </p>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.72rem', color: 'rgba(158,140,122,0.3)' }}>
-            Lady Frere · Cacadu · White Kei River
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.72rem', color: 'rgba(158,140,122,0.35)', lineHeight: 1.7 }}>
+            Built by{' '}
+            <a
+              href="https://qwabi.co.za"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: 'rgba(196, 98, 45, 0.7)', textDecoration: 'none', borderBottom: '1px solid rgba(196,98,45,0.3)' }}
+            >
+              Ayabonga Qwabi
+            </a>
+            {' '}— AmaQithi descendant, senior software engineer.{' '}
+            <a
+              href="https://business.qwabi.co.za"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: 'rgba(196, 98, 45, 0.7)', textDecoration: 'none', borderBottom: '1px solid rgba(196,98,45,0.3)' }}
+            >
+              Qwabi Engineering
+            </a>
+            {' '}builds software for South African businesses.
           </p>
         </div>
       </div>

@@ -3,9 +3,10 @@ interface PageHeroProps {
   headline: string;
   subheading?: string;
   intro?: string;
+  bg?: boolean;
 }
 
-export default function PageHero({ eyebrow, headline, subheading, intro }: PageHeroProps) {
+export default function PageHero({ eyebrow, headline, subheading, intro, bg }: PageHeroProps) {
   return (
     <section
       className="cave-section cave-bg"
@@ -14,9 +15,37 @@ export default function PageHero({ eyebrow, headline, subheading, intro }: PageH
         paddingTop: '120px',
         paddingBottom: '72px',
         position: 'relative',
+        overflow: 'hidden',
       }}
     >
-      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px' }}>
+      {/* Optional cave painting background */}
+      {bg && (
+        <>
+          <div
+            aria-hidden
+            style={{
+              position: 'absolute',
+              inset: 0,
+              backgroundImage: 'url(/bg_rectangular.png)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              opacity: 0.09,
+              pointerEvents: 'none',
+            }}
+          />
+          <div
+            aria-hidden
+            style={{
+              position: 'absolute',
+              inset: 0,
+              background: 'linear-gradient(to right, rgba(26,15,10,0.9) 35%, rgba(26,15,10,0.6) 100%)',
+              pointerEvents: 'none',
+            }}
+          />
+        </>
+      )}
+
+      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px', position: 'relative', zIndex: 1 }}>
         <p
           style={{
             fontFamily: 'var(--font-body), Inter, sans-serif',
