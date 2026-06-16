@@ -10,7 +10,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
     }
 
-    const { data, error } = await supabase
+    const { error } = await supabase
       .from('genomy_signups')
       .insert({
         full_name:                  body.fullName,
@@ -22,9 +22,7 @@ export async function POST(req: NextRequest) {
         consent_dna_testing:        body.consentDNA === 'on' || body.consentDNA === 'true',
         consent_anonymised_data:    body.consentDNA === 'on' || body.consentDNA === 'true',
         consent_future_requirement: body.consentFuture === 'on' || body.consentFuture === 'true',
-      })
-      .select()
-      .single();
+      });
 
     if (error) {
       console.error('[genomy-signup] insert error:', error);
@@ -32,12 +30,12 @@ export async function POST(req: NextRequest) {
     }
 
     try {
-      await sendGenomyEmail(data);
+      await sendGenomyEmail({ full_name: body.fullName, email: body.email, surname: body.surname });
     } catch {
       // email failure does not fail the submission
     }
 
-    return NextResponse.json({ ok: true, id: data.id });
+    return NextResponse.json({ ok: true });
   } catch (err) {
     console.error('[genomy-signup] route error:', err);
     return NextResponse.json({ error: 'Server error' }, { status: 500 });

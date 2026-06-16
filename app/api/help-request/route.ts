@@ -10,7 +10,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
     }
 
-    const { data, error } = await supabase
+    const { error } = await supabase
       .from('help_requests')
       .insert({
         full_name:         body.fullName,
@@ -22,9 +22,7 @@ export async function POST(req: NextRequest) {
         description:       body.description,
         what_tried:        body.alreadyTried ?? null,
         specific_ask:      body.specificAsk,
-      })
-      .select()
-      .single();
+      });
 
     if (error) {
       console.error('[help-request] insert error:', error);
@@ -32,12 +30,12 @@ export async function POST(req: NextRequest) {
     }
 
     try {
-      await sendHelpEmail(data);
+      await sendHelpEmail({ full_name: body.fullName, email: body.email, request_type: body.helpType, description: body.description });
     } catch {
       // email failure does not fail the submission
     }
 
-    return NextResponse.json({ ok: true, id: data.id });
+    return NextResponse.json({ ok: true });
   } catch (err) {
     console.error('[help-request] route error:', err);
     return NextResponse.json({ error: 'Server error' }, { status: 500 });

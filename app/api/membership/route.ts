@@ -12,7 +12,7 @@ export async function POST(req: NextRequest) {
 
     const vouchers = (body.vouchers ?? '').split(',').map((v: string) => v.trim());
 
-    const { data, error } = await supabase
+    const { error } = await supabase
       .from('membership_applications')
       .insert({
         full_name:             body.fullName,
@@ -26,9 +26,7 @@ export async function POST(req: NextRequest) {
         how_found:             body.referral ?? null,
         skill_profession:      body.profession ?? null,
         declaration_confirmed: body.declaration === 'on',
-      })
-      .select()
-      .single();
+      });
 
     if (error) {
       console.error('[membership] insert error:', error);
@@ -36,12 +34,12 @@ export async function POST(req: NextRequest) {
     }
 
     try {
-      await sendMembershipEmail(data);
+      await sendMembershipEmail({ full_name: body.fullName, email: body.email, surname: body.surname });
     } catch {
       // email failure does not fail the submission
     }
 
-    return NextResponse.json({ ok: true, id: data.id });
+    return NextResponse.json({ ok: true });
   } catch (err) {
     console.error('[membership] route error:', err);
     return NextResponse.json({ error: 'Server error' }, { status: 500 });

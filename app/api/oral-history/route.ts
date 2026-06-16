@@ -10,7 +10,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
     }
 
-    const { data, error } = await supabase
+    const { error } = await supabase
       .from('oral_history_submissions')
       .insert({
         full_name:     body.fullName,
@@ -20,9 +20,7 @@ export async function POST(req: NextRequest) {
         family_branch: body.familyBranch ?? null,
         region:        body.region ?? null,
         time_period:   body.timePeriod ?? null,
-      })
-      .select()
-      .single();
+      });
 
     if (error) {
       console.error('[oral-history] insert error:', error);
@@ -30,12 +28,12 @@ export async function POST(req: NextRequest) {
     }
 
     try {
-      await sendOralHistoryEmail(data);
+      await sendOralHistoryEmail({ full_name: body.fullName, email: body.email, description: body.description });
     } catch {
       // email failure does not fail the submission
     }
 
-    return NextResponse.json({ ok: true, id: data.id });
+    return NextResponse.json({ ok: true });
   } catch (err) {
     console.error('[oral-history] route error:', err);
     return NextResponse.json({ error: 'Server error' }, { status: 500 });

@@ -11,7 +11,7 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
     }
 
-    const { data, error } = await supabase
+    const { error } = await supabase
       .from('directory_registrations')
       .insert({
         full_name: fullName,
@@ -19,9 +19,7 @@ export async function POST(req: Request) {
         phone:     null,
         region,
         skill:     profession,
-      })
-      .select()
-      .single();
+      });
 
     if (error) {
       console.error('[directory] insert error:', error);
@@ -34,7 +32,7 @@ export async function POST(req: Request) {
       // email failure does not fail the submission
     }
 
-    return NextResponse.json({ ok: true, id: data.id });
+    return NextResponse.json({ ok: true });
   } catch (err) {
     console.error('[directory] route error:', err);
     return NextResponse.json({ error: 'Internal error' }, { status: 500 });
