@@ -120,10 +120,11 @@ export default function WhoWeArePage() {
       <Nav />
       <main style={{ background: '#1A0F0A', minHeight: '100vh' }}>
         <PageHero
-          eyebrow="AmaQithi — Identity"
-          headline="Not Thembu by origin. San by blood."
-          subheading="The AmaQithi are the San (AbaThwa) First People of the White Kei River basin. The name carries a palatal click consonant that survived long after everything else was absorbed."
-          intro="This is not mythology. It is oral history cross-referenced with colonial archive, genealogical record, and the testimony of Silayi — recorded by Sir Walter Stanford in the 1850s."
+          bg
+          eyebrow="AmaQithi — Who We Are"
+          headline="We were here before the history started being written down."
+          subheading="The Q in our name is a click. That click is San. Xhosa borrowed it from us — because we were here first, and the Thembu found us when they arrived at Rhodana."
+          intro="This is not legend or folklore. Our history lives in the colonial archives, in the testimony of Silayi recorded by Sir Walter Stanford, and in the mouths of elders who have been saying it for generations. We are just putting it somewhere it cannot be lost."
         />
 
         <div style={{ background: '#1A0F0A', paddingTop: '8px' }}>
@@ -131,8 +132,11 @@ export default function WhoWeArePage() {
         </div>
 
         {/* Stanford quote */}
-        <section className="cave-section cave-bg" style={{ ...section, background: '#2C1810' }}>
-          <div style={inner}>
+        <section className="cave-section cave-bg" style={{ ...section, background: '#2C1810', position: 'relative', overflow: 'hidden' }}>
+          <div aria-hidden style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/bg-square.png)', backgroundSize: 'cover', backgroundPosition: 'center left', opacity: 0.06, pointerEvents: 'none' }} />
+          <div aria-hidden style={{ position: 'absolute', inset: 0, background: 'rgba(44,24,16,0.92)', pointerEvents: 'none' }} />
+          <div style={{ ...inner, position: 'relative', zIndex: 1 }}>
+            <p style={{ ...eyebrow, marginBottom: '24px' }}>Primary Source</p>
             <blockquote
               style={{
                 borderLeft: '3px solid #C4622D',
@@ -167,6 +171,9 @@ export default function WhoWeArePage() {
                 — Silayi, subject of Chief Jumba, recorded by Sir Walter Stanford (Macquarrie 1962:31)
               </cite>
             </blockquote>
+            <p style={{ ...body, color: '#9E8C7A', fontStyle: 'italic', marginTop: '28px' }}>
+              Silayi was a witness. He told a colonial magistrate — a man who had no reason to make San people look important — that the San and the Thembu were living side by side, on good terms, in the White Kei valley. That is the record we are standing on.
+            </p>
           </div>
         </section>
 
@@ -176,18 +183,12 @@ export default function WhoWeArePage() {
         <section className="cave-section cave-bg" style={{ ...section, background: '#1A0F0A' }}>
           <div style={inner}>
             <p style={eyebrow}>Linguistics</p>
-            <h2 style={h2}>The click that survived.</h2>
+            <h2 style={h2}>The Q in our name.</h2>
             <p style={body}>
-              Original Bantu languages did not have click consonants. The Nguni people absorbed the
-              Q, C, and X clicks via centuries of interaction, intermarriage, and structural assimilation
-              with Khoisan people. A name containing a Q click is not a Xhosa name that happens to sound
-              unusual — it is evidence of San origin.
+              Bantu languages do not have click consonants. The Nguni people — Xhosa, Zulu — picked up the Q, C and X clicks from centuries of living near San people. So when you see a Q in a name, you are looking at San roots. It is that simple.
             </p>
             <p style={body}>
-              <strong style={{ color: '#E8A857' }}>Qwabi. Qithi. Mqithi.</strong> Every foundational
-              surname in this clan carries the palatal click — the sharpest, most distinctly
-              non-Bantu sound in the Khoisan phonetic system. In the original !Ui-Taa or Central Khoe
-              language groupings, the name would have been rendered:
+              <strong style={{ color: '#E8A857' }}>Qwabi. Qithi. Mqithi.</strong> Every core surname in this clan has that click. It was not borrowed. It was there from the start — in the original San language, the name probably sounded something like:
             </p>
             <p
               style={{
@@ -204,12 +205,10 @@ export default function WhoWeArePage() {
               !Qhiti → ‡Qiti → ||Giti
             </p>
             <p style={body}>
-              European travelers, Dutch colonial administrators, and British land registry clerks
-              systematically butchered these sounds in official records. Researchers tracing San lineage
-              must search for phonetic variants: Kiti, Chiti, Xiti, Tshiti, Captain Kees.
+              When European settlers wrote our names in official records, they could not spell the click. They wrote Kiti, Chiti, Xiti, Tshiti. If you are searching for AmaQithi in old archives, look for those too.
             </p>
             <p style={{ ...body, color: '#9E8C7A', fontStyle: 'italic' }}>
-              The click is where the story starts. It is also the last thing that could not be erased.
+              You can change a name on paper. You cannot change the sound in the mouth of someone who has spoken it their whole life.
             </p>
           </div>
         </section>
@@ -220,45 +219,343 @@ export default function WhoWeArePage() {
         <section className="cave-section cave-bg" style={{ ...section, background: '#2C1810' }}>
           <div style={inner}>
             <p style={eyebrow}>Rhodana · Lady Frere</p>
-            <h2 style={h2}>The Great Place and the San who were already there.</h2>
+            <h2 style={h2}>Mqithi was there before the Thembu came.</h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '48px' }}>
               <div>
                 <p style={body}>
-                  In 1841, Queen Nonesi — Great Wife of King Ngubengcuka — moved the Thembu royal
-                  court to Rhodana, at the foot of the Cacadu mountains near the White Kei River.
-                  The move was strategic: placing the Thembu on the frontline against British
-                  colonial expansion.
+                  In 1841, Queen Nonesi moved the Thembu royal court to Rhodana, at the foot of the Cacadu mountains. She came there because the British were pushing in from the south and she needed defensible ground near the White Kei River.
                 </p>
                 <p style={body}>
-                  The landscape was already inhabited. San communities had occupied the rock shelters
-                  of the Xonxa and Rhodana mountains for millennia. Rather than displacing them,
-                  the Thembu engaged in an era of intensive political integration.
+                  When she got there, San families were already living in those mountains. They had been in the rock shelters of Xonxa and Rhodana for thousands of years. Nonesi did not push them out. She brought them in.
                 </p>
                 <p style={{ ...body, color: '#9E8C7A' }}>
-                  The San leader <strong style={{ color: '#D4A96A' }}>Mqithi</strong> was recognized
-                  as the "Royal San" of the Rhodana Great Place. His clan was given Qithi Village —
-                  directly adjacent to the royal residence. That placement was a rank marker, not
-                  charity: Mqithi was treated as a senior counselor and hereditary ritual specialist.
+                  The San leader was <strong style={{ color: '#D4A96A' }}>Mqithi</strong>. Nonesi gave his clan a village right next to the royal house — Qithi Village, Location 17/18. That was not charity. That was rank. Mqithi was a senior advisor at the royal court.
                 </p>
               </div>
               <div>
                 <p style={body}>
-                  The roles were documented: San served as rainmakers during droughts, frontier scouts
-                  who tracked colonial movements through terrain no outsider could navigate, elite
-                  marksmen during the War of Mlanjeni (1850–1853), and herbalists supplying medicinal
-                  knowledge drawn from generations of inhabiting this specific landscape.
+                  What did the San bring? They knew every path in those mountains. They could track colonial soldiers through terrain no outsider could find their way through. During the War of Mlanjeni (1850–1853), San marksmen fought alongside the Thembu. They knew which plants healed wounds. They knew where rain would come from.
                 </p>
                 <p style={body}>
-                  The Thembu gave protection and cattle. The San gave intelligence, spiritual authority,
-                  and military capability. It was not assimilation by conquest. It was survival by
-                  mutual recognition.
+                  The Thembu brought cattle and protection. The San brought knowledge that kept people alive. That was the deal — and it was between equals, not between a ruler and a servant.
                 </p>
                 <p style={{ ...body, color: '#9E8C7A' }}>
-                  Qithi Village sits on a literal fence line with the Rodana royal site today —
-                  adjacent to the Rodana Clinic and Rodana PJS School. The geography has not moved.
+                  Qithi Village is still there today. It sits next to the Rodana Clinic and Rodana PJS School. The place has not moved.
                 </p>
               </div>
             </div>
+          </div>
+        </section>
+
+        <div className="section-rule" />
+
+        {/* Ntande rebuttal */}
+        <section className="cave-section cave-bg" style={{ ...section, background: '#1A0F0A' }}>
+          <div style={inner}>
+            <p style={eyebrow}>The Historical Record</p>
+            <h2 style={h2}>Why Qithi cannot be the son of Ntande.</h2>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '48px' }}>
+              <div>
+                <p style={body}>
+                  Some accounts describe Qithi as a son of the Thembu king Ntande, which would make the AmaQithi a Thembu clan by descent. The Ama-Tembu royal genealogy places Ntande in the late 1500s — more than two centuries before Queen Nonesi arrived at Rhodana.
+                </p>
+                <p style={body}>
+                  That timeline makes the claim impossible. Village names in this region were given by the people who lived in them, and they named places after leaders who were present and alive. A village does not get named after someone who died 200 years earlier.
+                </p>
+                <p style={{ ...body, color: '#9E8C7A' }}>
+                  The evidence for this is right in the surrounding landscape. KwaTshatshu — the village nearby — takes its name from Thembu chief Tshatshu, who lived in the early 1820s. His village was named while he was there. That is how naming worked.
+                </p>
+              </div>
+              <div>
+                <p style={body}>
+                  The Thembu did not settle in the Cacadu basin until the 1800s. Nonesi and Mtirara established the Great Place at Rhodana in 1841. If Qithi Village was named after a Thembu chief&apos;s son, that son would have had to be alive and present during the Nonesi era — not during the reign of Ntande in the 1500s.
+                </p>
+                <p style={body}>
+                  There is no Ntande-era Thembu presence in this region. The Thembu were far to the south and east until the 19th century. The White Kei basin was San and Khoe territory during Ntande&apos;s lifetime.
+                </p>
+                <p style={{ ...body, color: '#9E8C7A' }}>
+                  The royal genealogy below, from a colonial-era Ama-Tembu lineage record, shows where Ntande sits in the tree — many generations above Nonesi and Mtirara. The distance is not ambiguous.
+                </p>
+
+                {/* Thembu lineage image */}
+                <div
+                  style={{
+                    marginTop: '24px',
+                    border: '1px solid rgba(196,98,45,0.25)',
+                    overflow: 'hidden',
+                  }}
+                >
+                  <img
+                    src="/thembuline.png"
+                    alt="Ama-Tembu royal genealogy chart showing Ntande many generations above Nonesi and Mtirara, confirming Ntande reigned in the late 1500s — centuries before the Thembu settled the Cacadu basin"
+                    style={{ width: '100%', display: 'block', filter: 'brightness(0.92) contrast(1.1)' }}
+                    loading="lazy"
+                  />
+                </div>
+                <p
+                  style={{
+                    fontFamily: 'var(--font-body), Inter, sans-serif',
+                    fontSize: '0.72rem',
+                    color: '#9E8C7A',
+                    marginTop: '8px',
+                    lineHeight: 1.5,
+                    fontStyle: 'italic',
+                  }}
+                >
+                  Ama-Tembu royal lineage. Ntande appears in the upper generations, separated from Nonesi and Mtirara by multiple reigns. A village named during Nonesi&apos;s time at Rhodana (1841) could not carry the name of a son of Ntande.
+                </p>
+              </div>
+            </div>
+
+            {/* Summary box */}
+            <div
+              style={{
+                marginTop: '40px',
+                borderLeft: '3px solid #C4622D',
+                paddingLeft: '24px',
+                maxWidth: '680px',
+              }}
+            >
+              <p
+                style={{
+                  fontFamily: 'var(--font-display), Cormorant Garamond, serif',
+                  fontSize: 'clamp(1rem, 2vw, 1.25rem)',
+                  fontStyle: 'italic',
+                  color: '#E8A857',
+                  lineHeight: 1.65,
+                  marginBottom: '10px',
+                }}
+              >
+                The name Qithi holds a palatal click consonant that is not native to Bantu languages. The village predates the Thembu arrival at Rhodana. The naming pattern of the region links village names to living leaders, not ancestors from the 1500s. Three independent lines of evidence point the same way: Qithi was San.
+              </p>
+              <p
+                style={{
+                  fontFamily: 'var(--font-body), Inter, sans-serif',
+                  fontSize: '0.78rem',
+                  color: '#9E8C7A',
+                }}
+              >
+                The true lineage of the San chief Qithi (Mqithi) is still under active research. What is documented is that Mqithi was present at Rhodana before the Thembu arrived — and that his village name is linguistically San, not Thembu.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <div className="section-rule" />
+
+        {/* San chiefs of the region */}
+        <section className="cave-section cave-bg" style={{ ...section, background: '#2C1810' }}>
+          <div style={inner}>
+            <p style={eyebrow}>San Leadership · 19th Century</p>
+            <h2 style={h2}>Mqithi was not alone. These were the San leaders of his world.</h2>
+            <p style={{ ...body, marginBottom: '40px' }}>
+              The AmaQithi did not exist in isolation. They were one clan within a wider network of San leaders who were navigating the same pressures — colonial expansion, Nguni settlement, and the loss of land they had held for millennia. Knowing these names gives the AmaQithi story its full context.
+            </p>
+
+            {/* White Kei chiefs — most relevant */}
+            <p
+              style={{
+                fontFamily: 'var(--font-body), Inter, sans-serif',
+                fontSize: '0.68rem',
+                fontWeight: 600,
+                letterSpacing: '0.18em',
+                textTransform: 'uppercase',
+                color: '#C4622D',
+                marginBottom: '24px',
+              }}
+            >
+              Glen Grey · Lady Frere · White Kei Basin
+            </p>
+            <div
+              style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+                gap: '1px',
+                background: 'rgba(196,98,45,0.2)',
+                marginBottom: '56px',
+              }}
+            >
+              {[
+                {
+                  name: 'Mqithi (Qithi)',
+                  detail: 'The "Royal San" of Rhodana. Primary ally of Queen Nonesi when she established the Thembu Great Place in 1841. His clan was granted Qithi Village directly adjacent to the royal residence — a position of senior counselor and hereditary ritual specialist. His lineage is the direct ancestor of the AmaQithi clan.',
+                },
+                {
+                  name: 'Madolo (Madura · Madoor)',
+                  detail: 'Chief of a powerful San tribe originally occupying the Klipplaats and Upper Black Kei Rivers. Relocated to Glen Grey around 1835 and settled near the Bushman School on the White Kei River — the same area where Qwabi Joka was born in 1842. Led 200 levies (San, Khoe, Mfengu, and Thembu) for the British in the War of the Axe (1846). Retreated to White Kei caves around 1850 after conflict with Thembu chief Ndhela. Last recorded at age 80 in 1856, withdrawing into the Maloti-Drakensberg.',
+                },
+                {
+                  name: 'Flux',
+                  detail: 'Close associate of Madolo. Fought alongside him against the immigrant Thembu chief Ndhela around 1850. When colonial authorities moved against them, Flux and Madolo fled together to the caves on the White Kei River banks. His fate after that is not recorded.',
+                },
+                {
+                  name: "Mada'kane",
+                  detail: "Chief of a San tribe in the valley of the Lower Black Kei, down to its junction with the White Kei. His final stronghold was an inaccessible glen near that junction, which bears his name. His brother, 'Gcu-wa, was a noted San painter still active in 1869 — one of the last recorded practising San artists in the Eastern Cape.",
+                },
+              ].map((chief) => (
+                <div key={chief.name} style={{ background: '#2C1810', padding: '28px 24px' }}>
+                  <h3
+                    style={{
+                      fontFamily: 'var(--font-display), Cormorant Garamond, serif',
+                      fontSize: '1.2rem',
+                      fontWeight: 600,
+                      color: '#E8A857',
+                      marginBottom: '10px',
+                      lineHeight: 1.2,
+                    }}
+                  >
+                    {chief.name}
+                  </h3>
+                  <p
+                    style={{
+                      fontFamily: 'var(--font-body), Inter, sans-serif',
+                      fontSize: '0.88rem',
+                      color: '#9E8C7A',
+                      lineHeight: 1.7,
+                    }}
+                  >
+                    {chief.detail}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            {/* Drakensberg / Phuthi alliance */}
+            <p
+              style={{
+                fontFamily: 'var(--font-body), Inter, sans-serif',
+                fontSize: '0.68rem',
+                fontWeight: 600,
+                letterSpacing: '0.18em',
+                textTransform: 'uppercase',
+                color: '#C4622D',
+                marginBottom: '24px',
+              }}
+            >
+              Maloti-Drakensberg · Phuthi Alliance
+            </p>
+            <div
+              style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+                gap: '1px',
+                background: 'rgba(196,98,45,0.2)',
+                marginBottom: '56px',
+              }}
+            >
+              {[
+                {
+                  name: 'Soai',
+                  detail: 'The last major San leader of the Maloti mountains, based at Sehonghong Cave. A close friend and ally of Phuthi chief Moorosi — the same Moorosi after whom Qwabi Joka named his son Molosi. Soai\'s people frequently intermarried with the Phuthi. Killed by Sotho forces in 1871-1872 in an ambush near a pool.',
+                },
+                {
+                  name: 'Quu',
+                  detail: "San leader at 'Nkuakhomo during the Difaqane. Formalised the Phuthi-San alliance when Moorosi's father Mokuoane married his sister — making Moorosi himself part San. That kinship connection is why San fighters used 'Moroa' (Bushman) as the password to Moorosi's mountain stronghold in 1879.",
+                },
+              ].map((chief) => (
+                <div key={chief.name} style={{ background: '#2C1810', padding: '28px 24px' }}>
+                  <h3
+                    style={{
+                      fontFamily: 'var(--font-display), Cormorant Garamond, serif',
+                      fontSize: '1.2rem',
+                      fontWeight: 600,
+                      color: '#E8A857',
+                      marginBottom: '10px',
+                      lineHeight: 1.2,
+                    }}
+                  >
+                    {chief.name}
+                  </h3>
+                  <p
+                    style={{
+                      fontFamily: 'var(--font-body), Inter, sans-serif',
+                      fontSize: '0.88rem',
+                      color: '#9E8C7A',
+                      lineHeight: 1.7,
+                    }}
+                  >
+                    {chief.detail}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            {/* Nomansland / Transkei */}
+            <p
+              style={{
+                fontFamily: 'var(--font-body), Inter, sans-serif',
+                fontSize: '0.68rem',
+                fontWeight: 600,
+                letterSpacing: '0.18em',
+                textTransform: 'uppercase',
+                color: '#C4622D',
+                marginBottom: '24px',
+              }}
+            >
+              Nomansland · East Griqualand · Transkei
+            </p>
+            <div
+              style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+                gap: '1px',
+                background: 'rgba(196,98,45,0.2)',
+                marginBottom: '16px',
+              }}
+            >
+              {[
+                {
+                  name: 'Nqabayo (Ngqabayi)',
+                  detail: 'Led a band of 43 men near the Xuka and Mooi Rivers at the base of the Drakensberg. Notable for controlling the preparation of arrow poison. His people were attacked at Gubenxa in 1857 after a dispute with Thembu chief Mgudhluwa. Most of his men were killed. Gubenxa is today one of the Ngcobo villages where AmaQithi families are documented to live.',
+                },
+                {
+                  name: 'Luhayi',
+                  detail: 'Head of a main San family in the Tsolo district and the official rainmaker for Mpondomise chief Mditshwa. Photographed by Sir Walter Stanford in 1888. His family held the same dual role the AmaQithi held at Rhodana: San ancestry, performing rainmaking and healing for a neighbouring Nguni chief while maintaining their own identity.',
+                },
+                {
+                  name: 'Mdwebo',
+                  detail: 'Led a band between the Ngeli Mountains and the Mzimvubu River. A vassal of Mpondomise chief Mandela by marriage. Despite political ties to Nguni rulers, his band retained a nomadic hunter-gatherer way of life — the same pattern of integration without erasure that defined the AmaQithi experience at Rhodana.',
+                },
+              ].map((chief) => (
+                <div key={chief.name} style={{ background: '#2C1810', padding: '28px 24px' }}>
+                  <h3
+                    style={{
+                      fontFamily: 'var(--font-display), Cormorant Garamond, serif',
+                      fontSize: '1.2rem',
+                      fontWeight: 600,
+                      color: '#E8A857',
+                      marginBottom: '10px',
+                      lineHeight: 1.2,
+                    }}
+                  >
+                    {chief.name}
+                  </h3>
+                  <p
+                    style={{
+                      fontFamily: 'var(--font-body), Inter, sans-serif',
+                      fontSize: '0.88rem',
+                      color: '#9E8C7A',
+                      lineHeight: 1.7,
+                    }}
+                  >
+                    {chief.detail}
+                  </p>
+                </div>
+              ))}
+            </div>
+            <p
+              style={{
+                fontFamily: 'var(--font-body), Inter, sans-serif',
+                fontSize: '0.82rem',
+                color: '#9E8C7A',
+                fontStyle: 'italic',
+                lineHeight: 1.65,
+                maxWidth: '620px',
+                marginTop: '24px',
+              }}
+            >
+              The pattern across all these leaders is the same: San chiefs negotiating survival through alliances with neighbouring nations, trading knowledge and military service for land and protection — while keeping their identity intact. The AmaQithi at Rhodana were not an exception. They were part of a wider San political strategy across southern Africa.
+            </p>
           </div>
         </section>
 
@@ -268,7 +565,7 @@ export default function WhoWeArePage() {
         <section className="cave-section cave-bg" style={{ ...section, background: '#1A0F0A' }}>
           <div style={inner}>
             <p style={eyebrow}>Izibongo</p>
-            <h2 style={h2}>The praise names of the AmaQithi.</h2>
+            <h2 style={h2}>The praise names of AmaQithi.</h2>
             <div
               style={{
                 display: 'grid',
@@ -296,27 +593,21 @@ export default function WhoWeArePage() {
                 <p
                   style={{
                     fontFamily: 'var(--font-body), Inter, sans-serif',
-                    fontSize: '0.8rem',
+                    fontSize: '0.82rem',
                     color: '#9E8C7A',
                     fontStyle: 'italic',
-                    lineHeight: 1.65,
+                    lineHeight: 1.7,
                   }}
                 >
-                  "The AmaQithi — beautiful, with their nails." The izibongo are recited at
-                  ceremony, at introduction, at the moment of being recognized as belonging.
+                  "The AmaQithi — beautiful, with their nails." You say this when you introduce yourself. You say it when you arrive somewhere and need to be known.
                 </p>
               </div>
               <div>
                 <p style={{ ...body, color: '#9E8C7A' }}>
-                  Izibongo are clan praise poems — living documents that encode history, identity,
-                  and belonging. They are not written down first. They are spoken. They survive
-                  because they were given to children, recited at gatherings, and passed across
-                  every generation whether or not anyone thought to record them.
+                  Izibongo are praise poems. They are the clan's memory — names, events, the character of the people who came before. Nobody wrote them first. They were spoken. Passed from parents to children. Said at gatherings. Said to strangers who needed to know who you were.
                 </p>
                 <p style={{ ...body, color: '#9E8C7A' }}>
-                  The AmaQithi izibongo survived the colonial period, the forced removals, and the
-                  disruption of the San integration into the Thembu nation. They remain the primary
-                  living evidence of unbroken clan identity.
+                  The AmaQithi izibongo made it through the colonial years. Through the forced moves. Through everything that was done to make San people forget who they were. They are still here. That counts for something.
                 </p>
               </div>
             </div>
@@ -329,7 +620,7 @@ export default function WhoWeArePage() {
         <section className="cave-section cave-bg" style={{ ...section, background: '#2C1810' }}>
           <div style={inner}>
             <p style={eyebrow}>Chronology</p>
-            <h2 style={h2}>The documented record.</h2>
+            <h2 style={h2}>The written record.</h2>
             <div style={{ position: 'relative', paddingLeft: '24px' }}>
               <div
                 style={{
@@ -392,11 +683,11 @@ export default function WhoWeArePage() {
         <div className="section-rule" />
 
         <PageCTA
-          headline="Know your lineage. Apply for access."
-          body="This portal is for AmaQithi families and verified descendants only. If you know your village and your surname, begin your application."
-          primaryLabel="Apply for Membership"
+          headline="You know your village. You know your name. That is enough to start."
+          body="Applications are open to AmaQithi descendants, their families, and approved researchers. The council reviews each one."
+          primaryLabel="Apply Now"
           primaryHref="/apply"
-          secondaryLabel="View Families"
+          secondaryLabel="See the Families"
           secondaryHref="/families"
         />
       </main>
