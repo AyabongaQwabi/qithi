@@ -205,8 +205,7 @@ function MembershipForm({ onSuccess }: { onSuccess: () => void }) {
           <input name="declaration" type="checkbox" required
             style={{ marginTop: '3px', accentColor: 'var(--ochre)', flexShrink: 0 }} />
           <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: 'var(--smoke)', lineHeight: 1.5 }}>
-            I confirm that I am of AmaQithi descent and understand that false claims will result
-            in permanent exclusion.
+            I confirm that the information I have given is honest and true to the best of my knowledge.
           </span>
         </label>
       </Field>
@@ -324,18 +323,16 @@ function GenomyForm({ onSuccess }: { onSuccess: () => void }) {
           <input name="consentDNA" type="checkbox" required
             style={{ marginTop: '3px', accentColor: 'var(--ochre)', flexShrink: 0 }} />
           <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: 'var(--smoke)', lineHeight: 1.5 }}>
-            I consent to DNA testing and to my anonymised genetic data being used exclusively
-            for the AmaQithi genealogy project.
+            I agree to take a DNA test and for my anonymised results to be used in the AmaQithi ancestry project. My data will not be sold or shared.
           </span>
         </label>
       </Field>
-      <Field label="Consent to future DNA verification requirement">
+      <Field label="Optional: Future use consent">
         <label style={{ display: 'flex', gap: '10px', alignItems: 'flex-start', cursor: 'pointer' }}>
           <input name="consentFuture" type="checkbox"
             style={{ marginTop: '3px', accentColor: 'var(--ochre)', flexShrink: 0 }} />
           <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: 'var(--smoke)', lineHeight: 1.5 }}>
-            I understand that in the future, confirmed AmaQithi DNA may be required for full
-            platform access, and I consent to this use.
+            I am happy for my DNA results to be used in future phases of the AmaQithi ancestry project as it grows.
           </span>
         </label>
       </Field>
@@ -347,18 +344,18 @@ function GenomyForm({ onSuccess }: { onSuccess: () => void }) {
 const tracks: { id: Track; label: string; description: string }[] = [
   {
     id: 'membership',
-    label: 'Clan Membership',
-    description: 'Apply to join the AmaQithi clan portal. Requires lineage and two vouching members.',
+    label: 'Join the Clan',
+    description: 'Register as a member of the AmaQithi clan. Share your lineage and connect with your family.',
   },
   {
     id: 'help',
-    label: 'Request for Help',
-    description: 'Business, project, education, or emergency assistance. For members and those applying.',
+    label: 'Ask for Help',
+    description: 'Need support with school fees, a business, a project, or an emergency? Let us know.',
   },
   {
     id: 'genomy',
-    label: 'Genomy DNA Sign-up',
-    description: 'Sign up for the AmaQithi genealogy DNA project. Build the San genetic map.',
+    label: 'DNA Ancestry Project',
+    description: 'Join the AmaQithi Genomy project and help us trace our San roots through science.',
   },
 ];
 
@@ -403,7 +400,7 @@ export default function Apply() {
             lineHeight: 1.1,
           }}
         >
-          Join the clan. Access support. Map the lineage.
+          Connect. Get support. Trace your roots.
         </h2>
 
         {/* Track selector */}

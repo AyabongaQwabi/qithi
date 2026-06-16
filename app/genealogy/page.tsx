@@ -72,7 +72,7 @@ const keyFacts = [
   },
   {
     label: 'The linguistic anchor',
-    text: 'Q (palatal click) in Qwabi, Qithi, Mqithi — a Khoisan phonetic root surviving in Xhosa orthography. Linguistic fossil. Scientific confirmation is the next step.',
+    text: 'Q (palatal click) in Qwabi, Nqabayo, Mqithi — a Khoisan phonetic root surviving in Xhosa orthography. Linguistic fossil. Scientific confirmation is the next step.',
   },
   {
     label: 'Haplogroups tracked',
@@ -99,10 +99,11 @@ export default function GenealogyPage() {
       <Nav />
       <main style={{ background: '#1A0F0A', minHeight: '100vh' }}>
         <PageHero
+          bg
           eyebrow="AmaQithi Genomy"
-          headline="Mapping the AmaQithi bloodline through science."
-          subheading="The first scientific map of San genetic heritage within the AmaQithi clan. Voluntary DNA testing. L0 and L1 haplogroups. The most important long-term project on this platform."
-          intro="If you carry Qithi blood but cannot trace your lineage in writing, the DNA project is for you. Come forward. Submit what you know. Let the science do the rest."
+          headline="Our elders knew. Now we are building the proof."
+          subheading="The oral history says we are San. The DNA project turns that into something the world cannot argue with. Voluntary. Free. And the results belong to you."
+          intro="L0 and L1 are the haplogroups science links to the oldest human communities on earth. We are tracking them in AmaQithi families. If your blood goes back to the White Kei, there is a good chance it shows up in the data."
         />
 
         <div style={{ background: '#1A0F0A', paddingTop: '8px' }}>

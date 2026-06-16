@@ -134,7 +134,7 @@ export default function Genealogy() {
               },
               {
                 label: 'The linguistic anchor',
-                text: 'Q (palatal click) in Qwabi, Qithi, Mqithi — a Khoisan phonetic root surviving in Xhosa orthography. Linguistic fossil. Scientific confirmation is the next step.',
+                text: 'Q (palatal click) in Qwabi, Nqabayo, Mqithi — a Khoisan phonetic root surviving in Xhosa orthography. Linguistic fossil. Scientific confirmation is the next step.',
               },
               {
                 label: 'Your participation',

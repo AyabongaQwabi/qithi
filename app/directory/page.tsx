@@ -103,8 +103,7 @@ export default function DirectoryPage() {
                     marginBottom: '16px',
                   }}
                 >
-                  Access is restricted to verified AmaQithi members. You can search by skill,
-                  by region, or by name. If you need a service, you find one of your own first.
+                  Once the directory is live, verified members can search by skill, region, or name. Looking for a plumber, a lawyer, a builder? Check here first before you go outside the family.
                 </p>
                 <p
                   style={{

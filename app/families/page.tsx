@@ -130,10 +130,11 @@ export default function FamiliesPage() {
       <Nav />
       <main style={{ background: '#1A0F0A', minHeight: '100vh' }}>
         <PageHero
+          bg
           eyebrow="AmaQithi — Families"
-          headline="Five regions. One bloodline."
-          subheading="The AmaQithi are not one village. Different branches, same San heritage — from Lady Frere and Rhodana to Ngcobo, Cofimvaba, and the Free State."
-          intro="This is not a complete list. The AmaQithi genealogy project is ongoing. If your village or surname is missing, you are part of why this portal exists."
+          headline="The names that carried us to where we are now."
+          subheading="Five regions. Many villages. Different surnames — but the same roots, the same river, the same original people."
+          intro="This list is not complete and it may never be. Families scattered. Records burned. Names changed at borders. But every name we find, we add. If yours is missing, that is exactly why we built this."
         />
 
         <div style={{ background: '#1A0F0A', paddingTop: '8px' }}>
@@ -380,19 +381,17 @@ export default function FamiliesPage() {
                 lineHeight: 1.7,
               }}
             >
-              This portal is not open to the general public. Family records, genealogy data, and
-              directory access are restricted to verified AmaQithi members and approved researchers.
-              If you are AmaQithi and you are not yet registered, begin your application below.
+              Full family records, genealogy data, and the skills directory are available to registered members. If you are AmaQithi and not yet registered, your application is just below.
             </p>
           </div>
         </section>
 
         <PageCTA
-          headline="Find your branch. Join your family."
-          body="Apply for verified membership to access the full AmaQithi family archive, genealogy data, and the skills directory."
-          primaryLabel="Begin Application"
+          headline="Is your family on this list?"
+          body="If yes — apply for membership and join them. If no — apply and tell us what we are missing. Either way, start here."
+          primaryLabel="Apply Now"
           primaryHref="/apply"
-          secondaryLabel="Genealogy Project"
+          secondaryLabel="DNA Ancestry Project"
           secondaryHref="/genealogy"
         />
       </main>

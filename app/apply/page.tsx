@@ -34,10 +34,11 @@ export default function ApplyPage() {
       <Nav />
       <main style={{ background: '#1A0F0A', minHeight: '100vh' }}>
         <PageHero
+          bg
           eyebrow="AmaQithi — Apply"
-          headline="Join the clan. Access support. Map the lineage."
-          subheading="Three tracks. One portal. All applications are reviewed by the AmaQithi council. False claims result in permanent exclusion."
-          intro="If you are AmaQithi — or believe you are — this is where you begin."
+          headline="You do not need a perfect family tree. You just need to know where you come from."
+          subheading="Tell us who you are and what you know. The council takes it from there. Three ways to apply — for descendants, close family, and researchers."
+          intro="A lot of AmaQithi families lost the thread somewhere along the way. Cities, different surnames, generations of moving around. That is not your fault, and it is not a barrier. We are here to help piece it together."
         />
 
         <div style={{ background: '#1A0F0A', paddingTop: '8px' }}>

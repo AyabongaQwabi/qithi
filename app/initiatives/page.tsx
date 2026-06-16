@@ -11,7 +11,7 @@ const BASE = 'https://qithi.co.za';
 export const metadata: Metadata = {
   title: 'AmaQithi Initiatives — Education, Trust, Genealogy and Skills Support for AmaQithi Families',
   description:
-    'Six initiatives exclusively for AmaQithi clan members: the AmaQithi Trust (forming), Education Support (active), AmaQithi Genomy DNA project (recruiting), Skills Development, Cultural Preservation, and the IsiQithi Language Programme. AmaQithi community support.',
+    'Six AmaQithi community projects: the AmaQithi Trust (forming), Education Support (active), AmaQithi Genomy DNA project (recruiting), Skills Development, Cultural Preservation, and the IsiQithi Language Programme. Built by and for AmaQithi families.',
   keywords: [
     'AmaQithi support', 'AmaQithi community initiatives', 'AmaQithi trust',
     'AmaQithi education support', 'San community support Eastern Cape',
@@ -125,10 +125,11 @@ export default function InitiativesPage() {
       <Nav />
       <main style={{ background: '#1A0F0A', minHeight: '100vh' }}>
         <PageHero
+          bg
           eyebrow="AmaQithi — Initiatives"
-          headline="Six initiatives. All for AmaQithi only."
-          subheading="Not general community development. Not open to the public. Built by AmaQithi, governed by AmaQithi, for AmaQithi families and their children."
-          intro="Each initiative is tied to the AmaQithi Trust. The Trust is what makes them permanent rather than seasonal."
+          headline="Six things being built, right now, for this community."
+          subheading="A trust to pool our money. Education support for our children. A DNA project. A skills directory. And two programmes to protect our language and culture before they disappear."
+          intro="None of this was built by outsiders. It was built by AmaQithi, for AmaQithi. That is what makes it different."
         />
 
         <div style={{ background: '#1A0F0A', paddingTop: '8px' }}>
@@ -324,11 +325,11 @@ export default function InitiativesPage() {
         </section>
 
         <PageCTA
-          headline="Ready to participate?"
-          body="Apply for verified membership to access all six initiatives, the Trust, and the Skills Directory."
-          primaryLabel="Apply for Membership"
+          headline="Ready to be part of this?"
+          body="Apply to join and get access to the Trust, the Skills Directory, education support, and everything being built here."
+          primaryLabel="Apply Now"
           primaryHref="/apply"
-          secondaryLabel="The Trust"
+          secondaryLabel="About the Trust"
           secondaryHref="/trust"
         />
       </main>

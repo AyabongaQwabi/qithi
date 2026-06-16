@@ -141,12 +141,11 @@ export default function GenomySignupForm() {
             style={{ marginTop: '3px', accentColor: '#C4622D', flexShrink: 0 }}
           />
           <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#9E8C7A', lineHeight: 1.5 }}>
-            I consent to DNA testing and to my anonymised genetic data being used exclusively
-            for the AmaQithi genealogy project.
+            I agree to take a DNA test and for my anonymised results to be used in the AmaQithi ancestry project. My data will not be sold or shared.
           </span>
         </label>
       </Field>
-      <Field label="Future verification consent">
+      <Field label="Optional: Future use consent">
         <label style={{ display: 'flex', gap: '10px', alignItems: 'flex-start', cursor: 'pointer' }}>
           <input
             name="consentFuture"
@@ -154,8 +153,7 @@ export default function GenomySignupForm() {
             style={{ marginTop: '3px', accentColor: '#C4622D', flexShrink: 0 }}
           />
           <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#9E8C7A', lineHeight: 1.5 }}>
-            I understand that in the future, confirmed AmaQithi DNA may be required for full
-            platform access, and I consent to this use.
+            I am happy for my results to be used in future phases of the AmaQithi ancestry project as it grows.
           </span>
         </label>
       </Field>
