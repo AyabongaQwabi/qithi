@@ -110,24 +110,35 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
               className="hero-enter-delay"
               style={{
                 fontFamily: 'var(--font-display), Cormorant Garamond, serif',
-                fontSize: 'clamp(2rem, 6vw, 4rem)',
+                fontSize: 'clamp(2.6rem, 7vw, 5rem)',
                 fontWeight: 600,
                 color: '#E8A857',
-                lineHeight: 1.05,
-                letterSpacing: '-0.01em',
-                marginBottom: '24px',
+                lineHeight: 1.02,
+                letterSpacing: '-0.02em',
+                marginBottom: '32px',
+                maxWidth: '700px',
               }}
             >
               {post.title}
             </h1>
-            <p
+            <div
               className="hero-enter-delay-2"
               style={{
+                width: '32px',
+                height: '2px',
+                background: '#C4622D',
+                marginBottom: '24px',
+              }}
+            />
+            <p
+              className="hero-enter-delay-3"
+              style={{
                 fontFamily: 'var(--font-display), Cormorant Garamond, serif',
-                fontSize: 'clamp(1rem, 2vw, 1.3rem)',
+                fontSize: 'clamp(1.15rem, 2.2vw, 1.5rem)',
                 fontStyle: 'italic',
                 color: '#D4A96A',
-                lineHeight: 1.65,
+                lineHeight: 1.7,
+                maxWidth: '600px',
               }}
             >
               {post.excerpt}
@@ -143,18 +154,13 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
 
         {/* Body */}
         <ScrollReveal>
-          <article style={{ padding: '64px 0 80px' }}>
+          <article style={{ padding: '80px 0 100px' }}>
             <div
               className="reveal"
-              style={{ maxWidth: '720px', margin: '0 auto', padding: '0 24px' }}
+              style={{ maxWidth: '680px', margin: '0 auto', padding: '0 24px' }}
             >
               <div
-                style={{
-                  fontFamily: 'var(--font-body), Inter, sans-serif',
-                  fontSize: '1.05rem',
-                  color: '#D4A96A',
-                  lineHeight: 1.9,
-                }}
+                className="prose"
                 dangerouslySetInnerHTML={{ __html: post.body }}
               />
             </div>

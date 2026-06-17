@@ -223,6 +223,114 @@ button, input, textarea, select {
   animation: fadeUp 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.48s both;
 }
 
+/* ─── Blog prose typography ─────────────────────────────────────────────── */
+.prose {
+  font-family: var(--font-body), Inter, sans-serif;
+  font-size: clamp(1.05rem, 1.8vw, 1.2rem);
+  color: #D4A96A;
+  line-height: 1.95;
+}
+
+.prose p {
+  margin-bottom: 2em;
+}
+
+.prose p:first-of-type {
+  font-size: clamp(1.12rem, 2vw, 1.28rem);
+  color: #F5E6C8;
+  line-height: 1.85;
+}
+
+.prose p:first-of-type::first-letter {
+  font-family: var(--font-display), Cormorant Garamond, serif;
+  font-size: 4.2em;
+  font-weight: 600;
+  color: #C4622D;
+  float: left;
+  line-height: 0.82;
+  margin-right: 0.1em;
+  margin-top: 0.06em;
+}
+
+.prose h2 {
+  font-family: var(--font-display), Cormorant Garamond, serif;
+  font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+  font-weight: 600;
+  color: #E8A857;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin-top: 2.8em;
+  margin-bottom: 0.9em;
+}
+
+.prose h3 {
+  font-family: var(--font-display), Cormorant Garamond, serif;
+  font-size: clamp(1.25rem, 2.5vw, 1.65rem);
+  font-weight: 600;
+  color: #E8A857;
+  line-height: 1.2;
+  margin-top: 2.4em;
+  margin-bottom: 0.75em;
+}
+
+.prose h3::before {
+  content: '';
+  display: block;
+  width: 28px;
+  height: 2px;
+  background: #C4622D;
+  margin-bottom: 0.6em;
+}
+
+.prose em {
+  font-style: italic;
+  color: #F5E6C8;
+}
+
+.prose strong {
+  font-weight: 600;
+  color: #E8A857;
+}
+
+.prose a {
+  color: #C4622D;
+  text-decoration: underline;
+  text-decoration-color: rgba(196, 98, 45, 0.4);
+  text-underline-offset: 3px;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+.prose a:hover {
+  color: #E8A857;
+  text-decoration-color: rgba(232, 168, 87, 0.6);
+}
+
+.prose blockquote {
+  border-left: 3px solid #C4622D;
+  padding-left: 1.5em;
+  margin: 2.2em 0;
+  font-family: var(--font-display), Cormorant Garamond, serif;
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
+  font-style: italic;
+  color: #E8A857;
+  line-height: 1.6;
+}
+
+.prose ul,
+.prose ol {
+  padding-left: 1.4em;
+  margin-bottom: 2em;
+}
+
+.prose li {
+  margin-bottom: 0.6em;
+}
+
+.prose hr {
+  border: none;
+  border-top: 1px solid rgba(196, 98, 45, 0.25);
+  margin: 3em 0;
+}
+
 /* Respect reduced-motion preference */
 @media (prefers-reduced-motion: reduce) {
   .reveal, .reveal-left, .reveal-right,
