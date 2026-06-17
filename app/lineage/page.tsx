@@ -356,18 +356,18 @@ export default function LineagePage() {
               }}
             >
               <p style={{ fontFamily: 'var(--font-display), Cormorant Garamond, serif', fontSize: 'clamp(1.1rem, 2vw, 1.35rem)', fontStyle: 'italic', color: '#E8A857', lineHeight: 1.65, marginBottom: '12px' }}>
-                &ldquo;We are a Thembu nation whose identity is historically rooted in an ancient San-Bantu matrix. Born of a friendly amalgamation between early Nguni pioneers and the indigenous ǀXam hunter-gatherers, our people have carried the physical and cultural traditions of both worlds through centuries of shifting frontiers.&rdquo;
+                &ldquo;At about this time a number of Thembu groups living on the White Kei, including &lsquo;Jumba&rsquo;, were on comparatively friendly terms with San families and clans living in that area.&rdquo;
               </p>
               <cite style={{ fontFamily: 'var(--font-body), Inter, sans-serif', fontSize: '0.78rem', color: '#9E8C7A', fontStyle: 'normal' }}>
-                — The Archive of AmaQithi (update1.md §1, AmaQithi Research Archive, 2026)
+                — Silayi, recorded by Sir Walter Stanford (Macquarrie 1962:31)
               </cite>
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
               {[
-                { label: 'Thembu by lineage', text: 'The AmaQithi are a derived branch of the Thembu Great House, formed within the San-Bantu matrix that the Thembu nation was built upon.' },
-                { label: 'San by heritage', text: 'Their direct ancestor Mqithi was a San captain at Rhodana before the Thembu arrived. The click in the name, the Ingqithi ritual, and the izibongo carry the San root.' },
-                { label: 'Royal counsellors by rank', text: 'Mqithi\'s clan was placed adjacent to the royal residence at Rhodana — a position equivalent to a senior counsellor in the Thembu court.' },
-                { label: 'Diaspora by history', text: 'After the fall of Mount Moorosi (1879), the clan dispersed across eNgcobo, Cofimvaba, and Mkapusi — but the lineage, the name, and the izibongo survived.' },
+                { label: 'Thembu by lineage', text: 'The AmaQithi carry a strong Thembu connection — the evidence for that is real. Where exactly Mqithi sits in the Thembu tree remains an open question, one the research is still working to answer.' },
+                { label: 'San by heritage', text: 'San communities were present in the White Kei basin when Queen Nonesi established the Great Place at Rhodana in 1841. The click in the name, ingqithi ritual, and izibongo all point to a San root — the research holds this as the strongest thread.' },
+                { label: 'Adjacent to the royal court', text: 'Qithi Village sits directly next to the Rodana royal residence — that proximity is documented on the map today. What political role that closeness represented is what the research is working to establish.' },
+                { label: 'Diaspora by history', text: 'After the fall of Mount Moorosi (1879), the clan dispersed across eNgcobo, Cofimvaba, and Mkapusi — but the lineage, the name, and izibongo survived.' },
               ].map((point) => (
                 <div key={point.label} style={{ background: '#2C1810', padding: '24px', border: '1px solid rgba(196,98,45,0.2)' }}>
                   <h3 style={{ fontFamily: 'var(--font-display), Cormorant Garamond, serif', fontSize: '1.05rem', fontWeight: 600, color: '#E8A857', marginBottom: '8px' }}>
