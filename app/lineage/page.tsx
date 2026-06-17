@@ -341,6 +341,14 @@ export default function LineagePage() {
                 { src: '/geneology2.png', alt: 'AmaQithi genealogy research panel 2 — Thembu Great House branches', w: 2218, h: 1496 },
                 { src: '/geneology3.png', alt: 'AmaQithi genealogy research panel 3 — dispersal routes post-1879', w: 2218, h: 1496 },
                 { src: '/geneology4.png', alt: 'AmaQithi genealogy research panel 4 — Qwabi Joka and Lady Frere settlement', w: 2218, h: 1528 },
+                { src: '/geneology5.png', alt: 'AmaQithi genealogy research panel 5 — Thembu-San lineage extended chart', w: 2218, h: 1528 },
+                { src: '/geneology6.png', alt: 'AmaQithi genealogy research panel 6 — AmaQithi clan branches and surnames', w: 2218, h: 1528 },
+                { src: '/geneology7.png', alt: 'AmaQithi genealogy research panel 7 — Thembu royal house connections to AmaQithi', w: 2494, h: 1528 },
+                { src: '/geneology8.png', alt: 'AmaQithi genealogy research panel 8 — post-1879 dispersal and modern family lines', w: 2218, h: 1528 },
+                { src: '/geneology5.png', alt: 'AmaQithi genealogy research panel 5 — Thembu-San lineage extended chart', w: 2218, h: 1528 },
+                { src: '/geneology6.png', alt: 'AmaQithi genealogy research panel 6 — AmaQithi clan branches and surnames', w: 2218, h: 1528 },
+                { src: '/geneology7.png', alt: 'AmaQithi genealogy research panel 7 — Thembu royal house connections to AmaQithi', w: 2494, h: 1528 },
+                { src: '/geneology8.png', alt: 'AmaQithi genealogy research panel 8 — post-1879 dispersal and modern family lines', w: 2218, h: 1528 },
               ].map((img) => (
                 <div key={img.src} style={{ border: '1px solid rgba(196,98,45,0.2)', overflow: 'hidden' }}>
                   <Image
@@ -355,9 +363,40 @@ export default function LineagePage() {
               ))}
             </div>
 
-            <p style={{ fontFamily: 'var(--font-body), Inter, sans-serif', fontSize: '0.72rem', color: '#6B5A4E', marginTop: '16px', lineHeight: 1.6, fontStyle: 'italic', maxWidth: '820px' }}>
-              Working research charts — the full Thembu genealogy from Njanya (c. 1307) to the modern era. The documented son of Ntande in the written record is Mnguti — the investigation into the AmaQithi&apos;s precise place in the tree continues.
-            </p>
+            {/* Incomplete research notice + collaboration invite */}
+            <div style={{ marginTop: '32px', borderLeft: '3px solid rgba(232,168,87,0.4)', paddingLeft: '20px', maxWidth: '820px' }}>
+              <p style={{ fontFamily: 'var(--font-body), Inter, sans-serif', fontSize: '0.88rem', color: '#E8A857', lineHeight: 1.75, marginBottom: '10px', fontWeight: 500 }}>
+                These charts are incomplete. This is a living research document — not a finished record.
+              </p>
+              <p style={{ fontFamily: 'var(--font-body), Inter, sans-serif', fontSize: '0.85rem', color: '#9E8C7A', lineHeight: 1.75, marginBottom: '16px' }}>
+                The documented son of Ntande in the written record is Mnguti — but the investigation into the AmaQithi&apos;s precise place in the tree continues. If your family carries knowledge about this lineage, we want to hear it. The full working board is open for community collaboration.
+              </p>
+              <a
+                href="https://miro.com/welcomeonboard/TXlmSXhFTStpUENIL3p4ZHZNZkROd2lyODJ2b3pYSk1SeW5FQ1N4WU92UWIvNE02Q0Y3TGlkV3FVeHJOaW1vVHNKbk9CNWFyYVgyYkc0MndPY29RZSt5M0I0dHlESkxSSGpqNFpqV3pCaGs2NzRjMnlQVjVqdk5uelZBSElMS2JyVmtkMG5hNDA3dVlncnBvRVB2ZXBnPT0hdjE=?share_link_id=274299635695"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '8px',
+                  fontFamily: 'var(--font-body), Inter, sans-serif',
+                  fontSize: '0.82rem',
+                  fontWeight: 600,
+                  letterSpacing: '0.08em',
+                  textTransform: 'uppercase',
+                  color: '#E8A857',
+                  textDecoration: 'none',
+                  border: '1px solid rgba(232,168,87,0.4)',
+                  padding: '10px 20px',
+                }}
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+                  <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+                </svg>
+                Help complete the lineage board
+              </a>
+            </div>
           </div>
         </section>
 
