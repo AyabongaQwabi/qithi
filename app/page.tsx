@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import Hero from '@/components/Hero';
 import Footer from '@/components/Footer';
+import ScrollReveal from '@/components/ScrollReveal';
 import SchemaOrg, { orgSchema, websiteSchema, homeFaqSchema } from '@/components/SchemaOrg';
 
 const BASE = 'https://qithi.co.za';
@@ -83,137 +84,124 @@ export default function Home() {
         <Hero />
 
         {/* Wayfinding */}
-        <section
-          aria-label="Site navigation"
-          style={{
-            background: '#1A0F0A',
-            padding: '80px 0',
-          }}
-        >
-          <div
-            style={{
-              maxWidth: '1200px',
-              margin: '0 auto',
-              padding: '0 24px',
-            }}
+        <ScrollReveal>
+          <section
+            aria-label="Site navigation"
+            style={{ background: '#1A0F0A', padding: '80px 0' }}
           >
-            <p
-              style={{
-                fontFamily: 'var(--font-body), Inter, sans-serif',
-                fontSize: '0.68rem',
-                fontWeight: 500,
-                letterSpacing: '0.22em',
-                textTransform: 'uppercase',
-                color: '#C4622D',
-                marginBottom: '40px',
-              }}
-            >
-              Where to go
-            </p>
-
-            <div
-              style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
-                gap: '2px',
-              }}
-            >
-              {wayfinding.map((item) => (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  style={{
-                    display: 'block',
-                    background: '#2C1810',
-                    padding: '32px 28px',
-                    textDecoration: 'none',
-                    borderTop: `2px solid ${item.accent}`,
-                    transition: 'background 0.2s',
-                  }}
-                >
-                  <p
-                    style={{
-                      fontFamily: 'var(--font-display), Cormorant Garamond, serif',
-                      fontSize: '1.35rem',
-                      fontWeight: 600,
-                      color: '#E8A857',
-                      marginBottom: '10px',
-                      lineHeight: 1.2,
-                    }}
-                  >
-                    {item.label}
-                  </p>
-                  <p
-                    style={{
-                      fontFamily: 'var(--font-body), Inter, sans-serif',
-                      fontSize: '0.88rem',
-                      color: '#9E8C7A',
-                      lineHeight: 1.65,
-                      margin: 0,
-                    }}
-                  >
-                    {item.teaser}
-                  </p>
-                </a>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Pull-quote */}
-        <section
-          aria-label="Historical record"
-          style={{
-            background: '#2C1810',
-            padding: '80px 24px',
-          }}
-        >
-          <div
-            style={{
-              maxWidth: '720px',
-              margin: '0 auto',
-            }}
-          >
-            <div
-              style={{
-                width: '32px',
-                height: '2px',
-                background: '#C4622D',
-                marginBottom: '32px',
-              }}
-            />
-            <blockquote style={{ margin: 0 }}>
+            <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px' }}>
               <p
-                style={{
-                  fontFamily: 'var(--font-display), Cormorant Garamond, serif',
-                  fontSize: 'clamp(1.2rem, 2.5vw, 1.6rem)',
-                  fontStyle: 'italic',
-                  fontWeight: 400,
-                  color: '#E8A857',
-                  lineHeight: 1.7,
-                  marginBottom: '20px',
-                }}
-              >
-                &ldquo;At about this time a number of Thembu groups living on the White Kei, including
-                &lsquo;Jumba&rsquo;, were on comparatively friendly terms with San families and
-                clans living in that area.&rdquo;
-              </p>
-              <cite
+                className="reveal"
                 style={{
                   fontFamily: 'var(--font-body), Inter, sans-serif',
-                  fontSize: '0.75rem',
+                  fontSize: '0.68rem',
                   fontWeight: 500,
-                  letterSpacing: '0.08em',
-                  color: '#9E8C7A',
-                  fontStyle: 'normal',
-                  display: 'block',
+                  letterSpacing: '0.22em',
+                  textTransform: 'uppercase',
+                  color: '#C4622D',
+                  marginBottom: '40px',
                 }}
               >
-                — Silayi, recorded by Sir Walter Stanford (Macquarrie 1962:31)
-              </cite>
-            </blockquote>
-          </div>
-        </section>
+                Where to go
+              </p>
+
+              <div
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
+                  gap: '2px',
+                }}
+              >
+                {wayfinding.map((item, i) => (
+                  <a
+                    key={item.href}
+                    href={item.href}
+                    className={`reveal card-lift delay-${i + 1}`}
+                    style={{
+                      display: 'block',
+                      background: '#2C1810',
+                      padding: '32px 28px',
+                      textDecoration: 'none',
+                      borderTop: `2px solid ${item.accent}`,
+                      transition: 'background 0.25s ease, transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94), box-shadow 0.3s ease, opacity 0.65s ease',
+                    }}
+                    onMouseEnter={(e) => (e.currentTarget.style.background = '#3a1f10')}
+                    onMouseLeave={(e) => (e.currentTarget.style.background = '#2C1810')}
+                  >
+                    <p
+                      style={{
+                        fontFamily: 'var(--font-display), Cormorant Garamond, serif',
+                        fontSize: '1.35rem',
+                        fontWeight: 600,
+                        color: '#E8A857',
+                        marginBottom: '10px',
+                        lineHeight: 1.2,
+                      }}
+                    >
+                      {item.label}
+                    </p>
+                    <p
+                      style={{
+                        fontFamily: 'var(--font-body), Inter, sans-serif',
+                        fontSize: '0.88rem',
+                        color: '#9E8C7A',
+                        lineHeight: 1.65,
+                        margin: 0,
+                      }}
+                    >
+                      {item.teaser}
+                    </p>
+                  </a>
+                ))}
+              </div>
+            </div>
+          </section>
+        </ScrollReveal>
+
+        {/* Pull-quote */}
+        <ScrollReveal>
+          <section
+            aria-label="Historical record"
+            style={{ background: '#2C1810', padding: '80px 24px' }}
+          >
+            <div style={{ maxWidth: '720px', margin: '0 auto' }}>
+              <div
+                className="reveal"
+                style={{ width: '32px', height: '2px', background: '#C4622D', marginBottom: '32px' }}
+              />
+              <blockquote className="reveal delay-1" style={{ margin: 0 }}>
+                <p
+                  style={{
+                    fontFamily: 'var(--font-display), Cormorant Garamond, serif',
+                    fontSize: 'clamp(1.2rem, 2.5vw, 1.6rem)',
+                    fontStyle: 'italic',
+                    fontWeight: 400,
+                    color: '#E8A857',
+                    lineHeight: 1.7,
+                    marginBottom: '20px',
+                  }}
+                >
+                  &ldquo;At about this time a number of Thembu groups living on the White Kei, including
+                  &lsquo;Jumba&rsquo;, were on comparatively friendly terms with San families and
+                  clans living in that area.&rdquo;
+                </p>
+                <cite
+                  style={{
+                    fontFamily: 'var(--font-body), Inter, sans-serif',
+                    fontSize: '0.75rem',
+                    fontWeight: 500,
+                    letterSpacing: '0.08em',
+                    color: '#9E8C7A',
+                    fontStyle: 'normal',
+                    display: 'block',
+                  }}
+                >
+                  — Silayi, recorded by Sir Walter Stanford (Macquarrie 1962:31)
+                </cite>
+              </blockquote>
+            </div>
+          </section>
+        </ScrollReveal>
       </main>
       <Footer />
     </>

@@ -64,6 +64,7 @@ export default function Hero() {
         }}
       >
         <p
+          className="hero-enter"
           style={{
             fontFamily: 'var(--font-body), Inter, sans-serif',
             fontSize: '0.68rem',
@@ -79,6 +80,7 @@ export default function Hero() {
 
         <h1
           id="hero-heading"
+          className="hero-enter-delay"
           style={{
             fontFamily: 'var(--font-display), Cormorant Garamond, serif',
             fontSize: 'clamp(5rem, 14vw, 10rem)',
@@ -93,6 +95,7 @@ export default function Hero() {
         </h1>
 
         <p
+          className="hero-enter-delay-2"
           style={{
             fontFamily: 'var(--font-display), Cormorant Garamond, serif',
             fontSize: 'clamp(1.2rem, 2.5vw, 1.7rem)',
@@ -107,7 +110,7 @@ export default function Hero() {
           A Thembu–San clan from the White Kei River, Lady Frere — recognised by the mark of ingqithi.
         </p>
 
-        <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
+        <div className="hero-enter-delay-3" style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
           <a
             href="/who-we-are"
             style={{
