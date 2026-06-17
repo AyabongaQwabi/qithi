@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import Nav from '@/components/Nav';
 import PageHero from '@/components/PageHero';
 import Breadcrumb from '@/components/Breadcrumb';
 import PageCTA from '@/components/PageCTA';
 import Footer from '@/components/Footer';
+import LineageGallery from '@/components/LineageGallery';
 import SchemaOrg, { orgSchema, lineageSchema, breadcrumbSchema } from '@/components/SchemaOrg';
 
 const BASE = 'https://qithi.co.za';
@@ -288,87 +288,26 @@ export default function LineagePage() {
 
         <div className="section-rule" />
 
-        {/* Lineage charts — image gallery */}
+        {/* Lineage gallery — full-width lightbox */}
         <section className="cave-section cave-bg" style={{ ...section, background: '#2C1810' }}>
           <div style={inner}>
             <p style={eyebrow}>Visual Record</p>
             <h2 style={h2}>The genealogy — documented in full.</h2>
-            <p style={{ ...body, marginBottom: '40px' }}>
-              These charts trace the Thembu Great House from Zwide and Njanya (c. 1307) through Ntande, Nxego, Dlomo, Ngubengcuka, Mtirara, and Nonesi. Each image is a section of the working research document. Notes in the margins are part of the active investigation into the AmaQithi&apos;s place in the tree.
+            <p style={{ ...body, marginBottom: '32px' }}>
+              These charts trace the Thembu Great House from Zwide and Njanya (c. 1307) through Ntande, Nxego, Dlomo, Ngubengcuka, Mtirara, and Nonesi. Click any panel to view full size. Use arrow keys or buttons to navigate.
             </p>
+          </div>
 
-            {/* Full lineage overview */}
-            <div style={{ marginBottom: '12px' }}>
-              <p style={{ fontFamily: 'var(--font-body), Inter, sans-serif', fontSize: '0.65rem', fontWeight: 600, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#C4622D', marginBottom: '12px' }}>
-                Full Lineage Overview
-              </p>
-              <div style={{ border: '1px solid rgba(196,98,45,0.25)', overflow: 'hidden', width: '100%' }}>
-                <Image
-                  src="/lineage_full.png"
-                  alt="AmaQithi and AbaThembu full royal lineage from Njanya (c. 1307) to the present — working research chart"
-                  width={2448}
-                  height={1470}
-                  style={{ width: '100%', height: 'auto', display: 'block' }}
-                  quality={90}
-                />
-              </div>
-            </div>
+          {/* Gallery bleeds full width */}
+          <LineageGallery />
 
-            {/* Detail view */}
-            <div style={{ marginBottom: '40px' }}>
-              <p style={{ fontFamily: 'var(--font-body), Inter, sans-serif', fontSize: '0.65rem', fontWeight: 600, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#C4622D', marginBottom: '12px' }}>
-                Detail — Ntande to Nonesi
-              </p>
-              <div style={{ border: '1px solid rgba(196,98,45,0.25)', overflow: 'hidden', width: '100%' }}>
-                <Image
-                  src="/lineage_detail.png"
-                  alt="AbaThembu royal lineage detail — from Ntande through Ngubengcuka, Mtirara, and Queen Nonesi at Rhodana"
-                  width={2206}
-                  height={1470}
-                  style={{ width: '100%', height: 'auto', display: 'block' }}
-                  quality={90}
-                />
-              </div>
-            </div>
-
-            {/* Genealogy panels grid */}
-            <p style={{ fontFamily: 'var(--font-body), Inter, sans-serif', fontSize: '0.65rem', fontWeight: 600, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#C4622D', marginBottom: '12px' }}>
-              Working Research Panels
-            </p>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2px' }}>
-              {[
-                { src: '/geneology-abathembu-lineage-2.png', alt: 'AbaThembu lineage chart 2 — Thembu Great House genealogy from Njanya to Ngubengcuka', w: 2218, h: 1496 },
-                { src: '/geneology-abathembu-3.png', alt: 'AbaThembu genealogy panel 3 — Thembu royal house branches and succession', w: 2218, h: 1496 },
-                { src: '/geneology-abathembu-lineage-4.png', alt: 'AbaThembu lineage chart 4 — Thembu clans and AmaQithi placement in the royal tree', w: 2218, h: 1496 },
-                { src: '/geneology-abathembu-amaxhosa-amampondo-amampondomise-lineage.png', alt: 'AbaThembu, AmaXhosa, AmaMpondo, and AmaMpondomise shared lineage from Njanya — Nguni nations genealogy chart', w: 2218, h: 1528 },
-                { src: '/geneology-amaxhosa-lineage.png', alt: 'AmaXhosa lineage chart — Xhosa royal genealogy and relationship to AbaThembu and AmaQithi', w: 2218, h: 1528 },
-                { src: '/geneology-amaxhosa-lineage-2.png', alt: 'AmaXhosa lineage chart 2 — extended Xhosa royal house genealogy', w: 2218, h: 1528 },
-                { src: '/geneology-amaqwathi-lineage-qwati.png', alt: 'AmaQwathi lineage chart — Qwati clan genealogy and connection to AbaThembu and AmaQithi', w: 2494, h: 1528 },
-                { src: '/geneology-amaxhosa-lineage-last.png', alt: 'AmaXhosa lineage final panel — Xhosa, Thembu, and AmaQithi convergence in Eastern Cape genealogy', w: 2218, h: 1528 },
-                { src: '/geneology5.png', alt: 'AmaQithi genealogy research panel 5 — Thembu-San lineage extended chart', w: 2218, h: 1528 },
-                { src: '/geneology6.png', alt: 'AmaQithi genealogy research panel 6 — AmaQithi clan branches and surnames', w: 2218, h: 1528 },
-                { src: '/geneology7.png', alt: 'AmaQithi genealogy research panel 7 — Thembu royal house connections to AmaQithi', w: 2494, h: 1528 },
-                { src: '/geneology8.png', alt: 'AmaQithi genealogy research panel 8 — post-1879 dispersal and modern family lines', w: 2218, h: 1528 },
-              ].map((img) => (
-                <div key={img.src} style={{ border: '1px solid rgba(196,98,45,0.2)', overflow: 'hidden' }}>
-                  <Image
-                    src={img.src}
-                    alt={img.alt}
-                    width={img.w}
-                    height={img.h}
-                    style={{ width: '100%', height: 'auto', display: 'block' }}
-                    quality={85}
-                  />
-                </div>
-              ))}
-            </div>
-
+          <div style={inner}>
             {/* Incomplete research notice + collaboration invite */}
-            <div style={{ marginTop: '32px', borderLeft: '3px solid rgba(232,168,87,0.4)', paddingLeft: '20px', maxWidth: '820px' }}>
+            <div style={{ marginTop: '40px', borderLeft: '3px solid rgba(232,168,87,0.4)', paddingLeft: '20px', maxWidth: '820px' }}>
               <p style={{ fontFamily: 'var(--font-body), Inter, sans-serif', fontSize: '0.88rem', color: '#E8A857', lineHeight: 1.75, marginBottom: '10px', fontWeight: 500 }}>
                 These charts are incomplete. This is a living research document — not a finished record.
               </p>
-              <p style={{ fontFamily: 'var(--font-body), Inter, sans-serif', fontSize: '0.85rem', color: '#9E8C7A', lineHeight: 1.75, marginBottom: '16px' }}>
+              <p style={{ fontFamily: 'var(--font-body), Inter, sans-serif', fontSize: '0.85rem', color: '#9E8C7A', lineHeight: 1.75, marginBottom: '20px' }}>
                 The documented son of Ntande in the written record is Mnguti — but the investigation into the AmaQithi&apos;s precise place in the tree continues. If your family carries knowledge about this lineage, we want to hear it. The full working board is open for community collaboration.
               </p>
               <a
@@ -388,6 +327,7 @@ export default function LineagePage() {
                   textDecoration: 'none',
                   border: '1px solid rgba(232,168,87,0.4)',
                   padding: '10px 20px',
+                  transition: 'background 0.2s',
                 }}
               >
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
