@@ -33,6 +33,7 @@ const linkGroups = [
       { label: 'Lineage Board', href: '/lineage' },
       { label: 'Sources', href: '/sources' },
       { label: 'Village Anatomy', href: '/insights/thembu-village-anatomy' },
+      { label: 'Blog', href: '/blog' },
     ],
   },
   {

@@ -1,0 +1,198 @@
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import Nav from '@/components/Nav';
+import Footer from '@/components/Footer';
+import Breadcrumb from '@/components/Breadcrumb';
+import ScrollReveal from '@/components/ScrollReveal';
+import SchemaOrg, { orgSchema, breadcrumbSchema } from '@/components/SchemaOrg';
+import { posts } from '@/lib/posts';
+
+const BASE = 'https://qithi.co.za';
+
+export const metadata: Metadata = {
+  title: 'Blog — AmaQithi Dispatches | History, Research & Identity',
+  description:
+    'Writing from the AmaQithi research archive — history, language, genealogy, and the ongoing investigation into the San-Thembu heritage of the Eastern Cape.',
+  openGraph: {
+    title: 'AmaQithi Blog — Dispatches from the Archive',
+    description: 'History, language, genealogy, and the ongoing investigation into the San-Thembu heritage of the Eastern Cape.',
+    url: `${BASE}/blog`,
+    images: [{ url: `${BASE}/logo.png`, width: 1024, height: 1024, alt: 'AmaQithi' }],
+    type: 'website',
+  },
+  alternates: { canonical: `${BASE}/blog` },
+};
+
+const categoryColors: Record<string, string> = {
+  'Language & Identity': '#E8A857',
+  'History': '#C4622D',
+  'Research': '#9E8C7A',
+};
+
+function formatDate(iso: string) {
+  return new Date(iso).toLocaleDateString('en-ZA', { year: 'numeric', month: 'long', day: 'numeric' });
+}
+
+export default function BlogIndex() {
+  return (
+    <>
+      <SchemaOrg schemas={[orgSchema, breadcrumbSchema([{ name: 'Blog', url: '/blog' }])]} />
+      <Nav />
+      <main style={{ background: '#1A0F0A', minHeight: '100vh' }}>
+
+        {/* Hero */}
+        <section
+          style={{
+            position: 'relative',
+            background: 'radial-gradient(ellipse at 20% 80%, #3D2010 0%, #2C1810 50%, #1A0F0A 100%)',
+            paddingTop: '120px',
+            paddingBottom: '72px',
+            overflow: 'hidden',
+          }}
+        >
+          <div
+            aria-hidden
+            style={{
+              position: 'absolute',
+              inset: 0,
+              backgroundImage: 'url(/bg-square.png)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              opacity: 0.05,
+              pointerEvents: 'none',
+            }}
+          />
+          <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px', position: 'relative', zIndex: 1 }}>
+            <p
+              className="hero-enter"
+              style={{
+                fontFamily: 'var(--font-body), Inter, sans-serif',
+                fontSize: '0.68rem',
+                fontWeight: 500,
+                letterSpacing: '0.22em',
+                textTransform: 'uppercase',
+                color: '#C4622D',
+                marginBottom: '20px',
+              }}
+            >
+              Dispatches from the archive
+            </p>
+            <h1
+              className="hero-enter-delay"
+              style={{
+                fontFamily: 'var(--font-display), Cormorant Garamond, serif',
+                fontSize: 'clamp(3rem, 8vw, 6rem)',
+                fontWeight: 600,
+                color: '#E8A857',
+                lineHeight: 0.95,
+                letterSpacing: '-0.02em',
+                marginBottom: '24px',
+              }}
+            >
+              The Blog.
+            </h1>
+            <p
+              className="hero-enter-delay-2"
+              style={{
+                fontFamily: 'var(--font-display), Cormorant Garamond, serif',
+                fontSize: 'clamp(1rem, 2vw, 1.35rem)',
+                fontStyle: 'italic',
+                color: '#D4A96A',
+                maxWidth: '560px',
+                lineHeight: 1.65,
+              }}
+            >
+              History, language, genealogy — the ongoing investigation into the San-Thembu heritage of the Eastern Cape.
+            </p>
+          </div>
+        </section>
+
+        <div style={{ background: '#1A0F0A', paddingTop: '8px' }}>
+          <Breadcrumb items={[{ label: 'Blog' }]} />
+        </div>
+
+        {/* Posts */}
+        <ScrollReveal>
+          <section style={{ padding: '72px 0 96px' }}>
+            <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+                {posts.map((post, i) => (
+                  <Link
+                    key={post.slug}
+                    href={`/blog/${post.slug}`}
+                    className={`reveal card-lift delay-${Math.min(i + 1, 5)}`}
+                    style={{
+                      display: 'grid',
+                      gridTemplateColumns: '1fr auto',
+                      alignItems: 'start',
+                      gap: '24px',
+                      background: '#2C1810',
+                      padding: '32px 36px',
+                      textDecoration: 'none',
+                      borderLeft: `3px solid ${categoryColors[post.category] ?? '#C4622D'}`,
+                      transition: 'background 0.25s ease, transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94), box-shadow 0.3s ease, opacity 0.65s ease',
+                    }}
+                    onMouseEnter={(e) => (e.currentTarget.style.background = '#3a1f10')}
+                    onMouseLeave={(e) => (e.currentTarget.style.background = '#2C1810')}
+                  >
+                    <div>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '12px', flexWrap: 'wrap' }}>
+                        <span style={{
+                          fontFamily: 'var(--font-body), Inter, sans-serif',
+                          fontSize: '0.62rem',
+                          fontWeight: 700,
+                          letterSpacing: '0.18em',
+                          textTransform: 'uppercase',
+                          color: categoryColors[post.category] ?? '#C4622D',
+                        }}>
+                          {post.category}
+                        </span>
+                        <span style={{
+                          fontFamily: 'var(--font-body), Inter, sans-serif',
+                          fontSize: '0.68rem',
+                          color: '#6B5A4E',
+                        }}>
+                          {formatDate(post.date)}
+                        </span>
+                      </div>
+                      <h2 style={{
+                        fontFamily: 'var(--font-display), Cormorant Garamond, serif',
+                        fontSize: 'clamp(1.3rem, 2.5vw, 1.8rem)',
+                        fontWeight: 600,
+                        color: '#E8A857',
+                        lineHeight: 1.15,
+                        marginBottom: '12px',
+                      }}>
+                        {post.title}
+                      </h2>
+                      <p style={{
+                        fontFamily: 'var(--font-body), Inter, sans-serif',
+                        fontSize: '0.92rem',
+                        color: '#9E8C7A',
+                        lineHeight: 1.7,
+                        maxWidth: '640px',
+                      }}>
+                        {post.excerpt}
+                      </p>
+                    </div>
+                    <span style={{
+                      fontFamily: 'var(--font-body), Inter, sans-serif',
+                      fontSize: '1.2rem',
+                      color: '#C4622D',
+                      alignSelf: 'center',
+                      flexShrink: 0,
+                    }}>
+                      →
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        </ScrollReveal>
+
+      </main>
+      <Footer />
+    </>
+  );
+}
