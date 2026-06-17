@@ -337,14 +337,14 @@ export default function LineagePage() {
             </p>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2px' }}>
               {[
-                { src: '/geneology1.png', alt: 'AmaQithi genealogy research panel 1 — Thembu-San lineage working chart', w: 2218, h: 1496 },
-                { src: '/geneology2.png', alt: 'AmaQithi genealogy research panel 2 — Thembu Great House branches', w: 2218, h: 1496 },
-                { src: '/geneology3.png', alt: 'AmaQithi genealogy research panel 3 — dispersal routes post-1879', w: 2218, h: 1496 },
-                { src: '/geneology4.png', alt: 'AmaQithi genealogy research panel 4 — Qwabi Joka and Lady Frere settlement', w: 2218, h: 1528 },
-                { src: '/geneology5.png', alt: 'AmaQithi genealogy research panel 5 — Thembu-San lineage extended chart', w: 2218, h: 1528 },
-                { src: '/geneology6.png', alt: 'AmaQithi genealogy research panel 6 — AmaQithi clan branches and surnames', w: 2218, h: 1528 },
-                { src: '/geneology7.png', alt: 'AmaQithi genealogy research panel 7 — Thembu royal house connections to AmaQithi', w: 2494, h: 1528 },
-                { src: '/geneology8.png', alt: 'AmaQithi genealogy research panel 8 — post-1879 dispersal and modern family lines', w: 2218, h: 1528 },
+                { src: '/geneology-abathembu-lineage-2.png', alt: 'AbaThembu lineage chart 2 — Thembu Great House genealogy from Njanya to Ngubengcuka', w: 2218, h: 1496 },
+                { src: '/geneology-abathembu-3.png', alt: 'AbaThembu genealogy panel 3 — Thembu royal house branches and succession', w: 2218, h: 1496 },
+                { src: '/geneology-abathembu-lineage-4.png', alt: 'AbaThembu lineage chart 4 — Thembu clans and AmaQithi placement in the royal tree', w: 2218, h: 1496 },
+                { src: '/geneology-abathembu-amaxhosa-amampondo-amampondomise-lineage.png', alt: 'AbaThembu, AmaXhosa, AmaMpondo, and AmaMpondomise shared lineage from Njanya — Nguni nations genealogy chart', w: 2218, h: 1528 },
+                { src: '/geneology-amaxhosa-lineage.png', alt: 'AmaXhosa lineage chart — Xhosa royal genealogy and relationship to AbaThembu and AmaQithi', w: 2218, h: 1528 },
+                { src: '/geneology-amaxhosa-lineage-2.png', alt: 'AmaXhosa lineage chart 2 — extended Xhosa royal house genealogy', w: 2218, h: 1528 },
+                { src: '/geneology-amaqwathi-lineage-qwati.png', alt: 'AmaQwathi lineage chart — Qwati clan genealogy and connection to AbaThembu and AmaQithi', w: 2494, h: 1528 },
+                { src: '/geneology-amaxhosa-lineage-last.png', alt: 'AmaXhosa lineage final panel — Xhosa, Thembu, and AmaQithi convergence in Eastern Cape genealogy', w: 2218, h: 1528 },
                 { src: '/geneology5.png', alt: 'AmaQithi genealogy research panel 5 — Thembu-San lineage extended chart', w: 2218, h: 1528 },
                 { src: '/geneology6.png', alt: 'AmaQithi genealogy research panel 6 — AmaQithi clan branches and surnames', w: 2218, h: 1528 },
                 { src: '/geneology7.png', alt: 'AmaQithi genealogy research panel 7 — Thembu royal house connections to AmaQithi', w: 2494, h: 1528 },
