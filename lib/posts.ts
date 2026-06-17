@@ -37,6 +37,28 @@ export const posts: Post[] = [
     `,
   },
   {
+    slug: 'inkosi-means-thank-you',
+    title: 'Inkosi means "thank you." That is not a coincidence.',
+    date: '2026-06-17',
+    category: 'Language & Identity',
+    author: { name: 'Ayabonga Qwabi', url: 'https://qwabi.co.za' },
+    excerpt:
+      'The Thembu word for chief — inkosi — comes from enkosi, thank you. Leadership was not inherited from the gods or passed down by blood. It was given by a people who kept saying thank you to the same person. When that stopped, so did the title.',
+    body: `
+      <p>There is a saying in the Thembu nation: <em>inkosi siyibeka esihlalweni sobukhosi ngenxa yokuba sisoloko sisithi enkosi kuye</em> — we place a person in the seat of chieftainship because we always say thank you to them. The word <em>inkosi</em> (chief) comes directly from <em>enkosi</em> (thank you). It is not a metaphor. It is the etymology.</p>
+      <p>You were not called inkosi because you were born with sacred blood or appointed by a god. You were called inkosi because you were the person your community kept turning to, kept depending on, kept thanking. The title was a description of a relationship, not a declaration of a rank.</p>
+      <p>Ubuntu — <em>umntu ngumntu ngabantu</em>, a person is a person through other people — is the principle underneath this. Not a slogan. Not a woke corporate value. The way the Thembu organised their leadership is what Ubuntu looks like when it is the actual operating system, not the branding.</p>
+      <h3>The Qwathi brothers</h3>
+      <p>The clearest case I know of this system working as designed is the story of Ntswayibane and Noni, sons of Dikela of the Qwathi people.</p>
+      <p>Ntswayibane was the elder son. When Dikela died, the expectation fell on him — <em>umntakabani ulingana noyise</em>, a child measures up to their father. The Qwathi people placed him as chief, expecting that his father's nurture had made him what Dikela had been.</p>
+      <p>It turned out that whenever a matter of real weight came to the great house, Ntswayibane sent it to Noni. Not once. Habitually. And the people noticed. In time, they removed Ntswayibane and gave the chieftainship to Noni — not because Noni had a stronger bloodline, but because he was the brother the community kept saying thank you to.</p>
+      <p>The system caught its own error. That is what a community-held title can do that an inherited one cannot.</p>
+      <h3>What this means for how we read history</h3>
+      <p>I think about this when I read colonial accounts of Thembu leadership. The British kept looking for the king, the divine right, the sacred lineage. They found chiefs and assumed they were looking at a lesser version of monarchy. They were looking at something different — a form of governance where the title tracked the relationship, and the community held the power to reassign it.</p>
+      <p>A stranger is not an enemy. Just someone I have not yet had reason to say thank you to. That is the logic the Thembu built their leadership on, and it is still in the language: every time you say enkosi, you are using the same word.</p>
+    `,
+  },
+  {
     slug: 'the-click-in-our-name',
     title: 'The Q in our name is not a Xhosa sound',
     date: '2026-05-12',
