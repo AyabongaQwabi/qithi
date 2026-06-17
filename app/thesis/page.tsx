@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Nav from '@/components/Nav';
 import PageHero from '@/components/PageHero';
 import Breadcrumb from '@/components/Breadcrumb';
@@ -391,20 +392,20 @@ export default function ThesisPage() {
             </p>
 
             <div style={{ marginTop: '28px', border: '1px solid rgba(196,98,45,0.25)', overflow: 'hidden', width: '100%', maxWidth: '680px' }}>
-              <iframe
-                width="100%"
-                height="420"
-                src="https://miro.com/app/live-embed/uXjVKhgCVPw=/?embedMode=view_only_without_ui&moveToViewport=-3430,-966,1608,859&embedId=956341474657"
-                frameBorder="0"
-                scrolling="no"
-                allow="fullscreen; clipboard-read; clipboard-write"
-                allowFullScreen
-                title="AmaQithi — Thembu Royal Lineage Research Board"
-                style={{ display: 'block' }}
+              <Image
+                src="/thembuline.png"
+                alt="AbaThembu lineage chart — from Njanya (c. 1307) through Ntande, Mnguti, Ngubengcuka to Queen Nonesi — AmaQithi research working document"
+                width={1596}
+                height={1344}
+                style={{ width: '100%', height: 'auto', display: 'block' }}
+                quality={88}
               />
             </div>
             <p style={{ fontFamily: 'var(--font-body), Inter, sans-serif', fontSize: '0.72rem', color: '#6B5A4E', fontStyle: 'italic', lineHeight: 1.5, marginTop: '8px', maxWidth: '680px' }}>
-              Interactive lineage board — the full Thembu genealogy from Njanya (c. 1307) through Ntande and Mnguti to Nonesi. Pan and zoom to explore.
+              Working lineage chart — the full Thembu genealogy from Njanya (c. 1307) through Ntande and Mnguti to Nonesi. The full visual record is on the{' '}
+              <a href="/lineage" style={{ color: '#C4622D', textDecoration: 'none', borderBottom: '1px solid rgba(196,98,45,0.4)' }}>
+                Lineage page
+              </a>.
             </p>
           </div>
         </section>

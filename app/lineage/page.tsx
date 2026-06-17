@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Nav from '@/components/Nav';
 import PageHero from '@/components/PageHero';
 import Breadcrumb from '@/components/Breadcrumb';
@@ -287,29 +288,75 @@ export default function LineagePage() {
 
         <div className="section-rule" />
 
-        {/* Lineage chart — Miro board */}
+        {/* Lineage charts — image gallery */}
         <section className="cave-section cave-bg" style={{ ...section, background: '#2C1810' }}>
           <div style={inner}>
             <p style={eyebrow}>Visual Record</p>
-            <h2 style={h2}>The genealogy — interactive board.</h2>
-            <p style={{ ...body, marginBottom: '32px' }}>
-              This interactive board traces the Thembu Great House from Zwide and Njanya (c. 1307) through Ntande, Nxego, Dlomo, Ngubengcuka, Mtirara and Nonesi. It is a working research document — pan and zoom to explore. Notes in the margins are part of the active investigation into the AmaQithi&apos;s place in the tree.
+            <h2 style={h2}>The genealogy — documented in full.</h2>
+            <p style={{ ...body, marginBottom: '40px' }}>
+              These charts trace the Thembu Great House from Zwide and Njanya (c. 1307) through Ntande, Nxego, Dlomo, Ngubengcuka, Mtirara, and Nonesi. Each image is a section of the working research document. Notes in the margins are part of the active investigation into the AmaQithi&apos;s place in the tree.
             </p>
-            <div style={{ border: '1px solid rgba(196,98,45,0.25)', overflow: 'hidden', width: '100%', maxWidth: '960px' }}>
-              <iframe
-                width="100%"
-                height="500"
-                src="https://miro.com/app/live-embed/uXjVKhgCVPw=/?embedMode=view_only_without_ui&moveToViewport=-3430,-966,1608,859&embedId=956341474657"
-                frameBorder="0"
-                scrolling="no"
-                allow="fullscreen; clipboard-read; clipboard-write"
-                allowFullScreen
-                title="AmaQithi — Thembu Royal Lineage Research Board"
-                style={{ display: 'block' }}
-              />
+
+            {/* Full lineage overview */}
+            <div style={{ marginBottom: '12px' }}>
+              <p style={{ fontFamily: 'var(--font-body), Inter, sans-serif', fontSize: '0.65rem', fontWeight: 600, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#C4622D', marginBottom: '12px' }}>
+                Full Lineage Overview
+              </p>
+              <div style={{ border: '1px solid rgba(196,98,45,0.25)', overflow: 'hidden', width: '100%' }}>
+                <Image
+                  src="/lineage_full.png"
+                  alt="AmaQithi and AbaThembu full royal lineage from Njanya (c. 1307) to the present — working research chart"
+                  width={2448}
+                  height={1470}
+                  style={{ width: '100%', height: 'auto', display: 'block' }}
+                  quality={90}
+                />
+              </div>
             </div>
-            <p style={{ fontFamily: 'var(--font-body), Inter, sans-serif', fontSize: '0.72rem', color: '#9E8C7A', marginTop: '10px', lineHeight: 1.5, fontStyle: 'italic', maxWidth: '820px' }}>
-              Interactive lineage board — pan and zoom to navigate the full Thembu genealogy from Njanya (c. 1307) to the modern era. The documented son of Ntande in this record is Mnguti — the research into the AmaQithi&apos;s place in the tree continues.
+
+            {/* Detail view */}
+            <div style={{ marginBottom: '40px' }}>
+              <p style={{ fontFamily: 'var(--font-body), Inter, sans-serif', fontSize: '0.65rem', fontWeight: 600, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#C4622D', marginBottom: '12px' }}>
+                Detail — Ntande to Nonesi
+              </p>
+              <div style={{ border: '1px solid rgba(196,98,45,0.25)', overflow: 'hidden', width: '100%' }}>
+                <Image
+                  src="/lineage_detail.png"
+                  alt="AbaThembu royal lineage detail — from Ntande through Ngubengcuka, Mtirara, and Queen Nonesi at Rhodana"
+                  width={2206}
+                  height={1470}
+                  style={{ width: '100%', height: 'auto', display: 'block' }}
+                  quality={90}
+                />
+              </div>
+            </div>
+
+            {/* Genealogy panels grid */}
+            <p style={{ fontFamily: 'var(--font-body), Inter, sans-serif', fontSize: '0.65rem', fontWeight: 600, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#C4622D', marginBottom: '12px' }}>
+              Working Research Panels
+            </p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2px' }}>
+              {[
+                { src: '/geneology1.png', alt: 'AmaQithi genealogy research panel 1 — Thembu-San lineage working chart', w: 2218, h: 1496 },
+                { src: '/geneology2.png', alt: 'AmaQithi genealogy research panel 2 — Thembu Great House branches', w: 2218, h: 1496 },
+                { src: '/geneology3.png', alt: 'AmaQithi genealogy research panel 3 — dispersal routes post-1879', w: 2218, h: 1496 },
+                { src: '/geneology4.png', alt: 'AmaQithi genealogy research panel 4 — Qwabi Joka and Lady Frere settlement', w: 2218, h: 1528 },
+              ].map((img) => (
+                <div key={img.src} style={{ border: '1px solid rgba(196,98,45,0.2)', overflow: 'hidden' }}>
+                  <Image
+                    src={img.src}
+                    alt={img.alt}
+                    width={img.w}
+                    height={img.h}
+                    style={{ width: '100%', height: 'auto', display: 'block' }}
+                    quality={85}
+                  />
+                </div>
+              ))}
+            </div>
+
+            <p style={{ fontFamily: 'var(--font-body), Inter, sans-serif', fontSize: '0.72rem', color: '#6B5A4E', marginTop: '16px', lineHeight: 1.6, fontStyle: 'italic', maxWidth: '820px' }}>
+              Working research charts — the full Thembu genealogy from Njanya (c. 1307) to the modern era. The documented son of Ntande in the written record is Mnguti — the investigation into the AmaQithi&apos;s precise place in the tree continues.
             </p>
           </div>
         </section>
