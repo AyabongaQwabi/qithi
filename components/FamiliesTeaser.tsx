@@ -8,11 +8,11 @@ const surnames = [
 ];
 
 const regions = [
-  { name: 'Lady Frere', detail: 'Rhodana, Cacadu' },
-  { name: 'Ngcobo', detail: 'Ngcingwana, Mthontsi' },
-  { name: 'Cofimvaba', detail: 'Ngqoko, Mafilika' },
-  { name: 'Free State', detail: 'Scattered families' },
-  { name: 'Eastern Cape towns', detail: 'East London, Queenstown' },
+  { name: 'Lady Frere', detail: 'Mkapusi · KwaTshatshu (emaQithini) · Hala 1 · Hala 2' },
+  { name: 'Ngcobo', detail: 'Line of Ngcongolo · post-1879' },
+  { name: 'Cofimvaba', detail: 'Post-1879 dispersal line' },
+  { name: 'Queenstown & Ezibeleni', detail: 'Sons of Qwabi Joka · post-1915' },
+  { name: 'Steynsburg & Ndlovukazi', detail: 'Qwabi line · scattered families' },
 ];
 
 export default function FamiliesTeaser() {
@@ -94,7 +94,7 @@ export default function FamiliesTeaser() {
                 marginBottom: '12px',
               }}
             >
-              The AmaQithi started in Lady Frere — in Agnes, Qithi Village, Mkapusi, and the farms and valleys along the White Kei River. But work, war, and displacement moved families across the country. Cofimvaba, Ngcobo, Queenstown, the Free State. Some went to the mines. Some never came back. The surnames below are the ones we have traced so far.
+              After the fall of Mount Moorosi in 1879, the AmaQithi scattered deliberately — fracturing into separate family lines for safety against colonial tracking. Three main routes carried the clan south: the line of Ngcongolo went to eNgcobo, other families fled to Cofimvaba, and the line of Qhwabi (Qwabi) settled at Mkapusi in Lady Frere, founding Mqithi Village — also remembered in oral geography as Mawhumawhu.
             </p>
             <p
               style={{
@@ -105,7 +105,7 @@ export default function FamiliesTeaser() {
                 marginBottom: '28px',
               }}
             >
-              If one of these is your name — or your grandmother&apos;s name — you are likely looking at your own history. The list is not complete. There are families we have not found yet. If you know one, tell us.
+              Work, apartheid-era displacement, and migration scattered families further — to Queenstown, East London, the Free State, and the mines. The surnames below are the ones we have traced so far. The list is not complete. If you know one not listed, tell us.
             </p>
 
             {/* Surname chips */}

@@ -204,6 +204,182 @@ export const genealogySchema = {
   mainEntityOfPage: { '@type': 'WebPage', '@id': `${BASE}/genealogy` },
 };
 
+// AmaQithi clan page — heritage + ethnic group schema
+export const amaqithiSchema = {
+  '@context': 'https://schema.org',
+  '@type': ['Article', 'WebPage'],
+  '@id': `${BASE}/amaqithi#article`,
+  headline: 'AmaQithi Clan — Heritage, Identity, and the Great Dispersal',
+  description:
+    'The AmaQithi are a Thembu clan with deep San (AbaThwa) roots — royal counsellors, ritual specialists, and survivors of the 1879 dispersal from Quthing. Their story spans Lesotho, the White Kei River, and the Eastern Cape.',
+  datePublished: '2025-01-01',
+  dateModified: new Date().toISOString().split('T')[0],
+  author: { '@id': `${BASE}/#organization` },
+  publisher: { '@id': `${BASE}/#organization` },
+  inLanguage: 'en-ZA',
+  about: [
+    { '@type': 'Thing', name: 'AmaQithi clan', description: 'San (AbaThwa) First People integrated into the Thembu nation at Rhodana' },
+    { '@type': 'Thing', name: 'Ingqithi', description: 'The practice of cutting the terminal joint of the little finger — documented by G.W. Stow as near-universal among Bushman tribes' },
+    { '@type': 'Place', name: 'Quthing, Lesotho', geo: { '@type': 'GeoCoordinates', latitude: -30.4060, longitude: 27.7058 } },
+    { '@type': 'Place', name: 'Rhodana, Lady Frere', geo: { '@type': 'GeoCoordinates', latitude: -31.7048, longitude: 27.2328 } },
+  ],
+  mentions: [
+    { '@type': 'Person', name: 'Qwabi Joka', description: 'San patriarch born 1842; died 1915' },
+    { '@type': 'Person', name: 'King Moorosi', description: 'BaPhuthi chief; 1879 war forced AmaQithi dispersal from Quthing' },
+  ],
+  mainEntityOfPage: { '@type': 'WebPage', '@id': `${BASE}/amaqithi` },
+};
+
+// AbaThembu page schema
+export const thembuSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  '@id': `${BASE}/thembu#article`,
+  headline: 'AbaThembu — The Royal Nation: Origins, Lineage, and the San Alliance',
+  description:
+    'The AbaThembu are one of the oldest Nguni royal nations. Their lineage is traceable from the 14th century. Their history is inseparable from the San people — the ancient fusion that defines the AmaQithi clan.',
+  datePublished: '2025-01-01',
+  dateModified: new Date().toISOString().split('T')[0],
+  author: { '@id': `${BASE}/#organization` },
+  publisher: { '@id': `${BASE}/#organization` },
+  inLanguage: 'en-ZA',
+  about: [
+    { '@type': 'Thing', name: 'AbaThembu', sameAs: 'https://en.wikipedia.org/wiki/Thembu_people' },
+    { '@type': 'Thing', name: 'Thembu royal lineage', description: 'From Njanya to King Buyelekhaya — 700 years of documented lineage' },
+    { '@type': 'Place', name: 'Eastern Cape, South Africa', sameAs: 'https://en.wikipedia.org/wiki/Eastern_Cape' },
+  ],
+  mainEntityOfPage: { '@type': 'WebPage', '@id': `${BASE}/thembu` },
+};
+
+// San heritage page schema
+export const sanSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  '@id': `${BASE}/san#article`,
+  headline: 'AbaThwa (San) — First People of the Land: Heritage and Presence in the Eastern Cape',
+  description:
+    'The AbaThwa (San) are the original inhabitants of southern Africa with a presence in the Eastern Cape stretching back more than 10,000 years. The AmaQithi carry their heritage directly — through blood, language, and the ritual of the Ingqithi.',
+  datePublished: '2025-01-01',
+  dateModified: new Date().toISOString().split('T')[0],
+  author: { '@id': `${BASE}/#organization` },
+  publisher: { '@id': `${BASE}/#organization` },
+  inLanguage: 'en-ZA',
+  about: [
+    { '@type': 'Thing', name: 'San people', sameAs: 'https://en.wikipedia.org/wiki/San_people' },
+    { '@type': 'Thing', name: 'AbaThwa', description: 'Nguni name for the San First People of the Eastern Cape' },
+    { '@type': 'Thing', name: 'Ingqithi', description: 'Finger-cutting practice documented by G.W. Stow as near-universal among Bushman tribes' },
+    { '@type': 'Place', name: 'Cacadu Mountains', description: 'White Kei River basin — San homeland in the Eastern Cape' },
+  ],
+  mainEntityOfPage: { '@type': 'WebPage', '@id': `${BASE}/san` },
+};
+
+// Thesis / research page schema
+export const thesisSchema = {
+  '@context': 'https://schema.org',
+  '@type': ['ScholarlyArticle', 'Article'],
+  '@id': `${BASE}/thesis#article`,
+  headline: 'The Working Thesis — AmaQithi Research: Hypotheses, Evidence, and Community Voices',
+  description:
+    'The informal research notes behind the AmaQithi history project. Hypotheses on Qithi origins, the landscape theory, the San-Thembu matrix, and 100+ community voices from Facebook. Clearly labelled as hypothesis, not final history.',
+  datePublished: '2026-01-01',
+  dateModified: new Date().toISOString().split('T')[0],
+  author: { '@id': `${BASE}/#organization` },
+  publisher: { '@id': `${BASE}/#organization` },
+  inLanguage: 'en-ZA',
+  keywords: 'AmaQithi research, Qithi origin hypothesis, Thembu San matrix, ingqithi practice, Quthing AmaQithi, Mqithi Mnguti, AmaQithi community voices',
+  about: [
+    { '@type': 'Thing', name: 'AmaQithi origins research' },
+    { '@type': 'Thing', name: 'San-Thembu cultural convergence' },
+  ],
+  citation: [
+    { '@type': 'CreativeWork', name: 'Stow — The Native Races of South Africa' },
+    { '@type': 'CreativeWork', name: 'Jolly — Strangers to Brothers (UCT thesis, 1994)' },
+    { '@type': 'CreativeWork', name: 'Soga — The South Eastern Bantu (1930)' },
+  ],
+  mainEntityOfPage: { '@type': 'WebPage', '@id': `${BASE}/thesis` },
+};
+
+// Sources page schema
+export const sourcesSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  '@id': `${BASE}/sources#list`,
+  name: 'AmaQithi Heritage Research Sources — 47 Documents',
+  description: '47 sources used in the AmaQithi heritage research: books, theses, dictionaries, government records, and web sources. Includes NotebookLM and Google Gemini methodology notes, and step-by-step guides for beginners.',
+  url: `${BASE}/sources`,
+  numberOfItems: 47,
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Stow: The Native Races of South Africa', url: 'https://emandulo.uct.ac.za' },
+    { '@type': 'ListItem', position: 2, name: 'Soga: The South Eastern Bantu (1930)' },
+    { '@type': 'ListItem', position: 3, name: 'Jolly: Strangers to Brothers (UCT thesis, 1994)', url: 'https://open.uct.ac.za' },
+    { '@type': 'ListItem', position: 4, name: 'Unity and Division: AbaThembu Chieftainship (UCT thesis)', url: 'https://open.uct.ac.za' },
+    { '@type': 'ListItem', position: 5, name: 'Ellenberger: History of the Basuto (1912)' },
+    { '@type': 'ListItem', position: 6, name: 'Kropf & Godfrey: Kafir-English Dictionary' },
+    { '@type': 'ListItem', position: 7, name: 'House of Tshatshu (thesis)' },
+    { '@type': 'ListItem', position: 8, name: 'Emalahleni Local Municipality IDPs 2016-2027' },
+  ],
+};
+
+// Lineage page schema
+export const lineageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  '@id': `${BASE}/lineage#article`,
+  headline: 'The Royal Lineage — AbaThembu and AmaQithi: From Njanya to the Present',
+  description:
+    'Interactive Miro board documenting the AbaThembu royal lineage and AmaQithi placement within it, from ancestor Njanya through Queen Nonesi to the present. 700+ years of traceable genealogy.',
+  datePublished: '2025-01-01',
+  dateModified: new Date().toISOString().split('T')[0],
+  author: { '@id': `${BASE}/#organization` },
+  publisher: { '@id': `${BASE}/#organization` },
+  inLanguage: 'en-ZA',
+  about: [
+    { '@type': 'Thing', name: 'AbaThembu royal lineage' },
+    { '@type': 'Thing', name: 'AmaQithi genealogy' },
+    { '@type': 'Person', name: 'Queen Nonesi', description: 'Thembu Queen Regent who established Rhodana Great Place in 1841' },
+  ],
+  mainEntityOfPage: { '@type': 'WebPage', '@id': `${BASE}/lineage` },
+};
+
+// Insights — Village Anatomy page schema
+export const villageAnatomySchema = {
+  '@context': 'https://schema.org',
+  '@type': ['ScholarlyArticle', 'Article'],
+  '@id': `${BASE}/insights/thembu-village-anatomy#article`,
+  headline: 'The Anatomy of a Thembu Village — 278 GPS-Mapped Settlement Sites and the Hidden Grammar of Place-Names',
+  description:
+    '278+ GPS coordinates across Thembu country reveal a consistent settlement grammar: Komkhulu (22×), Elalini (16×), Luxeni grain stores (16×), Maqwathini warrior grounds (9×), Matolweni archery sites (7×). Every Thembu village cluster follows the same functional blueprint.',
+  datePublished: '2026-06-17',
+  dateModified: new Date().toISOString().split('T')[0],
+  author: { '@id': `${BASE}/#organization` },
+  publisher: { '@id': `${BASE}/#organization` },
+  inLanguage: 'en-ZA',
+  keywords: 'Thembu village structure, Komkhulu, Elalini, Thembu place-names, Eastern Cape village grammar, AmaQithi geography, Matolweni bow and arrow, Maqwathini warriors',
+  about: [
+    { '@type': 'Thing', name: 'Thembu settlement patterns' },
+    { '@type': 'Thing', name: 'isiXhosa place-name etymology' },
+    { '@type': 'Place', name: 'Eastern Cape, South Africa', sameAs: 'https://en.wikipedia.org/wiki/Eastern_Cape' },
+  ],
+  mainEntityOfPage: { '@type': 'WebPage', '@id': `${BASE}/insights/thembu-village-anatomy` },
+};
+
+// Breadcrumb schema factory
+export function breadcrumbSchema(items: { name: string; url?: string }[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'AmaQithi', item: BASE },
+      ...items.map((item, i) => ({
+        '@type': 'ListItem',
+        position: i + 2,
+        name: item.name,
+        ...(item.url ? { item: `${BASE}${item.url}` } : {}),
+      })),
+    ],
+  };
+}
+
 interface SchemaOrgProps {
   schemas: object[];
 }

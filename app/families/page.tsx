@@ -188,6 +188,18 @@ export default function FamiliesPage() {
                 </p>
               </div>
               <div>
+                {/* Ngcobo terrain map */}
+                <div style={{ border: '1px solid rgba(196,98,45,0.25)', overflow: 'hidden', marginBottom: '20px' }}>
+                  <img
+                    src="/ngcobo_map.png"
+                    alt="Satellite aerial of the Ngcobo area showing the river basins and terrain where AmaQithi families of the Ngcongolo line settled after the 1879 dispersal"
+                    style={{ width: '100%', display: 'block', filter: 'brightness(0.88) contrast(1.1)' }}
+                    loading="lazy"
+                  />
+                </div>
+                <p style={{ fontFamily: 'var(--font-body), Inter, sans-serif', fontSize: '0.72rem', color: '#6B5A4E', fontStyle: 'italic', lineHeight: 1.5, marginBottom: '16px' }}>
+                  The Ngcobo basin — terrain the Ngcongolo line settled after crossing from Quthing post-1879.
+                </p>
                 <p style={eyebrow}>The Ngcongolo Oral Account</p>
                 <p style={{ ...bodyText, color: '#9E8C7A' }}>
                   The oral history records: at sunset, many people came to Qiti. The first Qiti
@@ -310,6 +322,50 @@ export default function FamiliesPage() {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        <div className="section-rule" />
+
+        {/* Maps section */}
+        <section className="cave-section cave-bg" style={{ ...section, background: '#1A0F0A' }}>
+          <div style={inner}>
+            <p style={eyebrow}>On the Map</p>
+            <h2 style={h2}>From the mountain to the village — the route is visible.</h2>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '40px' }}>
+              <div>
+                <p style={{ fontFamily: 'var(--font-body), Inter, sans-serif', fontSize: '0.68rem', fontWeight: 600, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C4622D', marginBottom: '10px' }}>
+                  Mkapusi, Lady Frere — the Qwabi home village
+                </p>
+                <div style={{ border: '1px solid rgba(196,98,45,0.25)', overflow: 'hidden', marginBottom: '8px' }}>
+                  <img
+                    src="/mkapusi_map.png"
+                    alt="Satellite aerial of Mkapusi village in Lady Frere with village boundaries marked — home of Qwabi Joka and the Mqithi area visible on the map"
+                    style={{ width: '100%', display: 'block', filter: 'brightness(0.9) contrast(1.05)' }}
+                    loading="lazy"
+                  />
+                </div>
+                <p style={{ fontFamily: 'var(--font-body), Inter, sans-serif', fontSize: '0.72rem', color: '#6B5A4E', fontStyle: 'italic', lineHeight: 1.5 }}>
+                  Mkapusi, Lady Frere — home of Qwabi Joka (d. 1915). Note &ldquo;Mqithi&rdquo; labelled on the satellite image. This is where the Qwabi line settled after the 1879 war.
+                </p>
+              </div>
+              <div>
+                <p style={{ fontFamily: 'var(--font-body), Inter, sans-serif', fontSize: '0.68rem', fontWeight: 600, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C4622D', marginBottom: '10px' }}>
+                  The migration — Quthing to Mkapusi (700km)
+                </p>
+                <div style={{ border: '1px solid rgba(196,98,45,0.25)', overflow: 'hidden', marginBottom: '8px' }}>
+                  <img
+                    src="/migration_map.png"
+                    alt="Satellite map showing the 700km migration route from Mount Moorosi in Quthing, Lesotho south to Mkapusi in Lady Frere, Eastern Cape"
+                    style={{ width: '100%', display: 'block', filter: 'brightness(0.9) contrast(1.05)' }}
+                    loading="lazy"
+                  />
+                </div>
+                <p style={{ fontFamily: 'var(--font-body), Inter, sans-serif', fontSize: '0.72rem', color: '#6B5A4E', fontStyle: 'italic', lineHeight: 1.5 }}>
+                  The route from Quthing (Mount Moorosi) to Mkapusi — approximately 700km south. This is the road the Qwabi family and other AmaQithi took after the fall of Moorosi&apos;s mountain in November 1879.
+                </p>
+              </div>
             </div>
           </div>
         </section>

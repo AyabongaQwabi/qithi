@@ -1,30 +1,23 @@
 'use client';
 
-import Image from 'next/image';
-
-const stats = [
-  { value: '1841', label: 'Qithi at Rhodana — documented' },
-  { value: '5+', label: 'Provinces with AmaQithi families' },
-  { value: '180+', label: 'Years of recorded history' },
-];
+const WHATSAPP_URL = 'https://wa.me/27603116777';
 
 export default function Hero() {
   return (
     <section
       id="hero"
-      className="cave-section cave-bg"
+      aria-labelledby="hero-heading"
       style={{
         position: 'relative',
         minHeight: '100vh',
-        background: 'radial-gradient(ellipse at 40% 60%, #3D2010 0%, #2C1810 45%, #1A0F0A 100%)',
+        background: 'radial-gradient(ellipse at 30% 70%, #3D2010 0%, #2C1810 50%, #1A0F0A 100%)',
         display: 'flex',
         alignItems: 'center',
         overflow: 'hidden',
         paddingTop: '64px',
       }}
-      aria-labelledby="hero-heading"
     >
-      {/* Cave painting background */}
+      {/* Cave painting motif — very faint, right-side */}
       <div
         aria-hidden
         style={{
@@ -38,19 +31,15 @@ export default function Hero() {
           pointerEvents: 'none',
         }}
       />
-
-      {/* Dark overlay for readability */}
       <div
         aria-hidden
         style={{
           position: 'absolute',
           inset: 0,
-          background: 'linear-gradient(to right, rgba(26,15,10,0.92) 40%, rgba(26,15,10,0.65) 100%)',
+          background: 'linear-gradient(to right, rgba(26,15,10,0.95) 40%, rgba(26,15,10,0.6) 100%)',
           pointerEvents: 'none',
         }}
       />
-
-      {/* Bottom fade */}
       <div
         aria-hidden
         style={{
@@ -77,64 +66,50 @@ export default function Hero() {
         <p
           style={{
             fontFamily: 'var(--font-body), Inter, sans-serif',
-            fontSize: '0.7rem',
+            fontSize: '0.68rem',
             fontWeight: 500,
             letterSpacing: '0.22em',
             textTransform: 'uppercase',
             color: '#C4622D',
-            marginBottom: '20px',
+            marginBottom: '24px',
           }}
         >
-          San (AbaThwa) · White Kei River · Lady Frere · Eastern Cape
+          AbaThembu · AbaThwa (San) · White Kei River · Eastern Cape
         </p>
 
         <h1
           id="hero-heading"
           style={{
             fontFamily: 'var(--font-display), Cormorant Garamond, serif',
-            fontSize: 'clamp(4rem, 12vw, 9rem)',
+            fontSize: 'clamp(5rem, 14vw, 10rem)',
             fontWeight: 600,
             color: '#E8A857',
-            lineHeight: 0.95,
+            lineHeight: 0.93,
             letterSpacing: '-0.02em',
-            marginBottom: '24px',
+            marginBottom: '32px',
           }}
         >
-          AmaQithi
+          AmaQithi.
         </h1>
 
         <p
           style={{
             fontFamily: 'var(--font-display), Cormorant Garamond, serif',
-            fontSize: 'clamp(1.2rem, 3vw, 1.8rem)',
+            fontSize: 'clamp(1.2rem, 2.5vw, 1.7rem)',
             fontStyle: 'italic',
             fontWeight: 400,
-            color: '#E8A857',
-            marginBottom: '36px',
-            maxWidth: '680px',
-          }}
-        >
-          When Queen Nonesi moved the Thembu Great Place to Rhodana in 1841, she found our people already there.
-        </p>
-
-        <p
-          style={{
-            fontFamily: 'var(--font-body), Inter, sans-serif',
-            fontSize: 'clamp(0.95rem, 1.5vw, 1.1rem)',
             color: '#D4A96A',
-            maxWidth: '580px',
-            lineHeight: 1.85,
-            marginBottom: '44px',
+            maxWidth: '620px',
+            lineHeight: 1.6,
+            marginBottom: '48px',
           }}
         >
-          The AmaQithi are San (AbaThwa) people of the White Kei River basin. We were hunters, rainmakers, and frontier scouts — absorbed into the Thembu nation but never erased. Our names, our villages, and our oral history have kept the record. This site makes it accessible.
+          A Thembu–San clan from the White Kei River, Lady Frere — recognised by the mark of ingqithi.
         </p>
 
-
-        {/* CTA buttons */}
-        <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginBottom: '72px' }}>
+        <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
           <a
-            href="/apply"
+            href="/who-we-are"
             style={{
               display: 'inline-flex',
               alignItems: 'center',
@@ -142,34 +117,30 @@ export default function Hero() {
               background: '#C4622D',
               color: '#F5E6C8',
               fontFamily: 'var(--font-body), Inter, sans-serif',
-              fontSize: '0.85rem',
+              fontSize: '0.82rem',
               fontWeight: 600,
-              letterSpacing: '0.08em',
+              letterSpacing: '0.1em',
               textTransform: 'uppercase',
               textDecoration: 'none',
-              padding: '14px 32px',
+              padding: '14px 36px',
               border: '1px solid #C4622D',
               transition: 'background 0.2s, box-shadow 0.2s',
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.background = '#B5571F';
-              e.currentTarget.style.boxShadow = '0 0 20px rgba(196, 98, 45, 0.45)';
+              e.currentTarget.style.boxShadow = '0 0 20px rgba(196, 98, 45, 0.4)';
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.background = '#C4622D';
               e.currentTarget.style.boxShadow = 'none';
             }}
           >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-              <circle cx="9" cy="7" r="4" />
-              <line x1="19" y1="8" x2="19" y2="14" />
-              <line x1="22" y1="11" x2="16" y2="11" />
-            </svg>
-            Join the Clan
+            Our Story
           </a>
           <a
-            href="/who-we-are"
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             style={{
               display: 'inline-flex',
               alignItems: 'center',
@@ -177,70 +148,26 @@ export default function Hero() {
               background: 'transparent',
               color: '#E8A857',
               fontFamily: 'var(--font-body), Inter, sans-serif',
-              fontSize: '0.85rem',
+              fontSize: '0.82rem',
               fontWeight: 600,
-              letterSpacing: '0.08em',
+              letterSpacing: '0.1em',
               textTransform: 'uppercase',
               textDecoration: 'none',
-              padding: '14px 32px',
-              border: '1px solid rgba(232, 168, 87, 0.6)',
+              padding: '14px 36px',
+              border: '1px solid rgba(232, 168, 87, 0.5)',
               transition: 'background 0.2s, border-color 0.2s',
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.background = 'rgba(232, 168, 87, 0.08)';
+              e.currentTarget.style.background = 'rgba(232, 168, 87, 0.07)';
               e.currentTarget.style.borderColor = '#E8A857';
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.background = 'transparent';
-              e.currentTarget.style.borderColor = 'rgba(232, 168, 87, 0.6)';
+              e.currentTarget.style.borderColor = 'rgba(232, 168, 87, 0.5)';
             }}
           >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
-            </svg>
-            Our History
+            Talk to Us
           </a>
-        </div>
-
-        {/* Stats */}
-        <div
-          style={{
-            display: 'flex',
-            gap: '48px',
-            flexWrap: 'wrap',
-            borderTop: '1px solid rgba(196, 98, 45, 0.35)',
-            paddingTop: '32px',
-          }}
-        >
-          {stats.map((s) => (
-            <div key={s.label}>
-              <div
-                style={{
-                  fontFamily: 'var(--font-display), Cormorant Garamond, serif',
-                  fontSize: '2.4rem',
-                  fontWeight: 600,
-                  color: '#E8A857',
-                  lineHeight: 1,
-                  marginBottom: '6px',
-                }}
-              >
-                {s.value}
-              </div>
-              <div
-                style={{
-                  fontFamily: 'var(--font-body), Inter, sans-serif',
-                  fontSize: '0.72rem',
-                  fontWeight: 500,
-                  letterSpacing: '0.1em',
-                  textTransform: 'uppercase',
-                  color: '#9E8C7A',
-                }}
-              >
-                {s.label}
-              </div>
-            </div>
-          ))}
         </div>
       </div>
     </section>

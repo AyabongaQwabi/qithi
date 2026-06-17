@@ -76,7 +76,7 @@ export default function IdentityTeaser() {
                 marginBottom: '20px',
               }}
             >
-              San people who became part of the Thembu nation — but were never Thembu.
+              AbaThembu. AbaThwa. One bloodline, two heritages.
             </h2>
             <p
               style={{
@@ -87,7 +87,7 @@ export default function IdentityTeaser() {
                 marginBottom: '14px',
               }}
             >
-              The AmaQithi are San (AbaThwa) people whose roots can be traced back to the banks of the White Kei River basin in Lady Frere, the Cacadu mountains, and the surrounding territory. Their leader, Mqithi, was granted land directly adjacent to the Thembu royal residence at Rhodana. That placement was not coincidence. It marked the rank of a senior counselor and ritual specialist.
+              The AmaQithi are a Thembu clan born of an ancient San-Bantu matrix. The Thembu nation itself was formed through the fusion of early Nguni pioneers and the indigenous San — a people the Khoisan called <em>Tam&apos;bou&apos;ci</em> (later recorded as &ldquo;Tambookie&rdquo;). Whether the name Qithi belongs to an ancestor, a place, or a ritual is a question our research is still working through. What is certain: the name connects a valley in Lesotho, a village in Lady Frere, and a finger-cut custom shared with the San — all in one unbroken thread.
             </p>
             <p
               style={{
@@ -98,7 +98,7 @@ export default function IdentityTeaser() {
                 marginBottom: '14px',
               }}
             >
-              The AmaQithi served the Thembu as rainmakers during droughts, scouts who knew the mountain passes, and elite marksmen during the War of Mlanjeni (1850–1853). They were not servants. They were partners — bringing the knowledge of people who had lived on that land for millennia.
+              In Quthing (the Sotho way of saying <em>emaQithini</em>), Thembu, Phuthi, and San communities lived together under Chief Moorosi until the colonial forces took the mountain in November 1879. Survivors dispersed south into the Eastern Cape — bringing the name AmaQithi with them. They served as rainmakers, marksmen, and counsellors. They were not servants. They were partners.
             </p>
             <p
               style={{
@@ -109,27 +109,67 @@ export default function IdentityTeaser() {
                 marginBottom: '32px',
               }}
             >
-              The Q in Qithi is a palatal click — a sound indigenous to Khoisan languages, not Bantu ones. Xhosa absorbed clicks over centuries of contact with San people. That click in our name is a linguistic record of who we are. Researchers describe &ldquo;Mqithi&rdquo; as a linguistic fossil: a standard Xhosa prefix grafted onto an older San root.
+              The Q in Qithi is a palatal click — a sound that belongs to Khoisan languages, not Bantu. The Ingqithi ritual (the finger-cut custom inherited from the San and practiced by this division of the Thembu) is described in colonial records as definitive proof of that ancient fusion. The click in our name and the mark on our hands are the same message: we are both.
             </p>
-            <Link
-              href="/who-we-are"
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '6px',
-                fontFamily: 'var(--font-body), Inter, sans-serif',
-                fontSize: '0.82rem',
-                fontWeight: 600,
-                letterSpacing: '0.08em',
-                textTransform: 'uppercase',
-                color: '#C4622D',
-                textDecoration: 'none',
-                borderBottom: '1px solid #C4622D',
-                paddingBottom: '2px',
-              }}
-            >
-              Read the full history of the AmaQithi →
-            </Link>
+            <div style={{ display: 'flex', gap: '24px', flexWrap: 'wrap' }}>
+              <Link
+                href="/amaqithi"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '6px',
+                  fontFamily: 'var(--font-body), Inter, sans-serif',
+                  fontSize: '0.82rem',
+                  fontWeight: 600,
+                  letterSpacing: '0.08em',
+                  textTransform: 'uppercase',
+                  color: '#C4622D',
+                  textDecoration: 'none',
+                  borderBottom: '1px solid #C4622D',
+                  paddingBottom: '2px',
+                }}
+              >
+                AmaQithi Clan →
+              </Link>
+              <Link
+                href="/thembu"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '6px',
+                  fontFamily: 'var(--font-body), Inter, sans-serif',
+                  fontSize: '0.82rem',
+                  fontWeight: 600,
+                  letterSpacing: '0.08em',
+                  textTransform: 'uppercase',
+                  color: '#9E8C7A',
+                  textDecoration: 'none',
+                  borderBottom: '1px solid rgba(158,140,122,0.5)',
+                  paddingBottom: '2px',
+                }}
+              >
+                AbaThembu →
+              </Link>
+              <Link
+                href="/san"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '6px',
+                  fontFamily: 'var(--font-body), Inter, sans-serif',
+                  fontSize: '0.82rem',
+                  fontWeight: 600,
+                  letterSpacing: '0.08em',
+                  textTransform: 'uppercase',
+                  color: '#9E8C7A',
+                  textDecoration: 'none',
+                  borderBottom: '1px solid rgba(158,140,122,0.5)',
+                  paddingBottom: '2px',
+                }}
+              >
+                San Heritage →
+              </Link>
+            </div>
           </div>
 
           {/* Stanford quote */}
@@ -179,7 +219,7 @@ export default function IdentityTeaser() {
               lineHeight: 1.75,
               fontStyle: 'italic',
             }}>
-              This is a colonial-era witness account placing San families along the White Kei River at the exact time and place the AmaQithi oral history describes. Qwabi Joka — the ancestor from whom the Qwabi surname descends — was born on that same river in 1842.
+              A colonial-era witness placing San families at the exact site the AmaQithi oral history describes — in friendly alliance with Thembu leaders. Qwabi Joka, the ancestor from whom the Qwabi surname descends, was born on that same river in 1842. San and Thembu, side by side. That is the record we stand on.
             </p>
           </blockquote>
         </div>

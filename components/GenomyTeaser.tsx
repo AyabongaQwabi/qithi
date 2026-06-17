@@ -96,7 +96,7 @@ export default function GenomyTeaser() {
                 marginBottom: '16px',
               }}
             >
-              AmaQithi elders have told the same story for generations: San people, White Kei River, Lady Frere. Colonial records from 1839 and 1842 place San families exactly where those stories say they were. Place names, click consonants, and oral history all point the same direction.
+              AmaQithi elders have told the same story for generations: San people and Thembu royalty, fused at the White Kei River. Colonial records from 1839 and 1842 place San families exactly where those stories say they were. The Thembu royal lineage is traceable to Njanya (c. 1307). Place names, click consonants, and oral history all point the same direction.
             </p>
             <p
               style={{
@@ -107,7 +107,7 @@ export default function GenomyTeaser() {
                 marginBottom: '16px',
               }}
             >
-              The Genomy project adds a fourth layer: DNA. We are building a genetic map of AmaQithi San ancestry — focusing on the L0 and L1 haplogroups that researchers connect to the oldest human lineages on earth. Each family member who takes part makes the record stronger and harder to dismiss.
+              The Genomy project adds a scientific layer: DNA. We are building a genetic map of AmaQithi ancestry — focusing on the L0 and L1 haplogroups that trace our San roots, alongside the Nguni lineage markers from the Thembu side. Each family member who takes part makes the record stronger and harder to dismiss.
             </p>
             <p
               style={{
@@ -177,7 +177,7 @@ export default function GenomyTeaser() {
               {[
                 { label: 'Current phase', value: 'Open — accepting sign-ups' },
                 { label: 'People signed up', value: 'Recruiting now' },
-                { label: 'DNA lineages tracked', value: 'L0 and L1 (San ancestry)' },
+                { label: 'DNA lineages tracked', value: 'L0/L1 (San) + Nguni markers' },
                 { label: 'How to join', value: 'Free · AmaQithi members only' },
                 { label: 'Who owns the data', value: 'You + the AmaQithi Trust' },
               ].map(({ label, value }) => (

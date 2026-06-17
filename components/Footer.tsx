@@ -27,6 +27,15 @@ const linkGroups = [
     ],
   },
   {
+    label: 'Research',
+    links: [
+      { label: 'The Thesis', href: '/thesis' },
+      { label: 'Lineage Board', href: '/lineage' },
+      { label: 'Sources', href: '/sources' },
+      { label: 'Village Anatomy', href: '/insights/thembu-village-anatomy' },
+    ],
+  },
+  {
     label: 'System',
     links: [
       { label: 'Admin', href: '/admin' },

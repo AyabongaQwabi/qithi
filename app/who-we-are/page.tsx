@@ -9,21 +9,21 @@ import SchemaOrg, { orgSchema, whoWeAreSchema } from '@/components/SchemaOrg';
 const BASE = 'https://qithi.co.za';
 
 export const metadata: Metadata = {
-  title: 'AmaQithi History — Who Are the AmaQithi? San First People of the Eastern Cape',
+  title: 'AmaQithi History — Who Are the AmaQithi? Thembu Clan with San Heritage',
   description:
-    'The complete history of the AmaQithi clan: San (AbaThwa) First People of the White Kei River basin, not Thembu by origin. Mqithi at Rhodana before 1841, Qwabi Joka (born 1842), the Q click consonant, Stanford\'s Silayi testimony, and the documented generational lineage.',
+    'The complete history of the AmaQithi clan: a Thembu clan born of an ancient San-Bantu matrix. Mqithi at Rhodana before 1841, Qwabi Joka (born 1842), the Q click consonant, Stanford\'s Silayi testimony, and the Ingqithi ritual that proves the San-Thembu fusion.',
   keywords: [
     'who is Qithi', 'who are AmaQithi', 'AmaQithi history', 'AmaQithi clan history',
     'Mqithi history', 'Mqithi San', 'Qwabi Joka', 'San Eastern Cape history',
     'AbaThwa Eastern Cape', 'Rhodana history', 'Queen Nonesi Rhodana',
     'San Thembu alliance', 'White Kei River San', 'click consonant San',
     'Khoisan Eastern Cape', 'AmaQithi origin', 'Lady Frere San history',
-    'San First People Eastern Cape', 'San people South Africa history',
+    'San First People Eastern Cape', 'Thembu San matrix', 'Ingqithi ritual', 'Tambookie',
   ],
   openGraph: {
-    title: 'Who Are the AmaQithi? San (AbaThwa) First People of the Eastern Cape',
+    title: 'Who Are the AmaQithi? Thembu Clan with Deep San Heritage',
     description:
-      'The AmaQithi are San (AbaThwa) First People of the White Kei River basin — not Thembu by origin. Full history from Mqithi at Rhodana (before 1841) to Qwabi Joka and the documented generational lineage. Primary source: Sir Walter Stanford (Macquarrie 1962:31).',
+      'The AmaQithi are a Thembu clan born of the ancient San-Bantu matrix. San First People of the White Kei River basin, brought into the Thembu Great House at Rhodana in 1841. Full history with primary sources.',
     url: `${BASE}/who-we-are`,
     images: [{ url: `${BASE}/logo.png`, width: 1024, height: 1024, alt: 'AmaQithi' }],
     type: 'article',
@@ -122,9 +122,9 @@ export default function WhoWeArePage() {
         <PageHero
           bg
           eyebrow="AmaQithi — Who We Are"
-          headline="We were here before the history started being written down."
-          subheading="The Q in our name is a click. That click is San. Xhosa borrowed it from us — because we were here first, and the Thembu found us when they arrived at Rhodana."
-          intro="This is not legend or folklore. Our history lives in the colonial archives, in the testimony of Silayi recorded by Sir Walter Stanford, and in the mouths of elders who have been saying it for generations. We are just putting it somewhere it cannot be lost."
+          headline="AbaThembu, AbaThwa — ubabona nge Ngqithi."
+          subheading="One bloodline, two heritages — recognised by the mark of ingqithi."
+          intro="We are not choosing between identities. We carry both. The Q in our name is a San click. Our lineage runs through the Thembu Great House. The archives confirm it, the izibongo confirm it, and the ritual of the Ingqithi — the finger-cut custom inherited from the San — confirms it."
         />
 
         <div style={{ background: '#1A0F0A', paddingTop: '8px' }}>
@@ -185,7 +185,7 @@ export default function WhoWeArePage() {
             <p style={eyebrow}>Linguistics</p>
             <h2 style={h2}>The Q in our name.</h2>
             <p style={body}>
-              Bantu languages do not have click consonants. The Nguni people — Xhosa, Zulu — picked up the Q, C and X clicks from centuries of living near San people. So when you see a Q in a name, you are looking at San roots. It is that simple.
+              Bantu languages do not have click consonants. The Nguni people — Xhosa, Zulu — picked up the Q, C and X clicks from centuries of living alongside San people. That process is exactly how the Thembu became a creolised San-Bantu nation, known historically as the <em>Tambookie</em> (from the Khoisan term <em>Tam&#700;bou&#700;ci</em>). The clicks in our names are a fossil of that ancient fusion.
             </p>
             <p style={body}>
               <strong style={{ color: '#E8A857' }}>Qwabi. Qithi. Mqithi.</strong> Every core surname in this clan has that click. It was not borrowed. It was there from the start — in the original San language, the name probably sounded something like:
@@ -215,32 +215,29 @@ export default function WhoWeArePage() {
 
         <div className="section-rule" />
 
-        {/* Rhodana section */}
+        {/* Name / Rhodana section */}
         <section className="cave-section cave-bg" style={{ ...section, background: '#2C1810' }}>
           <div style={inner}>
-            <p style={eyebrow}>Rhodana · Lady Frere</p>
-            <h2 style={h2}>Mqithi was there before the Thembu came.</h2>
+            <p style={eyebrow}>The Name · What We Know So Far</p>
+            <h2 style={h2}>The search for Qithi is ongoing — and the clues are real.</h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '48px' }}>
               <div>
                 <p style={body}>
-                  In 1841, Queen Nonesi moved the Thembu royal court to Rhodana, at the foot of the Cacadu mountains. She came there because the British were pushing in from the south and she needed defensible ground near the White Kei River.
+                  Contrary to what some oral accounts suggest, no recorded history has been found of a man named Qithi born as a son of Thembu king Ntande, and therefore no confirmed record of him as a brother of Mcube. The only well-documented son of Ntande in the written record is <strong style={{ color: '#E8A857' }}>Mnguti</strong>. But the colonial record is incomplete, and unrecorded sons were common. Mqithi may yet turn out to be a long-lost brother of Mnguti — we simply do not know yet.
                 </p>
                 <p style={body}>
-                  When she got there, San families were already living in those mountains. They had been in the rock shelters of Xonxa and Rhodana for thousands of years. Nonesi did not push them out. She brought them in.
-                </p>
-                <p style={{ ...body, color: '#9E8C7A' }}>
-                  The San leader was <strong style={{ color: '#D4A96A' }}>Mqithi</strong>. Nonesi gave his clan a village right next to the royal house — Qithi Village, Location 17/18. That was not charity. That was rank. Mqithi was a senior advisor at the royal court.
+                  What the evidence does show is a web of connections around the name <em>Qithi</em>. The valley of <strong style={{ color: '#E8A857' }}>Quthing</strong> in Lesotho — where Thembu, Phuthi, and San communities lived together under Chief Moorosi — is the Sotho way of saying <em>emaQithini</em> in Xhosa. The same root. The same sound. And the ritual of <strong style={{ color: '#E8A857' }}>Ingqithi</strong> — the finger-cut custom practised by this division of the Thembu — contains the word <em>qithi</em> inside it. George Stow wrote in the 1800s that this custom &ldquo;among the Bushman tribes was almost universal.&rdquo;
                 </p>
               </div>
               <div>
                 <p style={body}>
-                  What did the San bring? They knew every path in those mountains. They could track colonial soldiers through terrain no outsider could find their way through. During the War of Mlanjeni (1850–1853), San marksmen fought alongside the Thembu. They knew which plants healed wounds. They knew where rain would come from.
+                  In 1841 Queen Nonesi moved the Thembu royal court to Rhodana. San people were present in the White Kei basin throughout this period — documented by colonial sources. Qithi Village sits directly next to the Rodana Clinic and Rodana PJS School today. That proximity is real.
                 </p>
                 <p style={body}>
-                  The Thembu brought cattle and protection. The San brought knowledge that kept people alive. That was the deal — and it was between equals, not between a ruler and a servant.
+                  The families we can trace — the Qwabi and Joka lines — arrived in the Lady Frere area after the 1879 war, coming from Quthing. Whether AmaQithi were already living at Rhodana before them is a question the record has not yet answered. San and Thembu people were on friendly terms on the White Kei throughout that century. The relationship was one of knowledge for protection — between equals.
                 </p>
                 <p style={{ ...body, color: '#9E8C7A' }}>
-                  Qithi Village is still there today. It sits next to the Rodana Clinic and Rodana PJS School. The place has not moved.
+                  The village in Lady Frere is called <strong style={{ color: '#D4A96A' }}>KwaTshatshu</strong> — locally known as <strong style={{ color: '#D4A96A' }}>emaQithini</strong>. Inhabited only by AmaQithi. If you know something about the origins of this name, or carry a family tradition about Qithi — tell us.
                 </p>
               </div>
             </div>
@@ -249,32 +246,29 @@ export default function WhoWeArePage() {
 
         <div className="section-rule" />
 
-        {/* Ntande rebuttal */}
+        {/* Ntande / Thembu identity section */}
         <section className="cave-section cave-bg" style={{ ...section, background: '#1A0F0A' }}>
           <div style={inner}>
             <p style={eyebrow}>The Historical Record</p>
-            <h2 style={h2}>Why Qithi cannot be the son of Ntande.</h2>
+            <h2 style={h2}>We are Thembu. But not from Ntande in the 1500s.</h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '48px' }}>
               <div>
                 <p style={body}>
-                  Some accounts describe Qithi as a son of the Thembu king Ntande, which would make the AmaQithi a Thembu clan by descent. The Ama-Tembu royal genealogy places Ntande in the late 1500s — more than two centuries before Queen Nonesi arrived at Rhodana.
+                  Some accounts describe Qithi as a son of the Thembu king Ntande, placing the AmaQithi inside the Thembu Great House from its earliest roots. We do not dispute the Thembu connection — the evidence for that is real. What the timeline cannot support is the specific claim that the village name comes from Ntande&#700;s time in the late 1500s.
                 </p>
                 <p style={body}>
-                  That timeline makes the claim impossible. Village names in this region were given by the people who lived in them, and they named places after leaders who were present and alive. A village does not get named after someone who died 200 years earlier.
+                  The Ama-Tembu royal genealogy places Ntande more than two centuries before Queen Nonesi arrived at Rhodana. Village names in this region were given by living leaders present on the ground. KwaTshatshu nearby is named for chief Tshatshu who was there in the 1820s. That is how naming worked.
                 </p>
                 <p style={{ ...body, color: '#9E8C7A' }}>
-                  The evidence for this is right in the surrounding landscape. KwaTshatshu — the village nearby — takes its name from Thembu chief Tshatshu, who lived in the early 1820s. His village was named while he was there. That is how naming worked.
+                  The AmaQithi connection to the Thembu runs through the San-Thembu matrix — the <em>Tambookie</em> creolised population that formed when pioneering Nguni clans and established San bands merged over generations. The AmaQithi are a product of that fusion, which means they are genuinely both.
                 </p>
               </div>
               <div>
                 <p style={body}>
-                  The Thembu did not settle in the Cacadu basin until the 1800s. Nonesi and Mtirara established the Great Place at Rhodana in 1841. If Qithi Village was named after a Thembu chief&apos;s son, that son would have had to be alive and present during the Nonesi era — not during the reign of Ntande in the 1500s.
-                </p>
-                <p style={body}>
-                  There is no Ntande-era Thembu presence in this region. The Thembu were far to the south and east until the 19th century. The White Kei basin was San and Khoe territory during Ntande&apos;s lifetime.
+                  The Thembu nation itself has always carried San heritage. Their praise names include <em>&ldquo;the tiny man&rdquo;</em> — a direct linguistic acknowledgment of San ancestry embedded in izibongo. The Ingqithi finger-cut ritual, practiced by this division of the Thembu and inherited from the San, is described in historical records as definitive proof of the &ldquo;friendly amalgamation between the two races.&rdquo;
                 </p>
                 <p style={{ ...body, color: '#9E8C7A' }}>
-                  The royal genealogy below, from a colonial-era Ama-Tembu lineage record, shows where Ntande sits in the tree — many generations above Nonesi and Mtirara. The distance is not ambiguous.
+                  The royal genealogy below shows where Ntande sits in the Thembu tree — many generations above Nonesi and Mtirara. Whether a man named Qithi sits in that tree as an unrecorded son of Ntande, a long-lost brother of Mnguti, is something the research has not yet resolved. The oral tradition points there; the written record has not confirmed it. Both things can be true at once.
                 </p>
 
                 {/* Thembu lineage image */}
@@ -286,9 +280,9 @@ export default function WhoWeArePage() {
                   }}
                 >
                   <img
-                    src="/thembuline.png"
-                    alt="Ama-Tembu royal genealogy chart showing Ntande many generations above Nonesi and Mtirara, confirming Ntande reigned in the late 1500s — centuries before the Thembu settled the Cacadu basin"
-                    style={{ width: '100%', display: 'block', filter: 'brightness(0.92) contrast(1.1)' }}
+                    src="/lineage_detail.png"
+                    alt="Annotated Thembu royal genealogy chart showing the lineage from Njanya (c. 1307) through Ntande, Nxego, Dlomo to Ngubengcuka and Mtirara — with researcher notes"
+                    style={{ width: '100%', display: 'block', filter: 'brightness(0.92) contrast(1.08)' }}
                     loading="lazy"
                   />
                 </div>
@@ -302,7 +296,7 @@ export default function WhoWeArePage() {
                     fontStyle: 'italic',
                   }}
                 >
-                  Ama-Tembu royal lineage. Ntande appears in the upper generations, separated from Nonesi and Mtirara by multiple reigns. A village named during Nonesi&apos;s time at Rhodana (1841) could not carry the name of a son of Ntande.
+                  Ama-Tembu royal lineage from Njanya (c. 1307) to the modern era. The AmaQithi are part of this lineage through the San-Thembu matrix — not as descendants of Ntande in the 1500s, but as a clan formed in the ancient fusion that became the Thembu nation.
                 </p>
               </div>
             </div>
@@ -326,7 +320,7 @@ export default function WhoWeArePage() {
                   marginBottom: '10px',
                 }}
               >
-                The name Qithi holds a palatal click consonant that is not native to Bantu languages. The village predates the Thembu arrival at Rhodana. The naming pattern of the region links village names to living leaders, not ancestors from the 1500s. Three independent lines of evidence point the same way: Qithi was San.
+                The AmaQithi are Thembu. They are also San. These are not contradictory claims — they are both true because the Thembu nation was itself formed by the fusion of Nguni pioneers and San hunter-gatherers. Whether the name Qithi belongs to a man, a place, a practice, or all three is still being researched. What is not in question is who carries it today — and what they know about where they came from.
               </p>
               <p
                 style={{
@@ -335,7 +329,7 @@ export default function WhoWeArePage() {
                   color: '#9E8C7A',
                 }}
               >
-                The true lineage of the San chief Qithi (Mqithi) is still under active research. What is documented is that Mqithi was present at Rhodana before the Thembu arrived — and that his village name is linguistically San, not Thembu.
+                Sources: Genealogy from Thembu royal lineage records. San-Thembu fusion described in historical archives; see also <em>The Royal Lineage and San Heritage of the abaThembu</em> (AmaQithi Research Archive, 2026). Ingqithi ritual documented in frontier colonial records.
               </p>
             </div>
           </div>
@@ -347,9 +341,9 @@ export default function WhoWeArePage() {
         <section className="cave-section cave-bg" style={{ ...section, background: '#2C1810' }}>
           <div style={inner}>
             <p style={eyebrow}>San Leadership · 19th Century</p>
-            <h2 style={h2}>Mqithi was not alone. These were the San leaders of his world.</h2>
+            <h2 style={h2}>These were the San leaders of the AmaQithi world.</h2>
             <p style={{ ...body, marginBottom: '40px' }}>
-              The AmaQithi did not exist in isolation. They were one clan within a wider network of San leaders who were navigating the same pressures — colonial expansion, Nguni settlement, and the loss of land they had held for millennia. Knowing these names gives the AmaQithi story its full context.
+              The AmaQithi did not exist in isolation. They were one group within a wider network of San leaders who were navigating the same pressures — colonial expansion, Nguni settlement, and the loss of land they had held for millennia. Knowing these names gives the AmaQithi story its full context.
             </p>
 
             {/* White Kei chiefs — most relevant */}
@@ -377,8 +371,8 @@ export default function WhoWeArePage() {
             >
               {[
                 {
-                  name: 'Mqithi (Qithi)',
-                  detail: 'The "Royal San" of Rhodana. Primary ally of Queen Nonesi when she established the Thembu Great Place in 1841. His clan was granted Qithi Village directly adjacent to the royal residence — a position of senior counselor and hereditary ritual specialist. His lineage is the direct ancestor of the AmaQithi clan.',
+                  name: 'AmaQithi — KwaTshatshu (emaQithini)',
+                  detail: 'The AmaQithi village in Lady Frere, locally known as emaQithini, inhabited only by AmaQithi. Whether the name Qithi belongs to an ancestor, a place, or a ritual is still being researched — no man named Qithi has been confirmed in the written record, though oral tradition points toward the Thembu royal line. The root "qithi" connects: the valley of Quthing in Lesotho, the village emaQithini, and the ritual Ingqithi which contains the same word. Qithi Village sits directly adjacent to the Rodana Clinic and Rodana PJS School.',
                 },
                 {
                   name: 'Madolo (Madura · Madoor)',
