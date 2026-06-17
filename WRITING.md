@@ -8,7 +8,7 @@ These rules apply whenever writing or editing blog posts for this site. Read the
 
 First person. The author is present. Use "I" when sharing a perspective, noticing something, or being honest about uncertainty. Not every sentence — but enough that a reader knows a person wrote this.
 
-The author is Ayabonga Qwabi. The site is about his clan's history. The writing should feel like someone deeply inside the subject, not an outside commentator.
+The author is Ayabonga Qwabi. The site is about his clan's history. The writing should feel like someone deeply inside the subject, not an outside commentator. Most readers are Xhosa or South African — write as someone speaking from inside the culture, not as a guide explaining it to outsiders.
 
 ---
 
@@ -16,9 +16,25 @@ The author is Ayabonga Qwabi. The site is about his clan's history. The writing 
 
 Conversational but not casual. Like explaining something fascinating to a friend who is smart but not a specialist. No jargon without explanation. No performative enthusiasm.
 
-Allowed: dry humour, genuine curiosity, open speculation clearly labelled as speculation.
+Allowed: dry humour (see Humour, below), genuine curiosity, open speculation clearly labelled as speculation.
 
 Not allowed: cheerleading, hype, "amazing", "fascinating", "incredible", exclamation marks in body text, rhetorical questions used as transitions.
+
+---
+
+## Humour
+
+Calibrate humour to communal Xhosa wit, not to British irony or American one-liners — and never let humour come at the expense of the people, rituals, or beliefs the post is describing.
+
+- Self-deprecation only: if something earns a laugh, let it be the author's confusion, a wrong turn in the research, or the gap between what he expected to find and what the record says. Not the ancestors, not the ritual, not the belief.
+- Humour as recognition, not mockery: a light, witty line about a person or clan figure should read as respect, the way a good toast does, not as a joke at their expense.
+- The incongruent pivot: build a sentence on a reasonable expectation, then let the real answer swerve somewhere smaller, stranger, or more mundane than expected. The swerve carries the humour, not a setup-punchline structure.
+- Concrete over abstract: where the instinct is to reach for an intensifier ("remarkably", "incredibly"), reach instead for one precise, earthy detail. The detail does the work the adverb was trying to do, and it lands better.
+- Names carry their own characterization: a clan name or nickname is often already a description, not just a label. Gloss its literal meaning plainly, once (as in Language specifics, below), and let it do the work. Do not explain why it's fitting or funny.
+- A proverb, once, can replace a sentence of explanation: a Xhosa saying used as an anchor for an idea earns its place if it's doing real work, not decorating the page.
+- The inquit: when reporting how someone spoke or reacted, a precise verb does more than "said" ever could. One well-chosen verb in an attribution carries characterization and a flicker of wit, without needing an extra sentence of commentary.
+- Gravity and levity sit beside each other, not instead of each other: a small human or absurd detail placed right next to a historical event's weight sharpens the weight rather than undercutting it. This is closer to how Xhosa humour has historically handled despair and defeat than either pure solemnity or pure joke.
+- One wry beat per post is enough. This is a history with a visible author, not a comedy piece.
 
 ---
 
@@ -60,6 +76,7 @@ These are the patterns that make the writing feel AI-generated. Avoid all of the
 - Generic closers: "The future looks bright", "Only time will tell", "One thing is certain"
 - Bold overuse: bold for a term being introduced, or a name that needs to stand out. Not for emphasis on ordinary phrases.
 - Em dash overuse: one per post maximum. Use a comma or a full stop instead.
+- Imported irony: dry, biting sarcasm aimed at elders, rituals, or belief — reads as outsider mockery, not insider wit, however clever it sounds.
 
 ---
 
