@@ -38,7 +38,7 @@ export const posts: Post[] = [
       <p>The Cape Colony had been pushing to disarm the Sotho chiefs. Moorosi refused. In April 1879 colonial forces began a siege of the mountain. It lasted eight months. On 20 November 1879, the mountain fell. Moorosi was killed. His followers — Phuthi, Thembu, and San alike — fled.</p>
       <p>Three main routes carried the AmaQithi south into the Eastern Cape: the line of Ngcongolo went to eNgcobo, other families fled to Cofimvaba, and the line of Qhwabi (Qwabi) settled at Mkapusi in Lady Frere, founding the village now remembered as <em>emaQithini</em> — Mqithi Village.</p>
       <h3>Not a defeat — a strategic dispersal</h3>
-      <p>The fracturing of the clan into separate family lines was, according to our research, deliberate. Spreading across multiple villages made it harder for colonial authorities to track and tax the group as a single political unit. The name, the izibongo, and the Ingqithi custom survived because the people who carried them survived — scattered but not erased.</p>
+      <p>The fracturing of the clan into separate family lines was, according to our research, deliberate. Spreading across multiple villages made it harder for colonial authorities to track and tax the group as a single political unit. The name, izibongo, and ingqithi custom survived because the people who carried them survived — scattered but not erased.</p>
     `,
   },
   {

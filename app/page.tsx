@@ -65,7 +65,7 @@ const wayfinding = [
   {
     href: '/amaqithi',
     label: 'The Clan',
-    teaser: 'AmaQithi in depth — identity, izibongo, and the ingqithi mark that connects it all.',
+    teaser: 'AmaQithi in depth — identity, izibongo, and ingqithi — the mark that connects it all.',
     accent: '#D4A96A',
   },
   {

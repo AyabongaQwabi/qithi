@@ -124,7 +124,7 @@ export default function WhoWeArePage() {
           eyebrow="AmaQithi — Who We Are"
           headline="AbaThembu, AbaThwa — ubabona nge Ngqithi."
           subheading="One bloodline, two heritages — recognised by the mark of ingqithi."
-          intro="We are not choosing between identities. We carry both. The Q in our name is a San click. Our lineage runs through the Thembu Great House. The archives confirm it, the izibongo confirm it, and the ritual of the Ingqithi — the finger-cut custom inherited from the San — confirms it."
+          intro="We are not choosing between identities. We carry both. The Q in our name is a San click. Our lineage runs through the Thembu Great House. The archives confirm it, izibongo confirm it, and ingqithi — the finger-cut custom inherited from the San — confirms it."
         />
 
         <div style={{ background: '#1A0F0A', paddingTop: '8px' }}>
@@ -265,7 +265,7 @@ export default function WhoWeArePage() {
               </div>
               <div>
                 <p style={body}>
-                  The Thembu nation itself has always carried San heritage. Their praise names include <em>&ldquo;the tiny man&rdquo;</em> — a direct linguistic acknowledgment of San ancestry embedded in izibongo. The Ingqithi finger-cut ritual, practiced by this division of the Thembu and inherited from the San, is described in historical records as definitive proof of the &ldquo;friendly amalgamation between the two races.&rdquo;
+                  The Thembu nation itself has always carried San heritage. Their praise names include <em>&ldquo;the tiny man&rdquo;</em> — a direct linguistic acknowledgment of San ancestry embedded in izibongo. Ingqithi finger-cut ritual, practiced by this division of the Thembu and inherited from the San, is described in historical records as definitive proof of the &ldquo;friendly amalgamation between the two races.&rdquo;
                 </p>
                 <p style={{ ...body, color: '#9E8C7A' }}>
                   The royal genealogy below shows where Ntande sits in the Thembu tree — many generations above Nonesi and Mtirara. Whether a man named Qithi sits in that tree as an unrecorded son of Ntande, a long-lost brother of Mnguti, is something the research has not yet resolved. The oral tradition points there; the written record has not confirmed it. Both things can be true at once.

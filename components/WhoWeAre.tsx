@@ -137,7 +137,7 @@ export default function WhoWeAre() {
               <p>
                 The AmaQithi assimilated into the Thembu nation over generations of coexistence,
                 intermarriage, and political integration in the Cacadu basin. They carry Thembu
-                customs and speak Xhosa. But their origin is San. That is where the izibongo
+                customs and speak Xhosa. But their origin is San. That is where izibongo
                 begin. That is where the lineage starts.
               </p>
 
