@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/Breadcrumb';
 import ScrollReveal from '@/components/ScrollReveal';
+import BlogCard from '@/components/BlogCard';
 import SchemaOrg, { orgSchema, breadcrumbSchema } from '@/components/SchemaOrg';
 import { posts } from '@/lib/posts';
 
@@ -117,74 +117,16 @@ export default function BlogIndex() {
             <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px' }}>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
                 {posts.map((post, i) => (
-                  <Link
+                  <BlogCard
                     key={post.slug}
                     href={`/blog/${post.slug}`}
-                    className={`reveal card-lift delay-${Math.min(i + 1, 5)}`}
-                    style={{
-                      display: 'grid',
-                      gridTemplateColumns: '1fr auto',
-                      alignItems: 'start',
-                      gap: '24px',
-                      background: '#2C1810',
-                      padding: '32px 36px',
-                      textDecoration: 'none',
-                      borderLeft: `3px solid ${categoryColors[post.category] ?? '#C4622D'}`,
-                      transition: 'background 0.25s ease, transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94), box-shadow 0.3s ease, opacity 0.65s ease',
-                    }}
-                    onMouseEnter={(e) => (e.currentTarget.style.background = '#3a1f10')}
-                    onMouseLeave={(e) => (e.currentTarget.style.background = '#2C1810')}
-                  >
-                    <div>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '12px', flexWrap: 'wrap' }}>
-                        <span style={{
-                          fontFamily: 'var(--font-body), Inter, sans-serif',
-                          fontSize: '0.62rem',
-                          fontWeight: 700,
-                          letterSpacing: '0.18em',
-                          textTransform: 'uppercase',
-                          color: categoryColors[post.category] ?? '#C4622D',
-                        }}>
-                          {post.category}
-                        </span>
-                        <span style={{
-                          fontFamily: 'var(--font-body), Inter, sans-serif',
-                          fontSize: '0.68rem',
-                          color: '#6B5A4E',
-                        }}>
-                          {formatDate(post.date)}
-                        </span>
-                      </div>
-                      <h2 style={{
-                        fontFamily: 'var(--font-display), Cormorant Garamond, serif',
-                        fontSize: 'clamp(1.3rem, 2.5vw, 1.8rem)',
-                        fontWeight: 600,
-                        color: '#E8A857',
-                        lineHeight: 1.15,
-                        marginBottom: '12px',
-                      }}>
-                        {post.title}
-                      </h2>
-                      <p style={{
-                        fontFamily: 'var(--font-body), Inter, sans-serif',
-                        fontSize: '0.92rem',
-                        color: '#9E8C7A',
-                        lineHeight: 1.7,
-                        maxWidth: '640px',
-                      }}>
-                        {post.excerpt}
-                      </p>
-                    </div>
-                    <span style={{
-                      fontFamily: 'var(--font-body), Inter, sans-serif',
-                      fontSize: '1.2rem',
-                      color: '#C4622D',
-                      alignSelf: 'center',
-                      flexShrink: 0,
-                    }}>
-                      →
-                    </span>
-                  </Link>
+                    category={post.category}
+                    categoryColor={categoryColors[post.category] ?? '#C4622D'}
+                    date={formatDate(post.date)}
+                    title={post.title}
+                    excerpt={post.excerpt}
+                    delayClass={`delay-${Math.min(i + 1, 5)}`}
+                  />
                 ))}
               </div>
             </div>

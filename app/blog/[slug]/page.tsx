@@ -5,6 +5,7 @@ import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/Breadcrumb';
 import ScrollReveal from '@/components/ScrollReveal';
+import BlogCard from '@/components/BlogCard';
 import SchemaOrg, { orgSchema, breadcrumbSchema } from '@/components/SchemaOrg';
 import { posts, getPost } from '@/lib/posts';
 
@@ -180,52 +181,17 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                 </p>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2px' }}>
                   {otherPosts.map((p, i) => (
-                    <Link
+                    <BlogCard
                       key={p.slug}
                       href={`/blog/${p.slug}`}
-                      className={`reveal card-lift delay-${i + 1}`}
-                      style={{
-                        display: 'block',
-                        background: '#1A0F0A',
-                        padding: '28px',
-                        textDecoration: 'none',
-                        borderTop: `2px solid ${categoryColors[p.category] ?? '#C4622D'}`,
-                        transition: 'background 0.25s ease, transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94), box-shadow 0.3s ease, opacity 0.65s ease',
-                      }}
-                      onMouseEnter={(e) => (e.currentTarget.style.background = '#221209')}
-                      onMouseLeave={(e) => (e.currentTarget.style.background = '#1A0F0A')}
-                    >
-                      <span style={{
-                        fontFamily: 'var(--font-body), Inter, sans-serif',
-                        fontSize: '0.6rem',
-                        fontWeight: 700,
-                        letterSpacing: '0.16em',
-                        textTransform: 'uppercase',
-                        color: categoryColors[p.category] ?? '#C4622D',
-                        display: 'block',
-                        marginBottom: '10px',
-                      }}>
-                        {p.category}
-                      </span>
-                      <h3 style={{
-                        fontFamily: 'var(--font-display), Cormorant Garamond, serif',
-                        fontSize: '1.25rem',
-                        fontWeight: 600,
-                        color: '#E8A857',
-                        lineHeight: 1.2,
-                        marginBottom: '10px',
-                      }}>
-                        {p.title}
-                      </h3>
-                      <p style={{
-                        fontFamily: 'var(--font-body), Inter, sans-serif',
-                        fontSize: '0.84rem',
-                        color: '#9E8C7A',
-                        lineHeight: 1.65,
-                      }}>
-                        {p.excerpt.slice(0, 100)}…
-                      </p>
-                    </Link>
+                      category={p.category}
+                      categoryColor={categoryColors[p.category] ?? '#C4622D'}
+                      date={formatDate(p.date)}
+                      title={p.title}
+                      excerpt={p.excerpt}
+                      delayClass={`delay-${i + 1}`}
+                      variant="compact"
+                    />
                   ))}
                 </div>
                 <div style={{ marginTop: '40px' }}>
