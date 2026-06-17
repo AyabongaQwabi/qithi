@@ -9,6 +9,34 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: 'is-umntu-a-name',
+    title: 'Is "Umntu" a name, not a word?',
+    date: '2026-06-17',
+    category: 'Language & Identity',
+    excerpt:
+      'Every Nguni speaker knows umntu means person. But the grammar tells a different story — one where umXhosa means descendant of Xhosa, umZulu means descendant of Zulu, and umNtu means... descendant of Ntu. This is a theory, not a textbook. Make of it what you will.',
+    body: `
+      <p>There is a word you have probably used ten thousand times without thinking about it. <em>Umntu.</em> Person. Human being. Basic vocabulary.</p>
+      <p>Except — sit with it for a moment — the grammar does something strange when you look closely.</p>
+      <p>In Xhosa, Zulu, Ndebele, the prefix <em>um-</em> combined with a name identifies where a person comes from. UmXhosa is a person of the Xhosa — a descendant of Xhosa. UmZulu is a person of the Zulu — a descendant of Zulu. The logic is completely consistent. It runs through the whole language.</p>
+      <p>So: umNtu. By that same logic: a descendant of Ntu.</p>
+      <h3>Who was Ntu?</h3>
+      <p>This is where it gets speculative, and I want to say that plainly. I am not an academic. I am not rewriting history. But oral historians across the Bantu-speaking world do talk about a figure called Ntu — a primordial ancestor, the root of the family tree. <em>Abantu</em> (people) is just the plural of the same word: Ntu's descendants, collectively.</p>
+      <p>The Western concept of "human" is biological. Homo sapiens. A species classification. What the Nguni languages may not have had — if this theory holds — is an equivalent word for that. Not a species term. An identity term. You were not a random organism; you belonged somewhere, to someone, across generations. <em>Umntu</em> might be less "human being" and more "person of the lineage."</p>
+      <p>Whether that is a distinction without a difference is a fair question. But it does not feel like one.</p>
+      <h3>The San thread</h3>
+      <p>Here is the part that stopped me. In Seroa — part of the !Ui language branch, one of the ancient San languages of southern Africa — the word for a person is <em>Tuu.</em></p>
+      <p>Say them out loud: Tuu. Ntu. They are almost the same sound.</p>
+      <p>Mainstream linguistics would call this ancient borrowing. The Nguni groups and the San lived alongside each other for centuries — traded, intermarried, shared language. That is where the clicks in Xhosa and Zulu came from. A shared root word for "person" would fit that same pattern.</p>
+      <p>But it also opens a stranger possibility: that the two populations, before they ever formally met, had already converged on the same sound for the same concept. A deep-time regional root for what it means to be a person, carried independently through completely different language families.</p>
+      <p>That is probably too neat. Language is messier than that. But I keep thinking about it.</p>
+      <h3>What the language carries</h3>
+      <p>Whether <em>umntu</em> is a genealogical title that got flattened into generic vocabulary over centuries, or whether it was always just a word that sounded like a name — the question itself says something. Our languages were built by people who defined themselves through connection, not classification. You did not exist in the abstract. You belonged.</p>
+      <p>The AmaQithi research keeps running into this. The Q in the name is a San sound. The Ingqithi ritual is a San practice absorbed into Thembu identity. The place name Quthing is a Sotho pronunciation of an isiXhosa root. Language is where the history hid when nothing else survived.</p>
+      <p><em>Umntu ngumntu ngabantu.</em> A person is a person through other people. Maybe the word was always the proof of that.</p>
+    `,
+  },
+  {
     slug: 'the-click-in-our-name',
     title: 'The Click in Our Name',
     date: '2026-05-12',
