@@ -1,13 +1,23 @@
 {
   "name": "AmaQithi — San First People of the Eastern Cape",
   "short_name": "AmaQithi",
-  "description": "The authoritative clan portal for AmaQithi (San/AbaThwa) First People of the White Kei River basin, Lady Frere and the Cacadu mountains, Eastern Cape.",
+  "description": "The authoritative clan portal for AmaQithi (San/AbaThwa) First People of the White Kei River basin, Lady Frere and the Cacadu mountains, Eastern Cape. Heritage, lineage, genealogy, and research.",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
+  "orientation": "portrait-primary",
   "background_color": "#1A0F0A",
   "theme_color": "#E8A857",
   "lang": "en-ZA",
+  "dir": "ltr",
+  "id": "https://qithi.co.za/",
   "icons": [
+    {
+      "src": "/favicon/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
     {
       "src": "/favicon/web-app-manifest-192x192.png",
       "sizes": "192x192",
@@ -27,8 +37,45 @@
       "purpose": "any"
     }
   ],
-  "categories": ["history", "education", "community"],
-  "screenshots": [],
+  "screenshots": [
+    {
+      "src": "/logo.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "label": "AmaQithi Heritage Portal"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Who We Are",
+      "short_name": "History",
+      "description": "AmaQithi origin story and identity",
+      "url": "/who-we-are",
+      "icons": [{ "src": "/logo.png", "sizes": "1024x1024" }]
+    },
+    {
+      "name": "AmaQithi Families",
+      "short_name": "Families",
+      "description": "Find your family, village and surname",
+      "url": "/families",
+      "icons": [{ "src": "/logo.png", "sizes": "1024x1024" }]
+    },
+    {
+      "name": "Apply to Join",
+      "short_name": "Apply",
+      "description": "Apply for AmaQithi clan membership",
+      "url": "/apply",
+      "icons": [{ "src": "/logo.png", "sizes": "1024x1024" }]
+    },
+    {
+      "name": "The Research",
+      "short_name": "Research",
+      "description": "Working thesis and source documents",
+      "url": "/thesis",
+      "icons": [{ "src": "/logo.png", "sizes": "1024x1024" }]
+    }
+  ],
+  "categories": ["history", "education", "community", "genealogy", "culture"],
   "related_applications": [],
   "prefer_related_applications": false
 }

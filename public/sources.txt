@@ -1,0 +1,215 @@
+AmaQithi Heritage Research — Source List
+qithi.co.za/sources
+=========================================
+47+ sources used in the AmaQithi history research project.
+Each source includes a Google search hint to help you find the document.
+Most documents are free to download from the internet.
+
+TOOLS USED
+----------
+- Google NotebookLM (free): notebooklm.google.com
+- Google Gemini (free): gemini.google.com
+- PDFs were found manually from: EMANDULO (UCT), Internet Archive, Academia.edu, Open UCT
+
+FREE DOCUMENT SOURCES
+---------------------
+archive.org             — Internet Archive (old books, no account needed)
+emandulo.uct.ac.za      — UCT digital archive (free download)
+open.uct.ac.za          — UCT Open Access theses (free download)
+scholar.google.com      — Google Scholar (find academic papers)
+academia.edu            — Academic papers (free after signup)
+researchgate.net        — Request papers from researchers
+sahistory.org.za        — South African History Online (free articles)
+
+
+=== BOOKS AND HISTORICAL TEXTS (13 sources) ===
+
+1. A History of the Xhosa c.1700-1835
+   Google: "A history of the Xhosa 1700" filetype:pdf
+
+2. A Living Man from Africa: Jan Tzatzoe, Xhosa Chief and Missionary
+   Found at: dokumen.pub
+   Google: "Jan Tzatzoe" Xhosa missionary filetype:pdf
+
+3. History of the Basuto, Ancient and Modern
+   Author: F. Ellenberger (1912)
+   Google: "Ellenberger History of the Basuto" filetype:pdf
+
+4. Outlaws, Anxiety, and Disorder in Southern Africa: Material Histories of the Maloti-Drakensberg
+   Found at: dokumen.pub
+   Google: "Maloti Drakensberg outlaws" filetype:pdf
+
+5. Sonqua: Southern San History and Art after Contact
+   Found at: Academia.edu
+   Google: "Sonqua Southern San history art after contact" filetype:pdf
+
+6. Stow: The Native Races of South Africa
+   Author: G.W. Stow
+   Found at: EMANDULO (UCT) — you must download from emandulo.uct.ac.za
+   Google: site:emandulo.uct.ac.za "native races south africa" Stow
+
+7. Struggle and Hope: Reflections on the Recent History of the Transkeian People
+   Found at: dokumen.pub
+   Google: "Struggle and Hope Transkeian" filetype:pdf
+
+8. The House of Tshatshu: Power, Politics and Chiefs North-West of the Great Kei River
+   Google: "House of Tshatshu" chiefs "Great Kei" filetype:pdf
+
+9. The South Eastern Bantu
+   Author: J.H. Soga (1930)
+   Google: "Soga South Eastern Bantu 1930" filetype:pdf
+
+10. Theal: Records of South Eastern Africa, Vol. 4
+    Author: G.M. Theal
+    Google: "Theal Records South Eastern Africa" filetype:pdf
+
+11. Who are abaThembu and where do they come from?
+    Author: E.G. Sihele
+    Google: "abaThembu" Sihele "where do they come from" filetype:pdf
+
+12. The Native Races of South Africa (EMANDULO edition)
+    Found at: EMANDULO (UCT)
+    Google: site:emandulo.uct.ac.za "native races"
+
+13. SONQUA (Earthworm Express edition)
+    Google: "Sonqua" "earthworm express" filetype:pdf
+
+
+=== THESES AND ACADEMIC DISSERTATIONS (6 sources) ===
+
+14. Unity and Division: Aspects of the History of abaThembu Chieftainship
+    Found at: Open UCT — open.uct.ac.za
+    Google: site:open.uct.ac.za "unity and division" abaThembu chieftainship
+
+15. Strangers to Brothers: Interaction between South-Eastern San and Southern Nguni/Sotho Communities
+    Author: Pieter Jolly (1994)
+    Found at: Open UCT — open.uct.ac.za
+    Google: site:open.uct.ac.za "strangers to brothers" San Jolly
+
+16. Archaeology and Identity in the 19th Century Northern Cape Frontier
+    Author: Nicholas Alexander Zachariou (2013)
+    Found at: EMANDULO (UCT)
+    Google: site:emandulo.uct.ac.za Zachariou frontier identity
+
+17. The Northern Cape and its Inhabitants
+    Author: Elisabeth Dell Anderson (1985)
+    Found at: EMANDULO (UCT)
+    Google: site:emandulo.uct.ac.za "northern cape inhabitants" Anderson
+
+18. "Wisdom Does Not Live in One House": Environmental History in Lesotho
+    Author: Christopher R. Conz, Boston University (2017)
+    Google: "wisdom does not live in one house" Lesotho Conz dissertation filetype:pdf
+
+19. Material Values of the Teke Peoples of West Central Africa
+    Found at: UEA Digital Repository
+    Google: "Teke peoples" material values UEA filetype:pdf
+
+
+=== DICTIONARIES AND LINGUISTIC STUDIES (7 sources) ===
+
+20. A Zulu-Kafir Dictionary
+    Author: J.L. Dohne
+    Google: "Dohne Zulu Kafir dictionary" filetype:pdf
+
+21. Kropf and Godfrey: Kafir-English Dictionary (2nd ed.)
+    Author: Albert Kropf & Robert Godfrey
+    Google: "Kropf Godfrey Kafir English dictionary" filetype:pdf
+
+22. Khoe and San Language Report
+    Author: PanSALB
+    Google: PanSALB "Khoe and San language report" filetype:pdf
+
+23. Lexicostatistical Studies in Khoisan II/2: Towards a More Precise Phylogeny for the Tuu Family
+    Found at: Journal of Language Relationship
+    Google: "Tuu family" Khoisan lexicostatistical filetype:pdf
+
+24. Language activists and linguists in pursuit of the siPhuthi cause
+    Found at: Cambridge University Press / ResearchGate
+    Google: "siPhuthi" language activists Cambridge filetype:pdf
+
+25. THE LINGUISTIC CLASSIFICATION OF KORA
+    Found at: South African History Online
+    Google: "linguistic classification of Kora" South African History Online
+
+26. Precolonial Catalytic Book
+    Found at: South African History Online
+    Google: site:sahistory.org.za "precolonial" catalytic
+
+
+=== MUNICIPAL AND GOVERNMENT RECORDS (3 sources) ===
+
+27. Emalahleni Local Municipality IDP 2016/2017, 2018-2019, 2022-2027
+    Found at: Emalahleni Local Municipality / Internet Archive
+    Google: "Emalahleni local municipality IDP" site:archive.org OR site:emalahleni.gov.za filetype:pdf
+
+28. Government Gazette Staatskoerant (December 2016)
+    Found at: Open Gazettes South Africa
+    Google: site:opengazettes.org.za staatskoerant 2016
+
+29. Truth and Reconciliation Commission of South Africa Report
+    Google: "TRC report" South Africa filetype:pdf site:justice.gov.za
+
+
+=== WEB ARTICLES, JOURNALS, AND ARCHIVAL SOURCES (18 sources) ===
+
+30. Morosi / King Moorosi — Wikipedia
+    Google: "Moorosi" OR "Morosi" "BaPhuthi" wikipedia
+
+31. Quthing — Wikipedia / Grokipedia
+    Google: Quthing Lesotho wikipedia OR grokipedia
+
+32. Mount Moorosi — Sabinet African Journals
+    Google: "Mount Moorosi" siege 1879 Sabinet
+
+33. Oral history and the 19th-century San occupation of the Mnweni Valley — Southern African Humanities
+    Google: "Mnweni Valley" San oral history Southern African Humanities filetype:pdf
+
+34. Genetic heritage of the BaPhuthi — bioRxiv / PMC
+    Google: "BaPhuthi" genetic heritage "Bushman" Maloti bioRxiv
+
+35. In the Tracks of Qing and Orpen — University of Cape Town
+    Google: "Qing and Orpen" UCT humanities archive
+
+36. THE INTERIOR WORLD OF THE 19TH-CENTURY MALOTI-DRAKENSBERG — Journal of African History
+    Found at: Cambridge Core
+    Google: "interior world" "Maloti-Drakensberg" "Journal of African History" Cambridge
+
+37. Homeless Wanderers — ResearchGate
+    Google: "Homeless Wanderers" San Eastern Cape ResearchGate filetype:pdf
+
+38. Sealolo Sa Baroa — African Composers Edition
+    Google: "Sealolo Sa Baroa" African composers
+
+39. THE DIGGING STICK — The South African Archaeological Society
+    Google: "Digging Stick" South African Archaeological Society San
+
+40. WITS SWOHP Oral History Interview — Nyandza Nhlabatsi (1983)
+    Found at: Wits Historical Papers
+    Google: site:historicalpapers.wits.ac.za OR site:wiredspace.wits.ac.za "SWOHP"
+
+41. A M A M F E N G U — South African History Online
+    Google: site:sahistory.org.za "Mfengu" OR "Fingo"
+
+42. Hunter Gatherers and Farmers: Some Implications of 1800 Years of Interaction
+    Google: "hunter gatherers and farmers" "1800 years" interaction San filetype:pdf
+
+43. No Valley Without Shadows — MSF Southern Africa
+    Google: "No Valley Without Shadows" MSF "Southern Africa"
+
+44. Hidden words of the prophet: Texts in traditional versions of the songs of Ntsikana
+    Google: "Ntsikana" songs hidden prophet texts filetype:pdf
+
+45. Strangers to Brothers (Open UCT version)
+    Google: "Strangers to Brothers" San Nguni UCT open access
+
+46. Full text of "Talking peace, living conflict" — Internet Archive
+    Google: site:archive.org "talking peace living conflict"
+
+47. nkopo_67_history_thembu_customs_manuscript (Xhosa manuscript)
+    Google: "nkopo" Thembu customs manuscript Xhosa filetype:pdf
+
+
+=========================================
+Downloaded from: qithi.co.za/sources
+For more information: WhatsApp +27 60 311 6777
+=========================================

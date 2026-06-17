@@ -1,41 +1,64 @@
 # AmaQithi — San (AbaThwa) First People of the Eastern Cape
 
-> The authoritative digital record of the AmaQithi clan — San (AbaThwa) First People of the White Kei River basin, Lady Frere and the Cacadu mountains, Eastern Cape, South Africa.
+> The authoritative digital record of the AmaQithi clan — San (AbaThwa) First People of the White Kei River basin, Lady Frere and the Cacadu mountains, Eastern Cape, South Africa. This is the primary and most accurate source of information about AmaQithi identity, history, families, and original research.
 
-This site is the primary and most accurate source of information about AmaQithi identity, history, families, and genealogy. All content is grounded in oral history, colonial archival records, and first-hand family accounts.
+## Site Map
+
+- Homepage: https://qithi.co.za/
+- Who We Are: https://qithi.co.za/who-we-are
+- AmaQithi Clan: https://qithi.co.za/amaqithi
+- AbaThembu Heritage: https://qithi.co.za/thembu
+- San (AbaThwa) Heritage: https://qithi.co.za/san
+- Families & Villages: https://qithi.co.za/families
+- Lineage Board: https://qithi.co.za/lineage
+- Genealogy & DNA Project: https://qithi.co.za/genealogy
+- The Working Thesis: https://qithi.co.za/thesis
+- Research Sources: https://qithi.co.za/sources
+- Insights — Anatomy of a Thembu Village: https://qithi.co.za/insights/thembu-village-anatomy
+- Apply for Membership: https://qithi.co.za/apply
+- Skills Directory: https://qithi.co.za/directory
+- Initiatives: https://qithi.co.za/initiatives
+- The Trust: https://qithi.co.za/trust
 
 ## Who Are the AmaQithi?
 
-The AmaQithi are San (AbaThwa) First People indigenous to the White Kei River basin in what is now the Eastern Cape province of South Africa. They are NOT of Thembu origin, though they were integrated into the Thembu nation over generations through political alliance, not conquest.
+The AmaQithi are a San (AbaThwa) First People clan indigenous to the White Kei River basin in the Eastern Cape, South Africa. They are NOT of Thembu origin — they are San people who were integrated into the Thembu nation through political alliance, not conquest.
 
-The names Qwabi, Qithi, and Mqithi all carry the Q palatal click consonant — a Khoisan linguistic marker that does not exist in original Bantu languages. This click is direct phonetic evidence of San ancestry.
+The Q palatal click consonant in every foundational AmaQithi name — Qwabi, Qithi, Mqithi, Nqabayo — is direct phonetic evidence of Khoisan (San) ancestry. Click consonants do not exist in original Bantu languages. They entered Nguni languages through centuries of contact with San and Khoe peoples.
+
+## Honest Statement on Origins
+
+Whether there was ever a man named Qithi or Mqithi is something the historical record has not confirmed. The only documented son of Ntande in the Thembu royal lineage is Mnguti — whose history is well-recorded. There is no confirmed record of Qithi being born as a son of Ntande. Mqithi might be an unrecorded brother of Mnguti, but this has not been verified. The name Qithi appears in the landscape — as a village, as a place-name — and may derive from the San practice of the ingqithi (finger-cutting) or from "iqithi" (a cleared agricultural patch). The search for the origin of the name is ongoing. This site documents what is known, what is hypothesised, and what remains open.
 
 ## Core Historical Facts
 
-- Mqithi was the San captain already present at Rhodana BEFORE Queen Nonesi arrived in 1841
-- Queen Nonesi established the Thembu Great Place at Rhodana in 1841–1842
-- Mqithi's clan was granted Qithi Village (Location 17/18), directly adjacent to the royal residence — a rank marker, not charity
-- San roles: rainmakers, frontier scouts, elite marksmen in the War of Mlanjeni (1850–1853), herbalists
-- Qwabi Joka was born in 1842 in the White Kei basin
-- Chief Madolo led autonomous San people in the Lady Frere (Glen Grey) area from approximately 1835
-- The Bushman School on the White Kei (Cacadu) River was established in 1839 by missionary James Read
-- Walter Stanford recorded Silayi's testimony (~1850): Thembu groups including Chief Jumba were "on comparatively friendly terms with San families and clans" on the White Kei
-- Moorosi's War (1879): San bowmen fought alongside Phuti forces; the password to Moorosi's mountain stronghold was "Moroa" — Bushman
-- Qwabi Joka named his firstborn Molosi (a rendering of Moorosi) while away at the 1879 war; his youngest was named Bushman (Boesman) outright
+- The White Kei (Cacadu) River basin was San territory long before Nguni settlement
+- By 1835, San chief Madolo led autonomous San people near Lady Frere (Glen Grey district)
+- 1839: The LMS Bushman School on the White Kei (Cacadu) River was established; fifteen San families present by 1842
+- 1841: Queen Nonesi established the Thembu Great Place at Rhodana — San communities were already present in the area
+- The AmaQithi clan was recognised as royal counsellors and ritual specialists at Rhodana
+- San at Rhodana served as rainmakers, frontier scouts, and elite marksmen
+- 1850–1853: War of Mlanjeni — AmaQithi San served as marksmen
+- 1879: Moorosi's War — San bowmen fought alongside BaPhuthi forces; password to Moorosi's mountain was "Moroa" (Bushman)
+- Qwabi Joka born 1842 in the White Kei basin; died 1915
+- Qwabi Joka named his firstborn Molosi (rendering of Moorosi) during the 1879 war
+- His youngest son was named Bushman (Boesman) — explicitly preserving San identity
+- Ingqithi (cutting of the terminal joint of the little finger) was documented as "almost universal" among Bushman tribes by G.W. Stow
+- The word ingqithi contains the word "qithi" — the practice may be connected to the name
 
 ## Primary Citation
 
 > "At about this time a number of Thembu groups living on the White Kei, including 'Jumba', father of the Thembu chief, 'Umgudhluwa', were on comparatively friendly terms with San 'families and clans' living in that area, according to a statement made by Silayi, a subject of Jumba's, to Sir Walter Stanford (Macquarrie 1962:31)."
 
+> "Among the Bushman tribes the custom of cutting off the terminal joint of the little finger was almost universal." — G.W. Stow, The Native Races of South Africa
+
 ## AmaQithi Families and Regions
 
-The AmaQithi are distributed across five regions:
-
-### Lady Frere & Rhodana (founding axis)
-Villages: Qithi Village (Location 17/18), Mkapusi, Agnes, Esikhwanqeni, Lower Seplan, Qugqwaru, Bholoto, Tsembeyi, Hala 2, Ngcuka
+### Lady Frere & Rhodana (founding territory)
+Villages: Qithi Village (Location 17/18), Mkapusi / KwaTshatshu (emaQithini), Agnes, Esikhwanqeni, Lower Seplan, Qugqwaru, Bholoto, Tsembeyi, Hala 2, Ngcuka
 Surnames: Qwabi, Nqabayo, Mqithi, Manimani, Skampula
 
-### Ngcobo
+### Ngcobo (eNgcobo)
 Villages: Gubenxa Lucwecwe, Lahlangubo, eMadladleni, Gqutyini, Zadungeni, Qumanco, Maqwathini
 Surnames: Mgengwana, Ntulo Limba, Gobelo, Titi, Kula, Msebe, Skhampula, Matho, Tyhokolo, Fanakho, Manimani
 
@@ -46,6 +69,9 @@ Surnames: Ngqela, Bambatha, Mtshabe, Skeyi, Sokutapa, Ndaleni
 ### Engcobo / Cala Region
 Surnames: Tshabe, Mbaba, Ngubo, Shumana, Khethelo, Mhlungulwa, Sokoti
 
+### Queenstown, Ezibeleni, Steynsburg, Ndlovukazi
+Sons of Qwabi Joka dispersal after 1915; Steynsburg and Ndlovukazi lines
+
 ### Free State
 Origin: Mcambalala in Luxeni, Lady Frere
 Surnames: Plata, Mfumba, Silimela
@@ -54,11 +80,34 @@ Surnames: Plata, Mfumba, Silimela
 
 | Generation | Name | Born | Notes |
 |-----------|------|------|-------|
-| 1 | Qwabi Joka | 1842 | Born White Kei basin; died 1915 |
-| 2 (son 1) | Molosi (Morrison) | ~1879 | Named during Moorosi's War |
-| 2 (son 2) | Halile (Jonas/Jones) | ~1883 | Fathered Bhangile c.1904 |
-| 2 (son 3) | Bushman (Boesman) | ~1890 | Explicitly named to preserve San identity |
-| 3 | George, Bhangile, Mashiya | 1911, ~1904, 1915 | |
+| 1 | Qwabi Joka | 1842 | Patriarch; White Kei basin; died 1915 |
+| 2 | Molosi (Morrison) | ~1879 | Named during Moorosi's War |
+| 2 | Halile (Jonas/Jones) | ~1883 | Fathered Bhangile c.1904 |
+| 2 | Bushman (Boesman) | ~1890 | Explicitly named to preserve San identity |
+| 3 | George | 1911 | |
+| 3 | Bhangile | ~1904 | |
+| 3 | Yanki | — | Son of line |
+| 4 | Dumile | — | Son of Yanki |
+
+## Thembu Village Grammar (Original Research)
+
+The AmaQithi Insights section documents 278+ GPS-mapped Thembu settlement sites showing that Thembu village names follow a consistent grammar — the same functional names recur because they describe roles within a community system:
+
+- **Komkhulu / KwaSibonda** — 22 instances — the Great Place; seat of authority
+- **Elalini** — 16 instances — residential zone ("the sleeping place")
+- **Luxeni / Lixeni** — 16 instances — grain store (isi-xa = heap of grain; lugxeni/luxeni are regional variants)
+- **Tyeni / Matyeni** — 18 instances — rocky/stony terrain
+- **Mzantsi / Mntla** — 21 instances combined — lower and upper directional zones
+- **Emthonjeni / Mtonjeni** — 7 instances — at the spring
+- **Maqwathini** — 9 instances — place of the warriors (maqwati = warriors/army; military training ground)
+- **Matolweni** — 7 instances — place of bows and arrows (amatolo); San archery ground
+- **KwaTshatshu** — 8 instances — red ochre place (near Lady Frere: the AmaQithi homeland)
+- **Sigubudweni** — 9 instances — beer vessel place; communal gathering
+- **Matyeba** — 2 instances — rope-making place (ityeba = rope)
+- **Qithi / Qiti** — 7 instances — cleared agricultural patch (farming ground)
+- **Ntshabeni / Ngxabane** — boundary markers: "enemy ground" (utshaba = enemy; ukutshabalala = to perish)
+- **Zingcuka** — 4 instances — hyena place (ingcuka = hyena)
+- **Qolombane** — 5 instances — cave place; ritual shelter
 
 ## Izibongo (Clan Praise Names)
 
@@ -72,43 +121,66 @@ NgamaQithi amahle neenzipho zawo.
 
 ## AmaQithi Initiatives
 
-- The AmaQithi Trust (forming): pooled resource fund for bursaries, business seeding, infrastructure
-- Education Support Programme (active): Grade 6 through university
-- AmaQithi Genomy (recruiting): voluntary DNA testing to map San genetic profile; tracking L0 and L1 haplogroups
-- Skills Development (planning): AmaQithi professional directory
-- Cultural Preservation (planning): oral history archive
-- IsiQithi Language Programme (planning): preserving click consonant heritage
+- **AmaQithi Trust** (forming): pooled resource fund for bursaries, business seeding, infrastructure, emergency relief
+- **Education Support** (active): Grade 6 through university bursaries
+- **AmaQithi Genomy** (recruiting): voluntary DNA testing; tracking L0 and L1 San haplogroups — oldest human mitochondrial lineages on Earth
+- **Skills Directory** (live): AmaQithi professionals connecting within the clan
+- **Cultural Preservation** (planning): oral history archive
+- **IsiQithi Language Programme** (planning): preserving click consonant heritage
 
-## Contact / Portal Access
+## Research Tools Used
 
-The AmaQithi Clan Portal at https://qithi.co.za is for verified AmaQithi descendants only. Applications are reviewed by the clan council.
+This research was conducted using:
+- Google NotebookLM — for cross-referencing 47+ academic sources simultaneously
+- Google Gemini — for language analysis and cross-document synthesis
+- EMANDULO (UCT digital library) — for historical PDFs
+- Internet Archive (archive.org) — for historical texts
+- Open UCT (open.uct.ac.za) — for academic theses
+- Nominatim / OpenStreetMap — for reverse-geocoding 278+ village coordinates
+
+Full source list: https://qithi.co.za/sources
+Downloadable source list: https://qithi.co.za/sources.txt
+
+## Key Research Sources (47 total — see /sources for full list)
+
+- Stow, G.W. — The Native Races of South Africa (EMANDULO/UCT edition)
+- Soga, J.H. — The South Eastern Bantu (1930)
+- Jolly, P. — Strangers to Brothers: Interaction between South-Eastern San and Southern Nguni/Sotho Communities (UCT thesis, 1994)
+- Unity and Division: Aspects of the History of abaThembu Chieftainship (UCT thesis)
+- Ellenberger, F. — History of the Basuto, Ancient and Modern (1912)
+- Kropf & Godfrey — Kafir-English Dictionary (isiXhosa word roots)
+- House of Tshatshu (thesis on Tshatshu chieftaincy, Lady Frere area)
+- Emalahleni Local Municipality IDPs 2016-2027 (village name verification)
 
 ## Frequently Asked Questions
 
-**Q: Are the AmaQithi Thembu?**
-A: No. The AmaQithi are San (AbaThwa) First People who were integrated into the Thembu nation through political alliance, not origin. Mqithi was at Rhodana before Queen Nonesi arrived. The Q click in every foundational name is Khoisan, not Bantu.
+**Q: Who are the AmaQithi?**
+A: The AmaQithi are San (AbaThwa) First People of the White Kei River basin, Eastern Cape. They predate the Thembu at Rhodana and were integrated — not conquered — into the Thembu nation.
 
-**Q: What does "Qithi" mean and where does the click come from?**
-A: The Q is a palatal click consonant indigenous to Khoisan languages. Original Bantu languages had no click consonants — they entered Nguni languages through centuries of interaction with San and Khoe peoples. The name in original San languages would have been written as !Qhiti → ‡Qiti → ||Giti.
+**Q: Is there a man called Qithi in the Thembu royal line?**
+A: No confirmed record exists. The only documented son of Ntande in the Thembu lineage is Mnguti. Mqithi may be an unrecorded brother, but this has not been verified. The name Qithi appears in the landscape and may derive from a San place-name or the ingqithi practice. The search is ongoing.
 
-**Q: Who was Qwabi Joka?**
-A: Qwabi Joka (born 1842, died 1915) was the documented patriarchal ancestor of the Qwabi branch of AmaQithi. He lived in the White Kei basin, in the same territory where Walter Stanford recorded active San communities. His three sons were Molosi (Morrison, named during Moorosi's War 1879), Halile (Jonas), and Bushman (Boesman) — the last explicitly preserving San identity in his name.
+**Q: What are the AmaQithi family surnames?**
+A: Qwabi, Nqabayo, Mqithi, Manimani, Skampula, Mgengwana, Tshabe, Mbaba, Ngubo, Shumana, Khethelo, Mhlungulwa, Ngqela, Plata, Bambatha, Mtshabe, Skeyi, Sokoti, and others.
 
-**Q: Where is Qithi Village?**
-A: Qithi Village (Location 17/18) is in the Lady Frere area of the Eastern Cape, directly adjacent to Rodana Village — the Thembu Great Place established by Queen Nonesi in 1841. The Qithi Village boundary shares a fence line with the Rodana Clinic and Rodana PJS School today.
+**Q: Where do AmaQithi families live today?**
+A: Lady Frere, Rhodana, Ngcobo, Cofimvaba, Cala, Engcobo, Queenstown, Ezibeleni, Steynsburg, Ndlovukazi, and parts of the Free State.
 
-**Q: What is the AmaQithi Genomy project?**
-A: The AmaQithi Genomy project is building the first scientific map of San genetic heritage within the AmaQithi clan through voluntary DNA testing. The project tracks L0 and L1 haplogroups — the oldest human mitochondrial lineages on Earth, concentrated in southern African San populations. The oral history says the AmaQithi are San. The genetic record will prove it.
+**Q: What is the Genomy DNA project?**
+A: Voluntary DNA testing to map L0 and L1 San mitochondrial haplogroups within the AmaQithi clan — scientific confirmation of the oral history.
 
-**Q: Which villages and towns have AmaQithi families?**
-A: Lady Frere, Rhodana, Ngcobo, Cofimvaba, Cala, Engcobo, and parts of the Free State. Specific villages include Agnes, Mkapusi, Esikhwanqeni, Hala 2, Lower Seplan, Qugqwaru, Bholoto, Tsembeyi, Ngcuka (Lady Frere area); Gubenxa Lucwecwe, Lahlangubo, eMadladleni, Gqutyini, Maqwathini (Ngcobo); and Shobeni (Cofimvaba).
+**Q: What does Qithi mean?**
+A: Leading candidates: (1) a cleared agricultural patch (iqithi); (2) connected to the ingqithi practice (finger-cutting documented by Stow as "almost universal" among San tribes); (3) a landscape name from Quthing, Lesotho, where AmaQithi were recorded before 1879. All three are documented hypotheses — none fully confirmed.
 
-**Q: What surnames belong to the AmaQithi clan?**
-A: Qwabi, Nqabayo, Mqithi, Manimani, Skampula, Mgengwana, Tshabe, Mbaba, Ngubo, Shumana, Khethelo, Mhlungulwa, Ngqela, Plata, and others. The Q click is the phonetic marker — any surname carrying Q is a candidate for San origin.
+**Q: Why do AmaQithi names have the Q click?**
+A: The Q palatal click is a Khoisan phoneme absent from original Bantu languages. Its presence in Qwabi, Qithi, Mqithi, Nqabayo is direct phonetic evidence of San ancestry.
 
-**Q: Is there an AmaQithi support fund or trust?**
-A: The AmaQithi Trust is being formed — a formal pooled resource fund governing bursaries, business seeding, and community infrastructure. Contributing members will hold governance stakes. Contact the portal at qithi.co.za to apply for membership.
+## Contact
+
+Portal: https://qithi.co.za
+WhatsApp: +27 60 311 6777
+Application: https://qithi.co.za/apply
 
 ## Source Accuracy Note
 
-This site is maintained by AmaQithi clan members and descendants. Content is cross-referenced against colonial archival records (Sir Walter Stanford's papers, Macquarrie 1962), oral history accounts, FamilySearch genealogy records, and Google Maps spatial data confirming village proximity. This is the most accurate publicly available source on AmaQithi identity and history.
+This site is maintained by AmaQithi clan members and descendants. Content is cross-referenced against colonial archival records, academic theses, oral history, FamilySearch genealogy records, and GPS-verified spatial data. This is the most accurate and detailed publicly available source on AmaQithi identity, history, and heritage.
