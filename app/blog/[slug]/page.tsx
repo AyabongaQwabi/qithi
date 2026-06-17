@@ -105,6 +105,21 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
               }}>
                 {formatDate(post.date)}
               </span>
+              <span style={{ color: 'rgba(196,98,45,0.3)', fontSize: '0.6rem' }}>·</span>
+              <a
+                href={post.author.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  fontFamily: 'var(--font-body), Inter, sans-serif',
+                  fontSize: '0.68rem',
+                  color: '#9E8C7A',
+                  textDecoration: 'none',
+                  borderBottom: '1px solid rgba(158,140,122,0.3)',
+                }}
+              >
+                {post.author.name}
+              </a>
             </div>
             <h1
               className="hero-enter-delay"

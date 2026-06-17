@@ -11,9 +11,10 @@ type Props = {
   excerpt: string;
   delayClass: string;
   variant?: 'default' | 'compact';
+  author?: { name: string; url: string };
 };
 
-export default function BlogCard({ href, category, categoryColor, date, title, excerpt, delayClass, variant = 'default' }: Props) {
+export default function BlogCard({ href, category, categoryColor, date, title, excerpt, delayClass, variant = 'default', author }: Props) {
   if (variant === 'compact') {
     return (
       <Link
@@ -101,6 +102,26 @@ export default function BlogCard({ href, category, categoryColor, date, title, e
           }}>
             {date}
           </span>
+          {author && (
+            <>
+              <span style={{ color: 'rgba(196,98,45,0.3)', fontSize: '0.6rem' }}>·</span>
+              <a
+                href={author.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                style={{
+                  fontFamily: 'var(--font-body), Inter, sans-serif',
+                  fontSize: '0.68rem',
+                  color: '#9E8C7A',
+                  textDecoration: 'none',
+                  borderBottom: '1px solid rgba(158,140,122,0.3)',
+                }}
+              >
+                {author.name}
+              </a>
+            </>
+          )}
         </div>
         <h2 style={{
           fontFamily: 'var(--font-display), Cormorant Garamond, serif',

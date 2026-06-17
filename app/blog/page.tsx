@@ -126,6 +126,7 @@ export default function BlogIndex() {
                     title={post.title}
                     excerpt={post.excerpt}
                     delayClass={`delay-${Math.min(i + 1, 5)}`}
+                    author={post.author}
                   />
                 ))}
               </div>

@@ -5,6 +5,10 @@ export type Post = {
   category: string;
   excerpt: string;
   body: string; // HTML string
+  author: {
+    name: string;
+    url: string;
+  };
 };
 
 export const posts: Post[] = [
@@ -13,6 +17,7 @@ export const posts: Post[] = [
     title: 'Is "Umntu" a name, not a word?',
     date: '2026-06-17',
     category: 'Language & Identity',
+    author: { name: 'Ayabonga Qwabi', url: 'https://qwabi.co.za' },
     excerpt:
       'Every Nguni speaker knows umntu means person. But the grammar tells a different story — one where umXhosa means descendant of Xhosa, umZulu means descendant of Zulu, and umNtu means... descendant of Ntu. This is a theory, not a textbook. Make of it what you will.',
     body: `
@@ -41,6 +46,7 @@ export const posts: Post[] = [
     title: 'The Click in Our Name',
     date: '2026-05-12',
     category: 'Language & Identity',
+    author: { name: 'Ayabonga Qwabi', url: 'https://qwabi.co.za' },
     excerpt:
       'The Q in AmaQithi is a palatal click — a sound that belongs to Khoisan languages, not Bantu. That single consonant is a direct genetic signature of the San-Bantu fusion that made us.',
     body: `
@@ -57,6 +63,7 @@ export const posts: Post[] = [
     title: 'The Fall of Mount Moorosi — November 1879',
     date: '2026-04-03',
     category: 'History',
+    author: { name: 'Ayabonga Qwabi', url: 'https://qwabi.co.za' },
     excerpt:
       'On 20 November 1879, colonial forces took Mount Moorosi in Lesotho. The Thembu, San, and Phuthi communities who had lived there under Chief Moorosi scattered south. The AmaQithi dispersal begins here.',
     body: `
@@ -74,6 +81,7 @@ export const posts: Post[] = [
     title: 'Reading the Eastern Cape Landscape',
     date: '2026-03-18',
     category: 'Research',
+    author: { name: 'Ayabonga Qwabi', url: 'https://qwabi.co.za' },
     excerpt:
       'Every place name in the Eastern Cape is a record of use. Matolweni means military training ground. Sixotyeni means mountain stronghold. Maghubeni means grain processing. Once you learn to read the names, the whole landscape becomes a map of the society that built it.',
     body: `
