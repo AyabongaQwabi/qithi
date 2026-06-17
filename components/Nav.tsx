@@ -61,7 +61,7 @@ function DropdownGroup({ group, isActive }: { group: typeof groups[0]; isActive:
       ref={ref}
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
-      style={{ position: 'relative' }}
+      style={{ position: 'relative', padding: '0 10px' }}
     >
       <button
         onClick={() => setOpen((o) => !o)}
@@ -103,31 +103,36 @@ function DropdownGroup({ group, isActive }: { group: typeof groups[0]; isActive:
         </svg>
       </button>
 
-      {/* Dropdown panel */}
+      {/* Dropdown panel — top flush with li bottom, paddingTop bridges the gap inside the hover zone */}
       <div
         style={{
           position: 'absolute',
-          top: 'calc(100% + 12px)',
+          top: '100%',
           left: '50%',
-          background: 'rgba(20, 11, 7, 0.98)',
-          border: '1px solid rgba(196,98,45,0.3)',
-          backdropFilter: 'blur(16px)',
-          WebkitBackdropFilter: 'blur(16px)',
-          minWidth: '200px',
-          boxShadow: '0 20px 40px rgba(0,0,0,0.6)',
+          transform: 'translateX(-50%)',
+          paddingTop: '10px',
           pointerEvents: open ? 'auto' : 'none',
           opacity: open ? 1 : 0,
-          transform: open
-            ? 'translateX(-50%) translateY(0)'
-            : 'translateX(-50%) translateY(-6px)',
-          transition: 'opacity 0.18s ease, transform 0.18s ease',
+          transition: 'opacity 0.18s ease',
           zIndex: 200,
         }}
       >
+        <div
+          style={{
+            background: 'rgba(20, 11, 7, 0.98)',
+            border: '1px solid rgba(196,98,45,0.3)',
+            backdropFilter: 'blur(16px)',
+            WebkitBackdropFilter: 'blur(16px)',
+            minWidth: '210px',
+            boxShadow: '0 20px 40px rgba(0,0,0,0.6)',
+            transform: open ? 'translateY(0)' : 'translateY(-6px)',
+            transition: 'transform 0.18s ease',
+          }}
+        >
         {/* Arrow */}
         <div style={{
           position: 'absolute',
-          top: '-5px',
+          top: '5px',
           left: '50%',
           transform: 'translateX(-50%) rotate(45deg)',
           width: '9px',
@@ -173,6 +178,7 @@ function DropdownGroup({ group, isActive }: { group: typeof groups[0]; isActive:
             </span>
           </Link>
         ))}
+        </div>
       </div>
     </li>
   );
@@ -261,7 +267,7 @@ export default function Nav() {
           {/* Desktop grouped nav */}
           <ul
             className="hidden-mobile"
-            style={{ display: 'flex', gap: '4px', listStyle: 'none', alignItems: 'center' }}
+            style={{ display: 'flex', gap: '0', listStyle: 'none', alignItems: 'center' }}
           >
             {groups.map((group) => (
               <DropdownGroup key={group.label} group={group} isActive={isActive} />
