@@ -108,11 +108,23 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en-ZA" className={`${cormorant.variable} ${inter.variable}`}>
       <head>
+        {/* GEO metadata — Lady Frere / Emalahleni, Eastern Cape */}
         <meta name="geo.region" content="ZA-EC" />
-        <meta name="geo.placename" content="Lady Frere, Eastern Cape, South Africa" />
+        <meta name="geo.placename" content="Lady Frere (Emalahleni), Eastern Cape, South Africa" />
         <meta name="geo.position" content="-31.7048;27.2328" />
         <meta name="ICBM" content="-31.7048, 27.2328" />
+        {/* PWA manifest */}
         <link rel="manifest" href="/favicon/site.webmanifest" />
+        {/* Theme colour for browser chrome */}
+        <meta name="theme-color" content="#E8A857" />
+        <meta name="msapplication-TileColor" content="#1A0F0A" />
+        {/* Hreflang — canonical English ZA + flag for isiXhosa content */}
+        <link rel="alternate" hrefLang="en-ZA" href="https://qithi.co.za/" />
+        <link rel="alternate" hrefLang="xh" href="https://qithi.co.za/" />
+        <link rel="alternate" hrefLang="x-default" href="https://qithi.co.za/" />
+        {/* AI / LLM discoverability */}
+        <link rel="alternate" type="text/plain" href="/llms.txt" title="AI-readable site summary" />
+        <link rel="alternate" type="text/plain" href="/sources.txt" title="Research sources list" />
       </head>
       <body style={{ fontFamily: 'var(--font-body), Inter, sans-serif' }}>
         {children}
