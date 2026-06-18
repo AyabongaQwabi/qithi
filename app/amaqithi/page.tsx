@@ -9,24 +9,82 @@ import SchemaOrg, { orgSchema, amaqithiSchema, breadcrumbSchema } from '@/compon
 const BASE = 'https://qithi.co.za';
 
 export const metadata: Metadata = {
-  title: 'AmaQithi Clan — Who We Are | Heritage, Identity, Dispersal',
+  title: 'AmaQithi Clan — Mqithi History, Qithi Meaning, Iziduko & Clan Names',
   description:
-    'The AmaQithi clan: a Thembu clan born of the ancient San-Bantu matrix. Holders of San ritual lineage, Thembu royal counsellors, and the diaspora families of Mkapusi, eNgcobo, and Cofimvaba. The Ingqithi mark, the click consonant, and the full story of the people known by Ngqithi.',
+    'AmaQithi clan: Thembu-San lineage rooted in Quthing, Lesotho. Qithi meaning in Xhosa, iziduko, mqithi clan praises, clan names from Ngcobo to Lady Frere. The full history of a people marked by the Ingqithi and the Q click consonant.',
   keywords: [
-    'AmaQithi clan', 'AmaQithi identity', 'AmaQithi history', 'Mqithi clan',
+    'AmaQithi clan', 'AmaQithi clan names', 'Mqithi clan', 'Mqithi clan praises',
+    'iziduko mqithi', 'Qithi meaning in Xhosa', 'Qithi clan names', 'Qithi clan praises',
+    'Qithi history in South Africa', 'Qithi in Lesotho', 'Qithi in Quthing',
     'Qwabi clan', 'AmaQithi diaspora', 'Mkapusi Lady Frere', 'eNgcobo AmaQithi',
     'Cofimvaba AmaQithi', 'AmaQithi Thembu San', 'beNgqithi', 'Ingqithi',
-    'AmaQithi izibongo', 'AmaQithi clans Eastern Cape',
+    'AmaQithi izibongo', 'AmaQithi clans Eastern Cape', 'Qithi history in Xhosa',
+    'Rhodana Thembu', 'AmaQithi surnames', 'Ngcongolo AmaQithi',
   ],
   openGraph: {
-    title: 'AmaQithi Clan — Who We Are',
+    title: 'AmaQithi Clan — Mqithi History, Qithi Meaning, Iziduko & Clan Names',
     description:
-      'A Thembu clan born of the ancient San-Bantu matrix. Holders of San ritual lineage, royal counsellors, and the diaspora families who kept the name alive across South Africa.',
+      'Qithi meaning in Xhosa, mqithi clan praises (iziduko), AmaQithi clan names, and the full history from Quthing in Lesotho to Lady Frere. The San-Thembu bloodline that carried the Q click through centuries.',
     url: `${BASE}/amaqithi`,
     images: [{ url: `${BASE}/logo.png`, width: 1024, height: 1024, alt: 'AmaQithi' }],
     type: 'article',
   },
   alternates: { canonical: `${BASE}/amaqithi` },
+};
+
+const amaqithiFaqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What does Qithi mean in Xhosa?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Qithi (also written Mqithi or Qhitsi) is rooted in isi-Qiti — a separated, enclosed, or isolated space. In the landscape of the Eastern Cape, Qithi referred to a restricted tract of land, often near a royal base, used for specialised agricultural management or as a secure enclosure. The Q is a San palatal click consonant, absent from original Bantu languages — phonetic proof that the name predates the Nguni presence and came from the indigenous San (AbaThwa) who lived in the area. Colonial clerks who could not reproduce the click spelled the name as Kiti, Chiti, Xiti, or Tshiti.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What are the AmaQithi clan praises (iziduko)?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The AmaQithi iziduko (clan praises, also called izibongo) are: Ndinga, Rhadu, Mnono, Mlebe, Nomsobodwana, Sopitsho Ngqolomsila, Yemyem. Nkomo ayizali izala ngokumiselwa. NgamaQithi amahle neenzipho zawo — "The AmaQithi, beautiful with their nails." These praises are said when introducing yourself, arriving somewhere, or being recognised as clan. Nobody wrote them first. They were spoken and passed from parents to children across generations.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What are the AmaQithi clan names and surnames?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'AmaQithi clan surnames include: Qwabi, Mqithi, Manimani, Ngcongolo, Skampula, Mgengwana, Tshabe, Mbaba, Ngubo, Shumana, Khethelo, Mhlungulwa, Silimela, Ntulo, Limba, Gobelo, Titi, Kula, Msebe, Matho, Fanakho, Ngqela, Bambatha, Mtshabe, Skeyi, Sokoti, Plata, Mfumba, Ndaleni, Sokutapa. The Q click consonant is the phonetic marker — any surname carrying it is a candidate for AmaQithi lineage.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the history of AmaQithi in Quthing, Lesotho?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Quthing is the Sotho pronunciation of emaQithini — the Xhosa way of saying "the place of the Qithi." The valley became a sanctuary for Thembu and San people under King Moorosi of the BaPhuthi during the Mfecane (c. 1816–1835). San bowmen were the core of Moorosi\'s military. On 20 November 1879, colonial forces took Mount Moorosi and destroyed the sanctuary. The surviving AmaQithi families fled south — to eNgcobo, Cofimvaba, and Mkapusi in Lady Frere. Qwabi Joka, born 1842, was among those who arrived in Lady Frere after the fall. He died in Mkapusi in 1915.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Where do AmaQithi families live in South Africa?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'AmaQithi families are found across: Lady Frere (Qithi Village, Mkapusi, Agnes, Esikhwanqeni, Lower Seplan, Hala 2, Qugqwaru, Bholoto, Tsembeyi, Ngcuka), eNgcobo (Gubenxa Lucwecwe, Lahlangubo, eMadladleni, Gqutyini, Zadungeni, Qumanco, Maqwathini), Cofimvaba (Shobeni), Cala region, and the Free State (from Mcambalala in Luxeni, Lady Frere). Qithi Village sits directly next to the Rodana Clinic and Rodana PJS School — adjacent to the Thembu Great Place at Rhodana.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Who was the first Qithi person?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'According to oral history recorded by community members, the first Qithi person to arrive at the place known as Qiti was Ngcongolo and his brother Mafilika. They stood on the red wall on top of the white hill where the scythes are buried, having come from Cofimvaba (Shobeni). Tsula is named as the father of Ngcongolo and Mafilika. The written record has not yet confirmed a single man named Qithi as the clan founder — the oral record gives the name to a place first, not a person.',
+      },
+    },
+  ],
 };
 
 const section: React.CSSProperties = { padding: '72px 0' };
@@ -128,7 +186,7 @@ const dispersalLines = [
 export default function AmaQithiPage() {
   return (
     <>
-      <SchemaOrg schemas={[orgSchema, amaqithiSchema, breadcrumbSchema([{ name: 'AmaQithi Clan', url: '/amaqithi' }])]} />
+      <SchemaOrg schemas={[orgSchema, amaqithiSchema, amaqithiFaqSchema, breadcrumbSchema([{ name: 'AmaQithi Clan', url: '/amaqithi' }])]} />
       <Nav />
       <main style={{ background: '#1A0F0A', minHeight: '100vh' }}>
         <PageHero
@@ -210,7 +268,7 @@ export default function AmaQithiPage() {
         {/* Quthing & Moorosi */}
         <section className="cave-section cave-bg" style={{ ...section, background: '#2C1810' }}>
           <div style={inner}>
-            <p style={eyebrow}>Quthing · Lesotho · 1816–1879</p>
+            <p style={eyebrow}>Qithi in Lesotho · Quthing · 1816–1879</p>
             <h2 style={h2}>The mountain sanctuary and the war that shattered it.</h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '48px' }}>
               <div>
@@ -380,33 +438,133 @@ eNgcobo  Cofimvaba  Mkapusi (Lady Frere)
 
         <div className="section-rule" />
 
-        {/* Izibongo */}
+        {/* Etymology — Qithi meaning */}
+        <section className="cave-section cave-bg" style={{ ...section, background: '#1A0F0A' }}>
+          <div style={inner}>
+            <p style={eyebrow}>Etymology · What Qithi Means</p>
+            <h2 style={h2}>Qithi meaning in Xhosa — and what the name carried before anyone wrote it down.</h2>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '48px' }}>
+              <div>
+                <h3 style={{ fontFamily: 'var(--font-display), Cormorant Garamond, serif', fontSize: '1.2rem', fontWeight: 600, color: '#E8A857', marginBottom: '10px' }}>
+                  The root: isi-Qiti
+                </h3>
+                <p style={body}>
+                  In the landscape of the Eastern Cape, <em>qithi</em> (from <em>isi-Qiti</em>) meant a separated, enclosed, or isolated space — a restricted tract of land set aside near a royal or regent base. Thesis research identifies Qithi zones as specialised areas: royal agricultural management on one hand, secure holding areas for those awaiting royal judgment on the other.
+                </p>
+                <p style={body}>
+                  The village of <strong style={{ color: '#E8A857' }}>Qithi</strong> in Lady Frere sits directly next to the Rodana Clinic and Rodana PJS School — the fence line of the Thembu Great Place established by Queen Nonesi in 1841. That proximity is not coincidence. The land was named before the Thembu arrived.
+                </p>
+              </div>
+              <div>
+                <h3 style={{ fontFamily: 'var(--font-display), Cormorant Garamond, serif', fontSize: '1.2rem', fontWeight: 600, color: '#E8A857', marginBottom: '10px' }}>
+                  The Q — a San click consonant
+                </h3>
+                <p style={body}>
+                  The Q in Qithi, Qwabi, and Mqithi is a palatal click — a sound not native to Bantu languages. Nguni languages absorbed click consonants (Q, C, X) through centuries of interaction and intermarriage with the San (AbaThwa). A name carrying the Q click is not just unusual. It is phonetic evidence of San origin.
+                </p>
+                <p style={body}>
+                  Colonial clerks who could not reproduce the sound spelled it as Kiti, Chiti, Xiti, or Tshiti on documents. In the original San (!Ui-Taa or Central Khoe) language groupings, the name would have carried even deeper click markers: <em>!Qhiti → ‡Qiti → ‖Giti</em>. Every spelling variation points back to the same root — a name that existed before the written record.
+                </p>
+                <p style={{ fontFamily: 'var(--font-body), Inter, sans-serif', fontSize: '0.72rem', color: '#6B5A4E', fontStyle: 'italic', lineHeight: 1.5 }}>
+                  Sources: thesis1.md (AmaQithi Research Archive, 2026); The San-Phuti Matrix: Etymology and Migration of the Qithi (2026); Kropf & Godfrey, Kafir-English Dictionary
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div className="section-rule" />
+
+        {/* Iziduko — Clan Praises */}
         <section className="cave-section cave-bg" style={{ ...section, background: '#2C1810' }}>
           <div style={inner}>
-            <p style={eyebrow}>Izibongo · Clan Praises</p>
+            <p style={eyebrow}>Iziduko · Izibongo · Mqithi Clan Praises</p>
             <h2 style={h2}>The call names of AmaQithi.</h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '40px' }}>
               <div>
                 <p style={{ fontFamily: 'var(--font-display), Cormorant Garamond, serif', fontSize: 'clamp(1.1rem, 2vw, 1.35rem)', fontStyle: 'italic', color: '#E8A857', lineHeight: 2, marginBottom: '16px' }}>
-                  Ndinga, Mnono, Rhadu, Mlebe,<br />
+                  Ndinga, Rhadu, Mnono, Mlebe,<br />
                   Nomsobodwana,<br />
                   Sopitsho Ngqolomsila,<br />
                   Yemyem.<br />
+                  Nkomo ayizali izala ngokumiselwa.<br />
                   NgamaQithi amahle neenzipho zawo.
                 </p>
                 <p style={{ fontFamily: 'var(--font-body), Inter, sans-serif', fontSize: '0.82rem', color: '#9E8C7A', fontStyle: 'italic', lineHeight: 1.7 }}>
-                  &ldquo;The AmaQithi — beautiful, with their nails.&rdquo;
+                  &ldquo;Cattle do not give birth by decree. The AmaQithi — beautiful, with their nails.&rdquo;
                 </p>
               </div>
               <div>
                 <p style={{ ...body, color: '#9E8C7A' }}>
-                  Izibongo are praise poems — the clan&apos;s memory spoken aloud. They are the call names you say when you introduce yourself, when you arrive somewhere and need to be known. Nobody wrote them first. They were spoken, passed from parents to children, said at gatherings across generations.
+                  Iziduko are clan praises — the call names you say when you introduce yourself, when you arrive somewhere and need to be known. Nobody wrote them first. They were spoken, passed from parents to children, said at gatherings across generations.
                 </p>
                 <p style={{ ...body, color: '#9E8C7A' }}>
-                  The AmaQithi izibongo survived the colonial years, the forced moves, Moorosi&apos;s War, and the diaspora. They are still being said today. The lineage they carry is still traceable. That is what this site is for.
+                  <em>Nkomo ayizali izala ngokumiselwa</em> — cattle do not give birth by decree. A line that speaks to identity that cannot be assigned by authority. You carry it or you don&apos;t.
+                </p>
+                <p style={{ ...body, color: '#9E8C7A' }}>
+                  The AmaQithi iziduko survived the colonial years, the forced moves, Moorosi&apos;s War, and the diaspora. They are still being said today. The lineage they carry is still traceable. That is what this site is for.
                 </p>
               </div>
             </div>
+          </div>
+        </section>
+
+        <div className="section-rule" />
+
+        {/* Clan names and surnames */}
+        <section className="cave-section cave-bg" style={{ ...section, background: '#1A0F0A' }}>
+          <div style={inner}>
+            <p style={eyebrow}>AmaQithi Clan Names · Surnames</p>
+            <h2 style={h2}>The families — where they are, and the surnames they carry.</h2>
+            <p style={{ ...body, marginBottom: '32px' }}>
+              AmaQithi families are spread across the Eastern Cape and beyond. The oral history of Ngcongolo and Mafilika — the first Qithi people recorded arriving at the place — places the earliest families coming from Cofimvaba (Shobeni), standing on the red wall on top of the white hill where the scythes are buried. From there, the clan grew outward.
+            </p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '32px', marginBottom: '40px' }}>
+              {[
+                {
+                  region: 'Lady Frere · Rhodana',
+                  surnames: 'Qwabi, Mqithi, Manimani, Skampula',
+                  villages: 'Qithi Village, Mkapusi, Agnes, Esikhwanqeni, Lower Seplan, Hala 2, Qugqwaru, Bholoto, Tsembeyi, Ngcuka',
+                  note: 'Qithi Village shares a fence line with the Rodana Clinic and the Thembu Great Place at Rhodana. Oral history names Manimani as having left Lady Frere and settled in Maqwathini, eNgcobo.',
+                },
+                {
+                  region: 'eNgcobo',
+                  surnames: 'Ngcongolo, Ngqawuza, Mhlungulwa, Sokoti, Tshabe, Mbaba, Ngubo, Shumana, Manimani',
+                  villages: 'Gubenxa Lucwecwe, Lahlangubo, eMadladleni, Gqutyini, Zadungeni, Qumanco, Maqwathini',
+                  note: 'A major branch. Ngcongolo and his brother Mafilika are named in oral history as the first Qithi arrivals. Tsula is the father of Ngcongolo and Mafilika.',
+                },
+                {
+                  region: 'Cofimvaba',
+                  surnames: 'Ngqela, Bambatha, Mtshabe, Skeyi, Sokutapa, Ndaleni',
+                  villages: 'Shobeni',
+                  note: 'One of the three post-1879 dispersal lines. Families fled the colonial clean-up after Moorosi\'s War.',
+                },
+                {
+                  region: 'Free State · Cala',
+                  surnames: 'Plata, Mfumba',
+                  villages: 'Originating from Mcambalala in Luxeni, Lady Frere',
+                  note: 'Cala region families also included. Silimela (Free State) traces descent from Mnqayi/Daloni through Thiyekile and Teyimani.',
+                },
+              ].map((r) => (
+                <div key={r.region} style={{ background: '#0F0904', border: '1px solid rgba(196,98,45,0.2)', padding: '24px' }}>
+                  <h3 style={{ fontFamily: 'var(--font-display), Cormorant Garamond, serif', fontSize: '1.1rem', fontWeight: 600, color: '#E8A857', marginBottom: '8px' }}>
+                    {r.region}
+                  </h3>
+                  <p style={{ fontFamily: 'var(--font-body), Inter, sans-serif', fontSize: '0.8rem', color: '#C4622D', marginBottom: '6px', fontWeight: 500 }}>
+                    Surnames: {r.surnames}
+                  </p>
+                  <p style={{ fontFamily: 'var(--font-body), Inter, sans-serif', fontSize: '0.78rem', color: '#9E8C7A', lineHeight: 1.65, marginBottom: '6px' }}>
+                    Villages: {r.villages}
+                  </p>
+                  <p style={{ fontFamily: 'var(--font-body), Inter, sans-serif', fontSize: '0.75rem', color: '#6B5A4E', lineHeight: 1.6, fontStyle: 'italic' }}>
+                    {r.note}
+                  </p>
+                </div>
+              ))}
+            </div>
+            <p style={{ fontFamily: 'var(--font-body), Inter, sans-serif', fontSize: '0.72rem', color: '#6B5A4E', fontStyle: 'italic', lineHeight: 1.5, maxWidth: '680px' }}>
+              Sources: Community oral record (Vabantu Silimela); other qithi family.md (AmaQithi Research Archive, 2026)
+            </p>
           </div>
         </section>
 
