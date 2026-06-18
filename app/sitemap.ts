@@ -1,9 +1,17 @@
 import type { MetadataRoute } from 'next';
+import { posts } from '@/lib/posts';
 
 const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://qithi.co.za';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
+
+  const blogPosts: MetadataRoute.Sitemap = posts.map((post) => ({
+    url: `${BASE}/blog/${post.slug}`,
+    lastModified: new Date(post.date),
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }));
 
   return [
     // Tier 1 — core identity pages (highest SEO priority)
@@ -105,5 +113,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.7,
     },
+
+    // Blog index
+    {
+      url: `${BASE}/blog`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+
+    // Blog posts
+    ...blogPosts,
   ];
 }

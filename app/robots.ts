@@ -63,6 +63,8 @@ export default function robots(): MetadataRoute.Robots {
           '/thesis',
           '/sources',
           '/insights/',
+          '/blog',
+          '/blog/',
           '/llms.txt',
           '/sources.txt',
           '/sitemap.xml',
