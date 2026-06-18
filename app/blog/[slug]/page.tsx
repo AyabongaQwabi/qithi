@@ -11,6 +11,27 @@ import { posts, getPost } from '@/lib/posts';
 
 const BASE = 'https://qithi.co.za';
 
+function articleSchema(post: { slug: string; title: string; date: string; excerpt: string; author: { name: string } }) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    '@id': `${BASE}/blog/${post.slug}#article`,
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.date,
+    dateModified: post.date,
+    author: {
+      '@type': 'Person',
+      name: post.author.name,
+      url: 'https://qwabi.co.za',
+    },
+    publisher: { '@id': `${BASE}/#organization` },
+    inLanguage: 'en-ZA',
+    mainEntityOfPage: { '@type': 'WebPage', '@id': `${BASE}/blog/${post.slug}` },
+    image: { '@type': 'ImageObject', url: `${BASE}/logo.png`, width: 1024, height: 1024 },
+  };
+}
+
 export function generateStaticParams() {
   return posts.map((p) => ({ slug: p.slug }));
 }
@@ -53,7 +74,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
 
   return (
     <>
-      <SchemaOrg schemas={[orgSchema, breadcrumbSchema([
+      <SchemaOrg schemas={[orgSchema, articleSchema(post), breadcrumbSchema([
         { name: 'Blog', url: '/blog' },
         { name: post.title, url: `/blog/${post.slug}` },
       ])]} />
@@ -168,18 +189,59 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         <div className="section-rule" />
 
         {/* Body */}
-        <ScrollReveal>
-          <article style={{ padding: '80px 0 100px' }}>
+        <article style={{ padding: '80px 0 100px' }}>
+          <div style={{ maxWidth: '680px', margin: '0 auto', padding: '0 24px' }}>
             <div
-              className="reveal"
-              style={{ maxWidth: '680px', margin: '0 auto', padding: '0 24px' }}
-            >
-              <div
-                className="prose"
-                dangerouslySetInnerHTML={{ __html: post.body }}
-              />
+              className="prose"
+              dangerouslySetInnerHTML={{ __html: post.body }}
+            />
+          </div>
+        </article>
+
+        {/* Write for us */}
+        <ScrollReveal>
+          <div style={{ maxWidth: '680px', margin: '0 auto', padding: '0 24px 80px' }}>
+            <div style={{
+              paddingTop: '48px',
+              borderTop: '1px solid rgba(196,98,45,0.15)',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '12px',
+            }}>
+              <p style={{
+                fontFamily: 'var(--font-display), Cormorant Garamond, serif',
+                fontSize: 'clamp(1rem, 2vw, 1.25rem)',
+                fontStyle: 'italic',
+                color: '#9E8C7A',
+                lineHeight: 1.6,
+                margin: 0,
+              }}>
+                If you know something about this history and want to write about it, get in touch.
+              </p>
+              <a
+                href="https://wa.me/27629473445"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '8px',
+                  fontFamily: 'var(--font-body), Inter, sans-serif',
+                  fontSize: '0.82rem',
+                  fontWeight: 600,
+                  letterSpacing: '0.08em',
+                  textTransform: 'uppercase',
+                  color: '#C4622D',
+                  textDecoration: 'none',
+                  borderBottom: '1px solid #C4622D',
+                  paddingBottom: '2px',
+                  width: 'fit-content',
+                }}
+              >
+                WhatsApp Ayabonga
+              </a>
             </div>
-          </article>
+          </div>
         </ScrollReveal>
 
         <div className="section-rule" />

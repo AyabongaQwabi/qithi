@@ -331,6 +331,38 @@ button, input, textarea, select {
   margin: 3em 0;
 }
 
+.prose dl.timeline {
+  margin: 2.4em 0 2.8em;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.prose dl.timeline dt {
+  font-family: var(--font-display), Cormorant Garamond, serif;
+  font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+  font-weight: 600;
+  color: #F5E6C8;
+  line-height: 1.2;
+  padding: 1.4em 0 0.35em;
+  border-top: 1px solid rgba(196, 98, 45, 0.2);
+  margin: 0;
+}
+
+.prose dl.timeline dt:first-of-type {
+  border-top: 2px solid rgba(196, 98, 45, 0.5);
+}
+
+.prose dl.timeline dd {
+  font-family: var(--font-body), Inter, sans-serif;
+  font-size: clamp(0.95rem, 1.6vw, 1.05rem);
+  color: #B09070;
+  line-height: 1.75;
+  margin: 0;
+  padding: 0 0 1.2em;
+}
+
 /* Respect reduced-motion preference */
 @media (prefers-reduced-motion: reduce) {
   .reveal, .reveal-left, .reveal-right,

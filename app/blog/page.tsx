@@ -130,6 +130,49 @@ export default function BlogIndex() {
                   />
                 ))}
               </div>
+
+              <div style={{
+                marginTop: '64px',
+                paddingTop: '40px',
+                borderTop: '1px solid rgba(196,98,45,0.15)',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '12px',
+              }}>
+                <p style={{
+                  fontFamily: 'var(--font-display), Cormorant Garamond, serif',
+                  fontSize: 'clamp(1rem, 2vw, 1.25rem)',
+                  fontStyle: 'italic',
+                  color: '#9E8C7A',
+                  lineHeight: 1.6,
+                  maxWidth: '480px',
+                  margin: 0,
+                }}>
+                  If you know something about this history and want to write about it, get in touch.
+                </p>
+                <a
+                  href="https://wa.me/27629473445"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '8px',
+                    fontFamily: 'var(--font-body), Inter, sans-serif',
+                    fontSize: '0.82rem',
+                    fontWeight: 600,
+                    letterSpacing: '0.08em',
+                    textTransform: 'uppercase',
+                    color: '#C4622D',
+                    textDecoration: 'none',
+                    borderBottom: '1px solid #C4622D',
+                    paddingBottom: '2px',
+                    width: 'fit-content',
+                  }}
+                >
+                  WhatsApp Ayabonga
+                </a>
+              </div>
             </div>
           </section>
         </ScrollReveal>
