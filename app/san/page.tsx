@@ -204,10 +204,13 @@ export default function SanPage() {
               Bantu languages do not have click consonants. The Nguni people — Xhosa, Zulu — picked up the Q, C and X clicks from centuries of living alongside San people. That process of contact is exactly how the Thembu became a creolised San-Bantu population.
             </p>
             <p style={body}>
-              <strong style={{ color: '#E8A857' }}>Qwabi. Qithi. Mqithi.</strong> Every core surname in this clan holds a palatal click. In the ancient !Ui-Taa (!Xam) and Central Khoe language groupings, these names carried authentic click symbols. European administrators who could not spell the click wrote: Kiti, Chiti, Xiti, Tshiti. If you search for AmaQithi in old archives, search for those too.
+              <strong style={{ color: '#E8A857' }}>Qithi. Mqithi.</strong> These core names in the clan hold a palatal click. In the ancient !Ui-Taa (!Xam) and Central Khoe language groupings, these names carried authentic click symbols. European administrators who could not spell the click wrote: Kiti, Chiti, Xiti, Tshiti. If you search for AmaQithi in old archives, search for those too.
             </p>
             <p style={{ fontFamily: 'var(--font-display), Cormorant Garamond, serif', fontSize: 'clamp(1.2rem, 2.5vw, 1.6rem)', fontStyle: 'italic', color: '#C4622D', marginBottom: '16px', marginLeft: '28px', borderLeft: '2px solid rgba(196,98,45,0.4)', paddingLeft: '20px' }}>
               !Qhiti → ‡Qiti → ||Giti
+            </p>
+            <p style={{ ...body, color: '#9E8C7A', fontStyle: 'italic' }}>
+              Qwabi follows a related but separate etymology line in family tradition: from <em>axab</em>, meaning <em>son</em>, adapted in local speech and records as Qwabi/Qhwabi.
             </p>
             <p style={{ ...body, color: '#9E8C7A', fontStyle: 'italic' }}>
               You can change a name on paper. You cannot change the sound in the mouth of someone who has spoken it their whole life.

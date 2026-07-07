@@ -11,7 +11,7 @@ const BASE = 'https://qithi.co.za';
 export const metadata: Metadata = {
   title: 'AmaQithi Clan — Mqithi History, Qithi Meaning, Iziduko & Clan Names',
   description:
-    'AmaQithi clan: Thembu-San lineage rooted in Quthing, Lesotho. Qithi meaning in Xhosa, iziduko, mqithi clan praises, clan names from Ngcobo to Lady Frere. The full history of a people marked by the Ingqithi and the Q click consonant.',
+    'AmaQithi clan: Thembu-San lineage rooted in Quthing, Lesotho. Read the wider heritage context of Qing, Khoboko, Soai, and the San-Phuthi-Sotho-Thembu matrix, plus Qithi meaning in Xhosa, iziduko, and clan names from Ngcobo to Lady Frere.',
   keywords: [
     'AmaQithi clan', 'AmaQithi clan names', 'Mqithi clan', 'Mqithi clan praises',
     'iziduko mqithi', 'Qithi meaning in Xhosa', 'Qithi clan names', 'Qithi clan praises',
@@ -41,7 +41,15 @@ const amaqithiFaqSchema = {
       name: 'What does Qithi mean in Xhosa?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Qithi (also written Mqithi or Qhitsi) is rooted in isi-Qiti — a separated, enclosed, or isolated space. In the landscape of the Eastern Cape, Qithi referred to a restricted tract of land, often near a royal base, used for specialised agricultural management or as a secure enclosure. The Q is a San palatal click consonant, absent from original Bantu languages — phonetic proof that the name predates the Nguni presence and came from the indigenous San (AbaThwa) who lived in the area. Colonial clerks who could not reproduce the click spelled the name as Kiti, Chiti, Xiti, or Tshiti.',
+        text: 'Qithi (also written Mqithi or Qhitsi) is rooted in isi-Qiti — a separated, enclosed, or isolated space. In the landscape of the Eastern Cape, Qithi referred to a restricted tract of land, often near a royal base, used for specialised agricultural management or as a secure enclosure. The Q in Qithi/Mqithi is a San palatal click consonant, absent from original Bantu languages, and preserves an older San-linked layer in the name. Colonial clerks who could not reproduce the click spelled the name as Kiti, Chiti, Xiti, or Tshiti.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What does Qwabi mean?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Qwabi is traced in family etymology to the root axab, meaning "son." Over time, this root moved through multilingual frontier speech (San, Seputhi, isiXhosa, and Sesotho contact zones) and was written in forms such as Qwabi and Qhwabi in oral and colonial records.',
       },
     },
     {
@@ -133,7 +141,7 @@ const identityPillars = [
   },
   {
     title: 'The Click in the Name',
-    body: 'The Q in Qithi and Qwabi is a San click consonant — a phonetic root not native to Bantu languages. Every colonial spelling variation (Kiti, Xiti, Chiti) confirms a name that pre-existed the written record and came from the San half of the San-Thembu matrix.',
+    body: 'The Q in Qithi and Mqithi is a San click consonant — a phonetic root not native to Bantu languages. Colonial spelling variation (Kiti, Xiti, Chiti) confirms a name that pre-existed the written record and preserved the San half of the San-Thembu matrix.',
     citation: 'Linguistic analysis; update1.md §2',
   },
 ];
@@ -180,6 +188,53 @@ const dispersalLines = [
     name: 'The Line of Qhwabi — Mkapusi, Lady Frere',
     body: 'The line carrying the family name Qhwabi (Qwabi) migrated south to Mkapusi in Lady Frere, where they established Mqithi Village — also preserved in oral geography as Mawhumawhu. This became a quiet sanctuary where the bloodline was protected. Colonial clerks struggling with the click spelled the name as Qwabi or Qhwabhi; refugees sometimes used the name Molosi on documents to avoid the British blacklists that followed Moorosi\'s War.',
     citation: 'update1.md §4; oral history',
+  },
+];
+
+const heritageContext = [
+  {
+    title: 'Qing (1873): the first direct interpreter of mountain paintings',
+    body:
+      'In 1873, Qing guided Joseph Millerd Orpen to shelters such as Melikane and Sehonghong and gave one of the earliest recorded insider explanations of San imagery. His testimony is treated by many researchers as a key interpretive bridge because it links visual motifs to living ritual language.',
+    note:
+      'In Qing\'s account, terms like Qweqwete align with Nguni forms such as abakhwetha, showing a shared ritual vocabulary across San, Phuthi, and other Nguni-speaking communities.',
+  },
+  {
+    title: 'Khoboko and Soai: lineage, alliance, and survival strategy',
+    body:
+      'Khoboko and his son Soai are remembered as major San leaders in the Maloti highlands. Their alliance with the BaPhuthi under Moorosi involved intermarriage, military cooperation, and shared refuge networks during the Difaqane period.',
+    note:
+      'After targeted campaigns in the early 1870s and the wider destruction of 1879, surviving San-descended families were dispersed and absorbed into neighbouring communities, often remembered under identities such as Baroa.',
+  },
+  {
+    title: 'Qeea: two women, one pattern of incorporation',
+    body:
+      'The records preserve at least two women named Qeea/Qea in different periods. One entered Moshoeshoe\'s household; another appears in later conflict-era captivity. Read together, these accounts show how San women and children were absorbed into Sotho and Nguni households under very unequal conditions.',
+    note:
+      'Name forms such as Qeea, Qea, Qheya, and related click-based variants reflect the same multilingual frontier where Seputhi, isiXhosa, and Sesotho interacted.',
+  },
+];
+
+const relationMatrix = [
+  {
+    axis: 'San ↔ Phuthi',
+    summary:
+      'Strong alliance networks, intermarriage, and shared military defense. Phuthi political life under Moorosi included major San participation.',
+  },
+  {
+    axis: 'San ↔ Sotho',
+    summary:
+      'Early cooperation and ritual exchange existed alongside periods of severe conflict, especially around livestock pressure and frontier wars.',
+  },
+  {
+    axis: 'Thembu ↔ San',
+    summary:
+      'Long histories of contact and admixture are reflected in language, ritual practices such as ingqithi, and oral claims of shared lineage.',
+  },
+  {
+    axis: 'Phuthi ↔ Sotho ↔ Xhosa',
+    summary:
+      'The frontier produced hybrid social worlds, including Seputhi speech forms and layered identities that do not fit single-tribe labels.',
   },
 ];
 
@@ -302,6 +357,115 @@ export default function AmaQithiPage() {
                   Quthing district, Lesotho — 46 minutes from the Mount Moorosi stronghold to Mkapusi in Lady Frere. The valley known as Quthing is the Sotho pronunciation of <em>emaQithini</em> in Xhosa.
                 </p>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <div className="section-rule" />
+
+        {/* Heritage context */}
+        <section className="cave-section cave-bg" style={{ ...section, background: '#2C1810' }}>
+          <div style={inner}>
+            <p style={eyebrow}>Heritage Context · Lesotho Frontier Archive</p>
+            <h2 style={h2}>AmaQithi history sits inside a wider mountain archive.</h2>
+            <p style={{ ...body, marginBottom: '36px' }}>
+              The AmaQithi story is not only a single clan line. It is part of a broader frontier history
+              where San, Phuthi, Sotho, and Thembu communities lived in alliance, conflict, intermarriage,
+              and ritual exchange across the Maloti-Drakensberg and the White Kei basin.
+            </p>
+
+            <div
+              style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
+                gap: '1px',
+                background: 'rgba(196,98,45,0.2)',
+                marginBottom: '28px',
+              }}
+            >
+              {heritageContext.map((item) => (
+                <div key={item.title} style={{ background: '#2C1810', padding: '28px 24px' }}>
+                  <h3
+                    style={{
+                      fontFamily: 'var(--font-display), Cormorant Garamond, serif',
+                      fontSize: '1.2rem',
+                      fontWeight: 600,
+                      color: '#E8A857',
+                      marginBottom: '10px',
+                      lineHeight: 1.25,
+                    }}
+                  >
+                    {item.title}
+                  </h3>
+                  <p
+                    style={{
+                      fontFamily: 'var(--font-body), Inter, sans-serif',
+                      fontSize: '0.88rem',
+                      color: '#9E8C7A',
+                      lineHeight: 1.75,
+                      marginBottom: '10px',
+                    }}
+                  >
+                    {item.body}
+                  </p>
+                  <p
+                    style={{
+                      fontFamily: 'var(--font-body), Inter, sans-serif',
+                      fontSize: '0.78rem',
+                      color: '#6B5A4E',
+                      lineHeight: 1.65,
+                      fontStyle: 'italic',
+                    }}
+                  >
+                    {item.note}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <div style={{ background: '#1A0F0A', border: '1px solid rgba(196,98,45,0.2)', padding: '24px' }}>
+              <p style={{ ...eyebrow, marginBottom: '12px' }}>Relationship Matrix</p>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '16px' }}>
+                {relationMatrix.map((item) => (
+                  <div key={item.axis} style={{ border: '1px solid rgba(196,98,45,0.22)', padding: '14px 14px 12px 14px' }}>
+                    <p
+                      style={{
+                        fontFamily: 'var(--font-body), Inter, sans-serif',
+                        fontSize: '0.72rem',
+                        fontWeight: 600,
+                        letterSpacing: '0.12em',
+                        textTransform: 'uppercase',
+                        color: '#C4622D',
+                        marginBottom: '6px',
+                      }}
+                    >
+                      {item.axis}
+                    </p>
+                    <p
+                      style={{
+                        fontFamily: 'var(--font-body), Inter, sans-serif',
+                        fontSize: '0.82rem',
+                        color: '#9E8C7A',
+                        lineHeight: 1.65,
+                      }}
+                    >
+                      {item.summary}
+                    </p>
+                  </div>
+                ))}
+              </div>
+              <p
+                style={{
+                  fontFamily: 'var(--font-body), Inter, sans-serif',
+                  fontSize: '0.72rem',
+                  color: '#6B5A4E',
+                  lineHeight: 1.55,
+                  fontStyle: 'italic',
+                  marginTop: '14px',
+                }}
+              >
+                This matrix is used as context, not as a claim of fixed identity boundaries. Frontier communities often moved between labels depending on language, marriage, and political pressure.
+              </p>
             </div>
           </div>
         </section>
@@ -438,11 +602,11 @@ eNgcobo  Cofimvaba  Mkapusi (Lady Frere)
 
         <div className="section-rule" />
 
-        {/* Etymology — Qithi meaning */}
+        {/* Etymology — Qithi and Qwabi */}
         <section className="cave-section cave-bg" style={{ ...section, background: '#1A0F0A' }}>
           <div style={inner}>
             <p style={eyebrow}>Etymology · What Qithi Means</p>
-            <h2 style={h2}>Qithi meaning in Xhosa — and what the name carried before anyone wrote it down.</h2>
+            <h2 style={h2}>Qithi and Qwabi — two linked names, two etymology tracks.</h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '48px' }}>
               <div>
                 <h3 style={{ fontFamily: 'var(--font-display), Cormorant Garamond, serif', fontSize: '1.2rem', fontWeight: 600, color: '#E8A857', marginBottom: '10px' }}>
@@ -454,13 +618,25 @@ eNgcobo  Cofimvaba  Mkapusi (Lady Frere)
                 <p style={body}>
                   The village of <strong style={{ color: '#E8A857' }}>Qithi</strong> in Lady Frere sits directly next to the Rodana Clinic and Rodana PJS School — the fence line of the Thembu Great Place established by Queen Nonesi in 1841. That proximity is not coincidence. The land was named before the Thembu arrived.
                 </p>
+                <h3 style={{ fontFamily: 'var(--font-display), Cormorant Garamond, serif', fontSize: '1.2rem', fontWeight: 600, color: '#E8A857', marginBottom: '10px', marginTop: '22px' }}>
+                  Qwabi: from axab
+                </h3>
+                <p style={body}>
+                  In family etymology, <em>Qwabi</em> comes from the root <em>axab</em>, meaning
+                  <strong style={{ color: '#E8A857' }}> son</strong>. In the multilingual frontier,
+                  this root moved through local pronunciation and orthography into forms such as
+                  <em> Qwabi</em> and <em>Qhwabi</em> in oral memory and records.
+                </p>
               </div>
               <div>
                 <h3 style={{ fontFamily: 'var(--font-display), Cormorant Garamond, serif', fontSize: '1.2rem', fontWeight: 600, color: '#E8A857', marginBottom: '10px' }}>
                   The Q — a San click consonant
                 </h3>
                 <p style={body}>
-                  The Q in Qithi, Qwabi, and Mqithi is a palatal click — a sound not native to Bantu languages. Nguni languages absorbed click consonants (Q, C, X) through centuries of interaction and intermarriage with the San (AbaThwa). A name carrying the Q click is not just unusual. It is phonetic evidence of San origin.
+                  The Q in Qithi and Mqithi is a palatal click — a sound not native to Bantu
+                  languages. Nguni languages absorbed click consonants (Q, C, X) through centuries
+                  of interaction and intermarriage with the San (AbaThwa). A name carrying the Q
+                  click is not just unusual. It is phonetic evidence of San origin.
                 </p>
                 <p style={body}>
                   Colonial clerks who could not reproduce the sound spelled it as Kiti, Chiti, Xiti, or Tshiti on documents. In the original San (!Ui-Taa or Central Khoe) language groupings, the name would have carried even deeper click markers: <em>!Qhiti → ‡Qiti → ‖Giti</em>. Every spelling variation points back to the same root — a name that existed before the written record.

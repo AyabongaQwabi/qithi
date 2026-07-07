@@ -72,7 +72,7 @@ const keyFacts = [
   },
   {
     label: 'The linguistic anchor',
-    text: 'Q (palatal click) in Qwabi, Nqabayo, Mqithi — a Khoisan phonetic root surviving in Xhosa orthography. Linguistic fossil. Scientific confirmation is the next step.',
+    text: 'Q (palatal click) in Qithi, Nqabayo, Mqithi preserves a Khoisan phonetic layer in Xhosa orthography, while Qwabi is traced to axab ("son") in family etymology. Scientific confirmation is the next step.',
   },
   {
     label: 'Haplogroups tracked',
@@ -123,9 +123,10 @@ export default function GenealogyPage() {
                   before it is further diluted or forgotten.
                 </p>
                 <p style={bodyText}>
-                  The names Qwabi, Qithi, and Mqithi carry the palatal click consonant Q — a
-                  Khoisan linguistic marker not native to Bantu languages. The Q in our names is
-                  where our San origin lives in language. The DNA project is the scientific parallel.
+                  Qithi and Mqithi carry the palatal click consonant Q — a Khoisan linguistic marker
+                  not native to Bantu languages. Qwabi follows a parallel family etymology from
+                  <em> axab</em> (son), adapted in local speech over time. The DNA project is the
+                  scientific parallel to these linguistic lineages.
                 </p>
                 <p style={{ ...bodyText, color: '#9E8C7A' }}>
                   What participants do: sign up via the form below, receive a test kit (logistics

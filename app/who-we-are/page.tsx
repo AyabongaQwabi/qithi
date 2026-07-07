@@ -100,6 +100,10 @@ const timelineItems = [
     event: 'San painter "\'Gcu-wa" (brother of chief Mada\'kane) is still recorded living in the White Kei area, carrying paint pots on his belt.',
   },
   {
+    year: '1873',
+    event: 'Qing (believed to be from the Soai line) guides Joseph Millerd Orpen through Maloti shelters and explains ritual meanings in the paintings. His testimony becomes a major interpretive source for understanding San-Phuthi-Nguni ritual overlap in mountain art.',
+  },
+  {
     year: '1879',
     event: 'Moorosi\'s War. Qwabi Joka names his firstborn son Molosi — preserving the name of Phuthi chief Moorosi, whose closest allies were San bowmen. The password to Moorosi\'s mountain stronghold was "Moroa" — "Bushman." Joka\'s youngest son is later named Bushman (Boesman) outright.',
   },
@@ -188,7 +192,7 @@ export default function WhoWeArePage() {
               Bantu languages do not have click consonants. The Nguni people — Xhosa, Zulu — picked up the Q, C and X clicks from centuries of living alongside San people. That process is exactly how the Thembu became a creolised San-Bantu nation, known historically as the <em>Tambookie</em> (from the Khoisan term <em>Tam&#700;bou&#700;ci</em>). The clicks in our names are a fossil of that ancient fusion.
             </p>
             <p style={body}>
-              <strong style={{ color: '#E8A857' }}>Qwabi. Qithi. Mqithi.</strong> Every core surname in this clan has that click. It was not borrowed. It was there from the start — in the original San language, the name probably sounded something like:
+              <strong style={{ color: '#E8A857' }}>Qithi. Mqithi.</strong> These core names in the clan carry the click. It was not borrowed. It was there from the start — in the original San language, the name probably sounded something like:
             </p>
             <p
               style={{
@@ -206,6 +210,9 @@ export default function WhoWeArePage() {
             </p>
             <p style={body}>
               When European settlers wrote our names in official records, they could not spell the click. They wrote Kiti, Chiti, Xiti, Tshiti. If you are searching for AmaQithi in old archives, look for those too.
+            </p>
+            <p style={body}>
+              <strong style={{ color: '#E8A857' }}>Qwabi</strong> follows a parallel lineage etymology: it is traced to <em>axab</em>, meaning <em>son</em>, later adapted into local recorded forms such as Qwabi and Qhwabi.
             </p>
             <p style={{ ...body, color: '#9E8C7A', fontStyle: 'italic' }}>
               You can change a name on paper. You cannot change the sound in the mouth of someone who has spoken it their whole life.
