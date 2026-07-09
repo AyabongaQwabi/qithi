@@ -295,14 +295,13 @@ export default function WhoWeArePage() {
             <p style={body}>
               The Lesotho link is historical, not symbolic. Documented work on
               the 1879 siege says San fighters supported Moorosi, and local
-              villagers in Quthing supplied the mountain under darkness. It
-              also says Basotho auxiliaries fought with the colonial side.
+              Thembu (Bathepu) in Quthing supplied the mountain under darkness.
             </p>
             <p style={body}>
-              Oral tradition says Ntande&apos;s twins, Qithi and Cube, were born of
-              commoner mothers and accepted through black-cow slaughter. We read
-              that as incorporation memory: AmaQithi and AmaCube folded into the
-              nation, not descending from the main royal line.
+              Oral tradition says Ntande&apos;s twins, Qithi and Cube, were born
+              of commoner mothers and accepted through black-cow slaughter. We
+              read that as incorporation memory: AmaQithi and AmaCube folded
+              into the nation, not descending from the main royal line.
             </p>
             <p style={{ ...body, color: "#9E8C7A" }}>
               Recorded accounts also say Moshoeshoe I settled Quthing mainly
@@ -552,7 +551,8 @@ export default function WhoWeArePage() {
                   born of commoner mothers, and accepted through black-cow
                   slaughter rites. No colonial document has yet confirmed that
                   twin detail in writing. The only consistently documented son
-                  in that branch is <strong style={{ color: "#E8A857" }}>Mnguti</strong>.
+                  in that branch is{" "}
+                  <strong style={{ color: "#E8A857" }}>Mnguti</strong>.
                 </p>
                 <p style={body}>
                   So our method is simple: keep oral memory visible, keep
