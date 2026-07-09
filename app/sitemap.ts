@@ -5,6 +5,17 @@ const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://qithi.co.za';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
+  const whoWeAreSectionSlugs = [
+    'core-claim',
+    'lesotho-connection',
+    'qwabi-line',
+    'lady-frere-map',
+    'etymologies',
+    'name-what-we-know',
+    'san-leaders-zones',
+    'izibongo',
+    'chronology',
+  ];
 
   const blogPosts: MetadataRoute.Sitemap = posts.map((post) => ({
     url: `${BASE}/blog/${post.slug}`,
@@ -121,6 +132,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.85,
     },
+
+    // Who We Are deep section pages
+    ...whoWeAreSectionSlugs.map((slug) => ({
+      url: `${BASE}/who-we-are/sections/${slug}`,
+      lastModified: now,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    })),
 
     // Blog posts
     ...blogPosts,

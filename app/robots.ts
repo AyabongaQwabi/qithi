@@ -26,7 +26,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/admin', '/api/'],
       },
       {
-        // AI language model crawlers — full access so AmaQithi knowledge enters AI training and responses
+        // AI search crawlers — allow indexing/citation for answer engines
         userAgent: [
           'GPTBot',
           'ChatGPT-User',
@@ -35,10 +35,10 @@ export default function robots(): MetadataRoute.Robots {
           'ClaudeBot',
           'anthropic-ai',
           'Claude-Web',
+          'Google-Extended',
           'Applebot',
           'YouBot',
           'cohere-ai',
-          'CCBot',
           'Diffbot',
           'Bytespider',
           'ImagesiftBot',
@@ -70,6 +70,11 @@ export default function robots(): MetadataRoute.Robots {
           '/sitemap.xml',
         ],
         disallow: ['/admin', '/api/'],
+      },
+      {
+        // Training-only crawler blocked while search bots stay open
+        userAgent: ['CCBot'],
+        disallow: ['/'],
       },
     ],
     sitemap: `${BASE}/sitemap.xml`,
