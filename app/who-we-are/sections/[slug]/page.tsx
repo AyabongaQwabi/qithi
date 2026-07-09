@@ -82,12 +82,12 @@ const sections: SectionContent[] = [
     eyebrow: "Section Deep Dive",
     title: "Who Qwabi Joka is, and why this line is a strong anchor",
     intro:
-      "Qwabi Joka is not presented as the whole clan. He is presented as one traceable line whose descendants, village continuity, and naming practices make this branch especially useful for historical reconstruction.",
+      "Qwabi Joka is not the whole clan. He is one traceable line. Our hypothesis is that he was Bathepu from the Quthing world linked to Moorosi's final alliance period.",
     blocks: [
       {
         heading: "Who he is in the record",
         text:
-          "Qwabi Joka is tied to the post-1879 movement period and to the Lady Frere-Mkapusi landscape. His line is one of the clearer genealogical pathways linking Lesotho frontier memory to present-day family settlement.",
+          "Documented: Qwabi Joka (1842-1915) is tied to the post-1879 period and the Lady Frere-Mkapusi landscape. Our hypothesis: he was Bathepu (Quthing Thembu) linked to the local support world around Moorosi.",
       },
       {
         heading: "Why descendants matter",
@@ -102,7 +102,7 @@ const sections: SectionContent[] = [
       {
         heading: "Why naming patterns matter",
         text:
-          "Name retention and adaptive spelling (for example Qwabi/Qhwabi, Moorosi/Molosi in colonial pressure contexts) preserve lineage memory while reflecting survival strategies in administrative systems.",
+          "Documented linguistics: isiXhosa adaptation can shift r/l sounds, so Moorosi to Molosi is expected. Our family history says the names Molosi and Bushman preserve the alliance memory after 1879.",
       },
       {
         heading: "Important limit",
@@ -446,13 +446,13 @@ export default async function WhoWeAreSectionPage({
                     3) Moorosi and the Baphuthi-San friendship
                   </h2>
                   <p style={{ fontFamily: "var(--font-body), Inter, sans-serif", fontSize: "0.92rem", color: "#9E8C7A", lineHeight: 1.75, marginBottom: "10px" }}>
-                    <strong style={{ color: "#F5E6C8" }}>Documented:</strong> Sehonghong (Mangolong) is a real and studied rock-art site. The 1879 siege world around Moorosi is also strongly documented.
+                    <strong style={{ color: "#F5E6C8" }}>Documented:</strong> Sehonghong (Mangolong) is a studied rock-art site. King and Challis (2017, p. 233) also record that San fighters fought with the Phuthi, and villagers replenished food on the mountain under cover of darkness.
                   </p>
                   <p style={{ fontFamily: "var(--font-body), Inter, sans-serif", fontSize: "0.92rem", color: "#9E8C7A", lineHeight: 1.75, marginBottom: "10px" }}>
-                    <strong style={{ color: "#F5E6C8" }}>Oral tradition:</strong> Accounts hold that San and Phuthi households shared social life, including painting and refuge ties across the Quthing caves.
+                    <strong style={{ color: "#F5E6C8" }}>Documented:</strong> The same literature records the mountain password as Moroa (Bushman), and places Basotho auxiliaries with the colonial side in the siege campaign (King and Challis 2017, pp. 232-233; Basutoland Records V references).
                   </p>
                   <p style={{ fontFamily: "var(--font-body), Inter, sans-serif", fontSize: "0.92rem", color: "#9E8C7A", lineHeight: 1.75, margin: 0 }}>
-                    <strong style={{ color: "#F5E6C8" }}>Our hypothesis:</strong> This suggests to us that San and Phuthi identity in this zone moved through marriage, art, and war together, not in sealed groups.
+                    <strong style={{ color: "#F5E6C8" }}>Oral tradition:</strong> Accounts hold that San and Phuthi households shared social life, including painting and refuge ties across the Quthing caves.
                   </p>
                 </article>
 
@@ -461,13 +461,13 @@ export default async function WhoWeAreSectionPage({
                     4) The Qithi connection: Qwabi
                   </h2>
                   <p style={{ fontFamily: "var(--font-body), Inter, sans-serif", fontSize: "0.92rem", color: "#9E8C7A", lineHeight: 1.75, marginBottom: "10px" }}>
-                    <strong style={{ color: "#F5E6C8" }}>Our hypothesis:</strong> In our family reading, <Link href="/who-we-are/sections/qwabi-line" style={{ color: "#E8A857" }}>Qwabi</Link> Joka belongs to this frontier memory world. One clue is that a son&apos;s name settled as Molosi, which I believe is an isiXhosa rendering of Moorosi.
+                    <strong style={{ color: "#F5E6C8" }}>Documented baseline:</strong> By 1879, the mountain defense included San fighters and local villagers from the district. Recorded accounts also say Moshoeshoe I settled Quthing mainly with Bathepu people.
                   </p>
                   <p style={{ fontFamily: "var(--font-body), Inter, sans-serif", fontSize: "0.92rem", color: "#9E8C7A", lineHeight: 1.75, marginBottom: "10px" }}>
                     <strong style={{ color: "#F5E6C8" }}>Documented linguistics:</strong> r-to-l shifts are common in cross-language naming in southern Africa, so Moorosi-to-Molosi is a plausible sound shift.
                   </p>
                   <p style={{ fontFamily: "var(--font-body), Inter, sans-serif", fontSize: "0.92rem", color: "#9E8C7A", lineHeight: 1.75, margin: 0 }}>
-                    <strong style={{ color: "#F5E6C8" }}>Our hypothesis:</strong> Qwabi also named another son Bushman. I believe that pairing preserves memory of San descent. We do not yet know whether Qwabi fought at Moorosi&apos;s mountain, fled after its fall, or honored that history from nearby.
+                    <strong style={{ color: "#F5E6C8" }}>Our hypothesis:</strong> I believe <Link href="/who-we-are/sections/qwabi-line" style={{ color: "#E8A857" }}>Qwabi</Link> was Bathepu, a Quthing Thembu in this local alliance world. I also believe his sons&apos; names, Molosi and Bushman, preserve that memory.
                   </p>
                 </article>
 
@@ -481,6 +481,9 @@ export default async function WhoWeAreSectionPage({
                   <p style={{ fontFamily: "var(--font-body), Inter, sans-serif", fontSize: "0.92rem", color: "#9E8C7A", lineHeight: 1.75, marginBottom: "10px" }}>
                     <strong style={{ color: "#F5E6C8" }}>Oral tradition + documented:</strong> Oral lines place Mnguti as a Lesotho-to-South migration figure. In Soga&apos;s <em>The South-Eastern Bantu</em>, Mnguti and Maya are siblings, but oral accounts do not always agree on exact placement.
                   </p>
+                  <p style={{ fontFamily: "var(--font-body), Inter, sans-serif", fontSize: "0.92rem", color: "#9E8C7A", lineHeight: 1.75, margin: 0 }}>
+                    <strong style={{ color: "#F5E6C8" }}>Documented counterweight:</strong> King and Challis (2017, p. 223) record that in 1829 Moorosi and Moshoeshoe I raided the Thembu of Ngubengcuka. That is why the later local Quthing Thembu alliance detail matters so much.
+                  </p>
                   <div style={{ marginTop: "14px", border: "1px solid rgba(196,98,45,0.35)", padding: "14px" }}>
                     <Image src="/thembuline.png" alt="Thembu lineage chart used in oral and written comparison" width={1200} height={900} style={{ width: "100%", height: "auto", display: "block" }} />
                   </div>
@@ -492,6 +495,9 @@ export default async function WhoWeAreSectionPage({
                   </h2>
                   <p style={{ fontFamily: "var(--font-body), Inter, sans-serif", fontSize: "0.92rem", color: "#9E8C7A", lineHeight: 1.75, marginBottom: "10px" }}>
                     <strong style={{ color: "#F5E6C8" }}>Oral tradition:</strong> Recorded Thembu oral history says Ntande&apos;s twins, Qithi and Cube, were born of commoner mothers and were accepted through black-cow slaughter rites.
+                  </p>
+                  <p style={{ fontFamily: "var(--font-body), Inter, sans-serif", fontSize: "0.92rem", color: "#9E8C7A", lineHeight: 1.75, marginBottom: "10px" }}>
+                    <strong style={{ color: "#F5E6C8" }}>Oral tradition:</strong> The same pattern is told earlier for Ndilo&apos;s commoner-house sons. That repetition is why we treat the rite as an incorporation pattern inside Thembu memory.
                   </p>
                   <p style={{ fontFamily: "var(--font-body), Inter, sans-serif", fontSize: "0.92rem", color: "#9E8C7A", lineHeight: 1.75, marginBottom: "10px" }}>
                     <strong style={{ color: "#F5E6C8" }}>Documented cultural layer:</strong> <Link href="/amaqithi" style={{ color: "#E8A857" }}><em>ingqithi</em></Link> (the little-finger joint cut custom) is recorded as San-linked and later present in Thembu practice.
@@ -520,7 +526,7 @@ export default async function WhoWeAreSectionPage({
                   Written sources
                 </p>
                 <p style={{ fontFamily: "var(--font-body), Inter, sans-serif", fontSize: "0.82rem", color: "#9E8C7A", lineHeight: 1.75, marginBottom: "10px" }}>
-                  Soga, <em>The South-Eastern Bantu</em> (lineage placement for Mnguti/Maya) · 2026-07-07 san and sotho relations notes · 2026-07-07 qing notes · 2026-07-07 khoboko notes · 2026-07-08 san in Lesotho notes (all parts).
+                  King, Rachel and Sam Challis, <em>The &#39;Interior World&#39; of the Nineteenth-Century Maloti-Drakensberg Mountains</em>, <em>The Journal of African History</em> 58:2 (2017), pp. 223, 232-233 · Conz, Christopher R., <em>Wisdom Does Not Live in One House</em> (2017), p. 115 · Soga, <em>The South-Eastern Bantu</em> (Mnguti/Maya placement).
                 </p>
 
                 <p style={{ fontFamily: "var(--font-body), Inter, sans-serif", fontSize: "0.74rem", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "#E8A857", marginBottom: "6px" }}>

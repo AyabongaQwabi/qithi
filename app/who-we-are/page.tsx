@@ -15,27 +15,16 @@ export const metadata: Metadata = {
   description:
     "The complete history of the AmaQithi clan: a Thembu clan born of an ancient San-Bantu matrix. Mqithi at Rhodana before 1841, Qwabi Joka (born 1842), the Q click consonant, Stanford's Silayi testimony, and the Ingqithi ritual that proves the San-Thembu fusion.",
   keywords: [
-    "who is Qithi",
     "who are AmaQithi",
     "AmaQithi history",
-    "AmaQithi clan history",
-    "Mqithi history",
-    "Mqithi San",
-    "Qwabi Joka",
-    "San Eastern Cape history",
-    "AbaThwa Eastern Cape",
-    "Rhodana history",
-    "Queen Nonesi Rhodana",
-    "San Thembu alliance",
-    "White Kei River San",
-    "click consonant San",
-    "Khoisan Eastern Cape",
     "AmaQithi origin",
-    "Lady Frere San history",
-    "San First People Eastern Cape",
-    "Thembu San matrix",
-    "Ingqithi ritual",
-    "Tambookie",
+    "San Thembu history",
+    "White Kei River history",
+    "Lady Frere heritage",
+    "Quthing connection",
+    "Qwabi Joka",
+    "Moorosi 1879",
+    "AbaThwa Eastern Cape",
   ],
   openGraph: {
     title: "Who Are the AmaQithi? Thembu Clan with Deep San Heritage",
@@ -149,7 +138,7 @@ const timelineItems = [
   {
     year: "1879",
     event:
-      'Moorosi\'s War. Qwabi Joka names his firstborn son Molosi — preserving the name of Phuthi chief Moorosi, whose closest allies were San bowmen. The password to Moorosi\'s mountain stronghold was "Moroa" — "Bushman." Joka\'s youngest son is later named Bushman (Boesman) outright.',
+      'Moorosi\'s War. Documented sources say San fighters and local Quthing villagers (described as Bathepu/Thembu) supported the mountain by night, while Basotho auxiliaries fought on the colonial side. The fortress password was "Moroa" ("Bushman"). We read Qwabi Joka\'s sons\' names — Molosi and Bushman — as memory of that same world.',
   },
   {
     year: "1880",
@@ -174,7 +163,7 @@ export default function WhoWeArePage() {
           eyebrow="AmaQithi — Who We Are"
           headline="AbaThembu, AbaThwa — ubabona nge Ngqithi."
           subheading="AmaQithi are a San-Thembu people of the Eastern Cape rooted in San ancestry, integrated into Thembu political history, and still identifiable through language, place names, and izibongo."
-          intro="On this site we explain why we make that claim, such asthe evidence in the White Kei record, the Lesotho connection, the traceable Qwabi line, the Rhodana and Lady Frere geography, and what we still do not know with certainty."
+          intro="On this site we explain why we make that claim, such as the evidence in the White Kei record, the Lesotho connection, the traceable Qwabi line, the Rhodana and Lady Frere geography, and what we still do not know with certainty."
         />
 
         <div style={{ background: "#1A0F0A", paddingTop: "8px" }}>
@@ -282,7 +271,10 @@ export default function WhoWeArePage() {
               landscape where AmaQithi identity has a long history with San and
               Thembu.
             </p>
-            <Link href="/who-we-are/sections/san-thembu-claim" style={readMoreLink}>
+            <Link
+              href="/who-we-are/sections/san-thembu-claim"
+              style={readMoreLink}
+            >
               See why
             </Link>
           </div>
@@ -301,24 +293,26 @@ export default function WhoWeArePage() {
               Quthing and the mountain frontier are part of our history.
             </h2>
             <p style={body}>
-              The Lesotho link is historical, not symbolic. Quthing functioned
-              as a major frontier zone where San, Phuthi, and Thembu networks
-              overlapped, especially in the period leading to and following the
-              1879 destruction of Moorosi&apos;s mountain.
+              The Lesotho link is historical, not symbolic. Documented work on
+              the 1879 siege says San fighters supported Moorosi, and local
+              villagers in Quthing supplied the mountain under darkness. It
+              also says Basotho auxiliaries fought with the colonial side.
             </p>
             <p style={body}>
-              In that zone, families moved under pressure, regrouped through
-              kinship and alliance, and later spread into Eastern Cape
-              districts. This is why Lesotho appears repeatedly in Thembu oral
-              history and in traceable family lines.
+              Oral tradition says Ntande&apos;s twins, Qithi and Cube, were born of
+              commoner mothers and accepted through black-cow slaughter. We read
+              that as incorporation memory: AmaQithi and AmaCube folded into the
+              nation, not descending from the main royal line.
             </p>
-            <p style={body}>
-              The Lesotho context also helps explain why AmaQithi history cannot
-              be read as only one kingdom, one language, or one fixed label. The
-              archive is regional and mixed by design. It is a reflection of the
-              complex social and political history of the region.
+            <p style={{ ...body, color: "#9E8C7A" }}>
+              Recorded accounts also say Moshoeshoe I settled Quthing mainly
+              with Bathepu people. Read the full section for the citations and
+              where we keep the documented/oral/hypothesis line visible.
             </p>
-            <Link href="/who-we-are/sections/lesotho-connection" style={readMoreLink}>
+            <Link
+              href="/who-we-are/sections/lesotho-connection"
+              style={readMoreLink}
+            >
               Read more
             </Link>
           </div>
@@ -351,10 +345,10 @@ export default function WhoWeArePage() {
             >
               <div>
                 <p style={body}>
-                  Qwabi Joka is part of the post-1879 historical trail. His
-                  descendants, village links, and naming patterns are among the
-                  strongest anchors currently available in the community
-                  archive.
+                  Qwabi Joka is part of the post-1879 trail. I believe he was a
+                  Bathepu (Quthing Thembu) ally in Moorosi&apos;s local support
+                  world. His descendants, village links, and naming patterns are
+                  some of the strongest anchors in the current archive.
                 </p>
                 <p style={body}>
                   This gives us a practical method: keep tracing the families we
@@ -434,7 +428,10 @@ export default function WhoWeArePage() {
                 </p>
               </div>
             </div>
-            <Link href="/who-we-are/sections/lady-frere-rhodana" style={readMoreLink}>
+            <Link
+              href="/who-we-are/sections/lady-frere-rhodana"
+              style={readMoreLink}
+            >
               Read more
             </Link>
           </div>
@@ -551,17 +548,16 @@ export default function WhoWeArePage() {
             >
               <div>
                 <p style={body}>
-                  Contrary to some oral accounts, no written record has yet
-                  confirmed a man named Qithi as a son of Thembu king Ntande.
-                  The only consistently documented son in that branch is{" "}
-                  <strong style={{ color: "#E8A857" }}>Mnguti</strong>. But the
-                  colonial record is incomplete, and unrecorded sons were
-                  common.
+                  Oral tradition holds that Ntande had twins, Qithi and Cube,
+                  born of commoner mothers, and accepted through black-cow
+                  slaughter rites. No colonial document has yet confirmed that
+                  twin detail in writing. The only consistently documented son
+                  in that branch is <strong style={{ color: "#E8A857" }}>Mnguti</strong>.
                 </p>
                 <p style={body}>
-                  This means uncertainty is real, not weakness. Mqithi may still
-                  represent an unrecorded line. Research is still active, and
-                  the conclusion remains open.
+                  So our method is simple: keep oral memory visible, keep
+                  document limits visible, and keep testing both together.
+                  Research is still active, and the conclusion stays open.
                 </p>
               </div>
               <div>
@@ -577,7 +573,10 @@ export default function WhoWeArePage() {
                 </p>
               </div>
             </div>
-            <Link href="/who-we-are/sections/name-what-we-know" style={readMoreLink}>
+            <Link
+              href="/who-we-are/sections/name-what-we-know"
+              style={readMoreLink}
+            >
               Read more
             </Link>
           </div>
@@ -732,18 +731,18 @@ export default function WhoWeArePage() {
                     lineHeight: 1.7,
                   }}
                 >
-                  &ldquo;The AmaQithi — beautiful, with their nails.&rdquo; You say this
-                  when you introduce yourself. You say it when you arrive
-                  somewhere and need to be known.
+                  &ldquo;The AmaQithi — beautiful, with their nails.&rdquo; You
+                  say this when you introduce yourself. You say it when you
+                  arrive somewhere and need to be known.
                 </p>
               </div>
               <div>
                 <p style={{ ...body, color: "#9E8C7A" }}>
-                  Izibongo are praise poems. They are the clan&apos;s memory — names,
-                  events, the character of the people who came before. Nobody
-                  wrote them first. They were spoken. Passed from parents to
-                  children. Said at gatherings. Said to strangers who needed to
-                  know who you were.
+                  Izibongo are praise poems. They are the clan&apos;s memory —
+                  names, events, the character of the people who came before.
+                  Nobody wrote them first. They were spoken. Passed from parents
+                  to children. Said at gatherings. Said to strangers who needed
+                  to know who you were.
                 </p>
                 <p style={{ ...body, color: "#9E8C7A" }}>
                   The current AmaQithi set is layered: San-linked continuity is

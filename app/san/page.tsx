@@ -66,8 +66,8 @@ const sanRoles = [
   },
   {
     title: 'Elite Marksmen',
-    desc: 'San marksmen served as elite units alongside Thembu and Xhosa forces during the War of Mlanjeni (1850–1853). In 1879, San bowmen fought alongside Chief Moorosi. The password to Moorosi\'s mountain stronghold was "Moroa" — the Xhosa word for Bushman.',
-    citation: 'update1.md §3; oral history archive',
+    desc: 'San marksmen served as elite units alongside Thembu and Xhosa forces during the War of Mlanjeni (1850–1853). In 1879, San bowmen fought alongside Moorosi, while local villagers in Quthing replenished mountain food supplies by night. The password to Moorosi\'s stronghold was "Moroa" (Bushman).',
+    citation: 'King & Challis (2017), p. 233; Marion How via King & Challis',
   },
   {
     title: 'Frontier Scouts',
@@ -95,7 +95,7 @@ const sanChiefs = [
   {
     name: 'AmaQithi — the search for Qithi',
     region: 'Quthing (Lesotho) → White Kei River Basin',
-    detail: 'No recorded history has yet confirmed a man named Qithi as a son of Thembu king Ntande. The research is ongoing. What is clear: the root "Qithi" connects the valley of Quthing in Lesotho (where San and Thembu lived together under Moorosi until 1879), the village emaQithini in Lady Frere, and the ritual Ingqithi — which contains the word "qithi" and was, according to George Stow, "almost universal" among San (Bushman) tribes. Whether Qithi was a man, a place, or a practice that named the clan — the San thread runs through all of it.',
+    detail: 'Oral tradition says Ntande had twins, Qithi and Cube, accepted through black-cow slaughter rites. We have not yet found a matching colonial record confirming that twin detail in writing. What is clear: the root "Qithi" connects Quthing in Lesotho, emaQithini in Lady Frere, and the ritual Ingqithi — which contains the word "qithi" and was, according to George Stow, "almost universal" among San (Bushman) tribes.',
     citation: 'The San-Phuti Matrix (AmaQithi Research Archive, 2026); Stow, The Native Races of South Africa, Ch. IX, p. 170; Stanford (Macquarrie 1962:31)',
   },
   {
@@ -152,7 +152,7 @@ const timeline = [
   { year: '1850–1853', event: 'War of Mlanjeni. San marksmen serve as elite units alongside Thembu forces defending the Xonxa and Rhodana mountains.' },
   { year: '1856', event: 'Chief Madolo, aged approximately 80, retreats into the Maloti-Drakensberg with the remnant of his San band. They disappear from the colonial record.' },
   { year: '1869', event: 'San painter \'Gcu-wa (brother of chief Mada\'kane) is still recorded living in the White Kei area, carrying paint pots on his belt. One of the last recorded practising San artists in the Eastern Cape.' },
-  { year: '1879', event: 'Moorosi\'s War. San bowmen fight alongside Moorosi\'s forces. The password to Moorosi\'s mountain stronghold is "Moroa" — Bushman. Qwabi Joka names his firstborn son Molosi in honour of Moorosi, and his youngest son outright Bushman (Boesman).' },
+  { year: '1879', event: 'Moorosi\'s War. San bowmen fight alongside Moorosi, and local villagers in Quthing replenish food on the mountain by night. Basotho auxiliaries fight with colonial forces. The password is "Moroa" (Bushman). Our family reading links Qwabi Joka\'s sons\' names, Molosi and Bushman, to this same world.' },
   { year: '1888', event: 'Sir Walter Stanford photographs San leader Luhayi in the Tsolo district — one of the last photographic records of a San leader in the Eastern Cape.' },
 ];
 
@@ -226,7 +226,7 @@ export default function SanPage() {
             <p style={eyebrow}>What the San Brought</p>
             <h2 style={h2}>The roles our San ancestors carried.</h2>
             <p style={{ ...body, marginBottom: '40px' }}>
-              The AmaQithi were not subjects absorbed into the Thembu nation. They were partners. Their knowledge, their ritual authority, and their reading of the land were irreplaceable. These are the roles the archives and oral history confirm.
+              The archives and oral tradition show a mixed history of alliance and incorporation. We read AmaQithi as a San-descended people whose role in Thembu history included both partnership and later folding into larger political structures. Their knowledge, ritual authority, and land reading remained central in that process.
             </p>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1px', background: 'rgba(196,98,45,0.2)' }}>
               {sanRoles.map((role) => (

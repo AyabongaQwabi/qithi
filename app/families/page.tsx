@@ -70,7 +70,7 @@ const regions = [
     name: 'Lady Frere & Rhodana',
     villages: ['Qithi Village (Location 17/18)', 'Mkapusi', 'Agnes', 'Esikhwanqeni', 'Lower Seplan', 'Qugqwaru', 'Bholoto', 'Tsembeyi', 'Hala 2', 'Ngcuka'],
     surnames: ['Qwabi', 'Qithi', 'Mqithi', 'Manimani', 'Skampula'],
-    note: 'The founding axis. Rhodana is where Mqithi received Qithi Village from Queen Nonesi. The Qwabi lineage traces directly from Qwabi Joka (1842) who died in the White Kei basin.',
+    note: 'The founding axis. Rhodana is where Qithi place-memory and Thembu political geography meet. Our family reading says Qwabi Joka (1842-1915) carried a Bathepu-linked Quthing memory into this Lady Frere line.',
   },
   {
     name: 'Ngcobo',
@@ -363,7 +363,7 @@ export default function FamiliesPage() {
                   />
                 </div>
                 <p style={{ fontFamily: 'var(--font-body), Inter, sans-serif', fontSize: '0.72rem', color: '#6B5A4E', fontStyle: 'italic', lineHeight: 1.5 }}>
-                  The route from Quthing (Mount Moorosi) to Mkapusi — approximately 700km south. This is the road the Qwabi family and other AmaQithi took after the fall of Moorosi&apos;s mountain in November 1879.
+                  The route from Quthing (Mount Moorosi) to Mkapusi — approximately 700km south. Our family history says this is the road Qwabi&apos;s people used after the fall of the mountain in 1879.
                 </p>
               </div>
             </div>

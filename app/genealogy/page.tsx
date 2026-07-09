@@ -75,6 +75,10 @@ const keyFacts = [
     text: 'Q (palatal click) in Qithi, Nqabayo, Mqithi preserves a Khoisan phonetic layer in Xhosa orthography, while Qwabi is traced to axab ("son") in family etymology. Scientific confirmation is the next step.',
   },
   {
+    label: 'The oral-history anchor',
+    text: 'Oral tradition says Ntande\'s twins, Qithi and Cube, were incorporated through black-cow slaughter rites. We treat that as a key hypothesis bridge and test it against documents in the Lesotho research section.',
+  },
+  {
     label: 'Haplogroups tracked',
     text: 'L0 and L1 — the deepest San maternal lineages. These are the oldest human mitochondrial lineages on Earth, concentrated in southern African San populations.',
   },

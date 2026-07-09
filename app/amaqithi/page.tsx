@@ -13,13 +13,16 @@ export const metadata: Metadata = {
   description:
     'AmaQithi clan: Thembu-San lineage rooted in Quthing, Lesotho. Read the wider heritage context of Qing, Khoboko, Soai, and the San-Phuthi-Sotho-Thembu matrix, plus Qithi meaning in Xhosa, iziduko, and clan names from Ngcobo to Lady Frere.',
   keywords: [
-    'AmaQithi clan', 'AmaQithi clan names', 'Mqithi clan', 'Mqithi clan praises',
-    'iziduko mqithi', 'Qithi meaning in Xhosa', 'Qithi clan names', 'Qithi clan praises',
-    'Qithi history in South Africa', 'Qithi in Lesotho', 'Qithi in Quthing',
-    'Qwabi clan', 'AmaQithi diaspora', 'Mkapusi Lady Frere', 'eNgcobo AmaQithi',
-    'Cofimvaba AmaQithi', 'AmaQithi Thembu San', 'beNgqithi', 'Ingqithi',
-    'AmaQithi izibongo', 'AmaQithi clans Eastern Cape', 'Qithi history in Xhosa',
-    'Rhodana Thembu', 'AmaQithi surnames', 'Ngcongolo AmaQithi',
+    'AmaQithi clan names',
+    'AmaQithi iziduko',
+    'Qithi meaning',
+    'Qwabi meaning',
+    'Mqithi clan praises',
+    'AmaQithi surnames',
+    'Quthing AmaQithi',
+    'Ngcobo AmaQithi',
+    'Mkapusi Lady Frere',
+    'Ingqithi',
   ],
   openGraph: {
     title: 'AmaQithi Clan — Mqithi History, Qithi Meaning, Iziduko & Clan Names',
@@ -30,69 +33,6 @@ export const metadata: Metadata = {
     type: 'article',
   },
   alternates: { canonical: `${BASE}/amaqithi` },
-};
-
-const amaqithiFaqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'What does Qithi mean in Xhosa?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Qithi (also written Mqithi or Qhitsi) is rooted in isi-Qiti — a separated, enclosed, or isolated space. In the landscape of the Eastern Cape, Qithi referred to a restricted tract of land, often near a royal base, used for specialised agricultural management or as a secure enclosure. The Q in Qithi/Mqithi is a San palatal click consonant, absent from original Bantu languages, and preserves an older San-linked layer in the name. Colonial clerks who could not reproduce the click spelled the name as Kiti, Chiti, Xiti, or Tshiti.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What does Qwabi mean?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Qwabi is traced in family etymology to the root axab, meaning "son." Over time, this root moved through multilingual frontier speech (San, Seputhi, isiXhosa, and Sesotho contact zones) and was written in forms such as Qwabi and Qhwabi in oral and colonial records.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What are the AmaQithi clan praises (iziduko)?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'The AmaQithi iziduko (clan praises, also called izibongo) are: Ndinga, Rhadu, Mnono, Mlebe, Nomsobodwana, Sopitsho Ngqolomsila, Yemyem. Nkomo ayizali izala ngokumiselwa. NgamaQithi amahle neenzipho zawo — "The AmaQithi, beautiful with their nails." These praises are said when introducing yourself, arriving somewhere, or being recognised as clan. Nobody wrote them first. They were spoken and passed from parents to children across generations.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What are the AmaQithi clan names and surnames?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'AmaQithi clan surnames include: Qwabi, Mqithi, Manimani, Ngcongolo, Skampula, Mgengwana, Tshabe, Mbaba, Ngubo, Shumana, Khethelo, Mhlungulwa, Silimela, Ntulo, Limba, Gobelo, Titi, Kula, Msebe, Matho, Fanakho, Ngqela, Bambatha, Mtshabe, Skeyi, Sokoti, Plata, Mfumba, Ndaleni, Sokutapa. The Q click consonant is the phonetic marker — any surname carrying it is a candidate for AmaQithi lineage.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What is the history of AmaQithi in Quthing, Lesotho?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Quthing is the Sotho pronunciation of emaQithini — the Xhosa way of saying "the place of the Qithi." The valley became a sanctuary for Thembu and San people under King Moorosi of the BaPhuthi during the Mfecane (c. 1816–1835). San bowmen were the core of Moorosi\'s military. On 20 November 1879, colonial forces took Mount Moorosi and destroyed the sanctuary. The surviving AmaQithi families fled south — to eNgcobo, Cofimvaba, and Mkapusi in Lady Frere. Qwabi Joka, born 1842, was among those who arrived in Lady Frere after the fall. He died in Mkapusi in 1915.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Where do AmaQithi families live in South Africa?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'AmaQithi families are found across: Lady Frere (Qithi Village, Mkapusi, Agnes, Esikhwanqeni, Lower Seplan, Hala 2, Qugqwaru, Bholoto, Tsembeyi, Ngcuka), eNgcobo (Gubenxa Lucwecwe, Lahlangubo, eMadladleni, Gqutyini, Zadungeni, Qumanco, Maqwathini), Cofimvaba (Shobeni), Cala region, and the Free State (from Mcambalala in Luxeni, Lady Frere). Qithi Village sits directly next to the Rodana Clinic and Rodana PJS School — adjacent to the Thembu Great Place at Rhodana.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Who was the first Qithi person?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'According to oral history recorded by community members, the first Qithi person to arrive at the place known as Qiti was Ngcongolo and his brother Mafilika. They stood on the red wall on top of the white hill where the scythes are buried, having come from Cofimvaba (Shobeni). Tsula is named as the father of Ngcongolo and Mafilika. The written record has not yet confirmed a single man named Qithi as the clan founder — the oral record gives the name to a place first, not a person.',
-      },
-    },
-  ],
 };
 
 const section: React.CSSProperties = { padding: '72px 0' };
@@ -151,7 +91,7 @@ const qwabiGenerations = [
     gen: 'Generation 1',
     name: 'Qwabi Joka',
     dates: 'b. 1842 · d. 1915 · Mkapusi',
-    detail: 'Born in the White Kei basin. Fought in Moorosi\'s War (1879) in Quthing, Lesotho. Arrived in Mkapusi, Lady Frere after the fall of the mountain. Died in Mkapusi in 1915. Named his firstborn son Molosi in honour of Chief Moorosi — adjusting the royal name to navigate British blacklists. Named his youngest son Bushman (Boesman) outright, ensuring the family\'s San identity would never be forgotten.',
+    detail: 'Born in the White Kei basin. Lived through Moorosi\'s War (1879) and later settled in Mkapusi, Lady Frere, where he died in 1915. I believe he was part of the Bathepu-linked Quthing world that supported the mountain. He named one son Molosi and another Bushman (Boesman), which we read as memory of that alliance history.',
   },
   {
     gen: 'Generation 2',
@@ -241,7 +181,7 @@ const relationMatrix = [
 export default function AmaQithiPage() {
   return (
     <>
-      <SchemaOrg schemas={[orgSchema, amaqithiSchema, amaqithiFaqSchema, breadcrumbSchema([{ name: 'AmaQithi Clan', url: '/amaqithi' }])]} />
+      <SchemaOrg schemas={[orgSchema, amaqithiSchema, breadcrumbSchema([{ name: 'AmaQithi Clan', url: '/amaqithi' }])]} />
       <Nav />
       <main style={{ background: '#1A0F0A', minHeight: '100vh' }}>
         <PageHero
@@ -291,7 +231,7 @@ export default function AmaQithiPage() {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '48px' }}>
               <div>
                 <p style={body}>
-                  Our research has so far found no recorded history of a man named Qithi born as a son of the Thembu king Ntande — and therefore no confirmed record of him as a brother of Mcube. The only well-documented son of Ntande in the historical record is <strong style={{ color: '#E8A857' }}>Mnguti</strong>, whose lineage is rich and traceable. But history does not always write down every son. Mqithi could be a long-lost or simply unrecorded branch — perhaps a brother of Mnguti who slipped through the gaps in the written colonial record.
+                  Oral tradition says Ntande had twins, Qithi and Cube, born of commoner mothers and accepted through black-cow slaughter. We have not yet found a colonial document that confirms this twin detail in writing. In that same branch, <strong style={{ color: '#E8A857' }}>Mnguti</strong> remains the most clearly documented name in written material.
                 </p>
                 <p style={body}>
                   What we can say is this: <strong style={{ color: '#E8A857' }}>the name itself carries clues</strong>. The root word <em>Qithi</em> appears in places that connect the San, the land, and the Thembu in ways that are hard to dismiss. The valley of <strong style={{ color: '#E8A857' }}>Quthing</strong> in Lesotho — where San people lived under Chief Moorosi until 1879 — is the Sotho way of pronouncing <em>emaQithini</em> in Xhosa. The same root, the same sound, from the same region.
@@ -331,18 +271,18 @@ export default function AmaQithiPage() {
                   When the <em>Mfecane</em> wars of the early 1800s erupted, segments of the Thembu nation fled north. They were not entering foreign territory — they were returning to their ancient Lesotho homelands, where Thembu lines had migrated as early as 1600–1650.
                 </p>
                 <p style={body}>
-                  In the high valleys of <strong style={{ color: '#E8A857' }}>Quthing</strong> — a name combining a San click root (Q-) and a Sotho locative suffix (-ing) — the Thembu integrated with the local Baphuthi and remaining mountain San networks under King Moorosi. San bowmen were the core of Moorosi&apos;s defensive forces. The password to his mountain stronghold was <em>&ldquo;Moroa&rdquo;</em> — Bushman.
+                  In the high valleys of <strong style={{ color: '#E8A857' }}>Quthing</strong>, documented sources say San fighters supported Moorosi and local villagers replenished food on the mountain at night. The password to his stronghold was <em>&ldquo;Moroa&rdquo;</em> (Bushman), a detail tied to the San alliance.
                 </p>
               </div>
               <div>
                 <p style={body}>
-                  On <strong style={{ color: '#E8A857' }}>20 November 1879</strong>, colonial forces took the mountain. The sanctuary was destroyed. The surviving families dispersed rapidly into South Africa, fracturing along distinct family lines for safety.
+                  On <strong style={{ color: '#E8A857' }}>20 November 1879</strong>, colonial forces took the mountain. Basotho auxiliaries were on the colonial side, while local alliance networks on the mountain side were broken. Families then dispersed into South Africa in separate lines for survival.
                 </p>
                 <p style={{ ...body, color: '#9E8C7A' }}>
-                  Qwabi Joka, born in 1842, named his firstborn son <strong style={{ color: '#D4A96A' }}>Molosi</strong> in honour of Moorosi — adjusting the royal name to navigate British blacklists. His youngest son he named outright <strong style={{ color: '#D4A96A' }}>Bushman (Boesman)</strong>, ensuring the memory of the mountain archers would never be erased.
+                  Our family history says Qwabi Joka, born in 1842, belonged to that same Quthing world. I believe he was Bathepu, and that he kept memory through names: <strong style={{ color: '#D4A96A' }}>Molosi</strong> and <strong style={{ color: '#D4A96A' }}>Bushman (Boesman)</strong>.
                 </p>
                 <p style={{ fontFamily: 'var(--font-body), Inter, sans-serif', fontSize: '0.72rem', color: '#6B5A4E', fontStyle: 'italic', lineHeight: 1.5, marginBottom: '20px' }}>
-                  Source: update1.md §§ 3–4 (AmaQithi Research Archive, 2026); oral history
+                  Sources: King & Challis (2017), pp. 232-233; Conz (2017), p. 115; oral history
                 </p>
                 {/* Quthing map */}
                 <div style={{ border: '1px solid rgba(196,98,45,0.25)', overflow: 'hidden' }}>
