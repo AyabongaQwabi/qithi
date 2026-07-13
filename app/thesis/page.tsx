@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     "Qithi origin hypothesis",
     "Quthing 1879",
     "Moorosi war support networks",
-    "Bathepu hypothesis",
+    "San assimilation into Thembu",
     "twins incorporation oral tradition",
     "AmaQithi community voices",
   ],
@@ -295,7 +295,7 @@ export default function ThesisPage() {
                 }}
               >
                 Everything on this page is hypothesis. Some of it is
-                well-supported. Some of it is speculative. We've marked each
+                well-supported. Some of it is speculative. We&apos;ve marked each
                 section so you know which is which.
               </p>
               <p
@@ -409,8 +409,25 @@ export default function ThesisPage() {
                   We also added the twins-incorporation tradition (Qithi and
                   Cube as Ntande-linked twins absorbed through black-cow ritual)
                   as oral tradition not yet confirmed in colonial records. In
-                  the same frame, Qwabi Joka is treated as Bathepu-linked
-                  Quthing-world hypothesis, not settled fact.
+                  the same frame, Qwabi Joka is treated as part of a San line
+                  assimilated into Thembu history.
+                </p>
+              </div>
+              <div
+                style={{
+                  background: "#1A0F0A",
+                  border: "1px solid rgba(196,98,45,0.2)",
+                  padding: "20px",
+                }}
+              >
+                <div style={hypothesisBadge}>Oral-history correction · 13 July 2026</div>
+                <p style={{ ...bodyMuted, marginBottom: 0 }}>
+                  New oral history says the San groups around Glen Grey where
+                  Qwabi lived were under Ngqabayi, with Madolo groups in the
+                  same area. It also says Quthing is linked to Quu, and gives
+                  Moorosi&apos;s San name as Qengha (Qenya in isiXhosa). We are
+                  integrating this now and waiting for the audio files for full
+                  source publication.
                 </p>
               </div>
               <div

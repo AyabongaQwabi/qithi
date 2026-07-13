@@ -30,6 +30,7 @@ const linkGroups = [
     label: 'Research',
     links: [
       { label: 'The Thesis', href: '/thesis' },
+      { label: 'Iziduko Authority Page', href: '/iziduko-izibongo-clan-names' },
       { label: 'Lineage Board', href: '/lineage' },
       { label: 'Sources', href: '/sources' },
       { label: 'Village Anatomy', href: '/insights/thembu-village-anatomy' },
@@ -176,18 +177,40 @@ export default function Footer() {
             <p
               style={{
                 fontFamily: 'var(--font-display), Cormorant Garamond, serif',
-                fontSize: '0.9rem',
-                fontStyle: 'italic',
-                color: 'rgba(158,140,122,0.6)',
-                lineHeight: 1.7,
+                fontSize: 'clamp(1.1rem, 1.5vw, 1.4rem)',
+                fontStyle: 'normal',
+                fontWeight: 700,
+                color: '#F5E6C8',
+                lineHeight: 1.3,
+                textTransform: 'uppercase',
+                letterSpacing: '0.03em',
               }}
             >
-              Ndinga, Mnono, Rhadu, Mlebe,<br />
-              Nomsobodwana,<br />
-              Sopitsho Ngqolomsila,<br />
-              Yemyem.<br />
-              NgamaQithi amahle neenzipho zawo.
+              UMQITHI, NDINGA, RHADU, MNONO,<br />
+              NOMSOBONDWANA, UMLEBE,<br />
+              U NKOMO AYIZALI IZALA NGOKU MISELWA,<br />
+              SOPITSHO, YEM YEM, NGQOLOMSILA,<br />
+              VELA BAMBHENTSELE, AMANTANDE,<br />
+              NGAMAQITHI AMAHLE NEENZIPHO ZAWO.
             </p>
+            <Link
+              href="/iziduko-izibongo-clan-names"
+              style={{
+                display: 'inline-block',
+                marginTop: '8px',
+                fontFamily: 'var(--font-body), Inter, sans-serif',
+                fontSize: '0.72rem',
+                fontWeight: 600,
+                letterSpacing: '0.09em',
+                textTransform: 'uppercase',
+                color: '#C4622D',
+                textDecoration: 'none',
+                borderBottom: '1px solid rgba(196,98,45,0.45)',
+                paddingBottom: '2px',
+              }}
+            >
+              Full iziduko page
+            </Link>
           </div>
         </div>
 

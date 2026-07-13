@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import Nav from '@/components/Nav';
 import PageHero from '@/components/PageHero';
 import Breadcrumb from '@/components/Breadcrumb';
@@ -11,10 +12,10 @@ const BASE = 'https://qithi.co.za';
 export const metadata: Metadata = {
   title: 'AbaThwa (San) — First People of the Land | AmaQithi Heritage',
   description:
-    'The San (AbaThwa) heritage of the AmaQithi clan. The First People of the White Kei River basin — hunters, rainmakers, rock artists, and frontier counsellors. AmaQithi: a Thembu-San group from Quthini in Lesotho. San leaders Madolo, Madakane, Soai and their world. The Ingqithi ritual, the click consonant, and 10,000 years before the written record.',
+    'The San (AbaThwa) heritage of the AmaQithi clan. The First People of the White Kei River basin — hunters, rainmakers, rock artists, and frontier counsellors. AmaQithi are a San group assimilated into Thembu history in Lady Frere. The Ingqithi ritual, the click consonant, and 10,000 years before the written record.',
   keywords: [
     'AbaThwa San heritage', 'San First People Eastern Cape', 'San Lady Frere',
-    'White Kei River San', 'AmaQithi Quthini origin', 'Madolo San chief', 'Madakane San',
+    'White Kei River San', 'AmaQithi San assimilation', 'Madolo San chief', 'Madakane San',
     'San rock art Eastern Cape', 'San rainmakers', 'Ingqithi ritual',
     'Khoisan Eastern Cape', 'San AmaQithi', 'AbaThwa history', 'San Thembu alliance',
     'Bushman School Lady Frere 1842',
@@ -86,7 +87,7 @@ const sanRoles = [
   },
   {
     title: 'Counsellors to Royalty',
-    desc: 'The AmaQithi — named for the valley of Quthini in Lesotho, not for any individual leader — held a position at the Rhodana royal court comparable to a senior counsellor. Early Thembu chiefs gave San hunters precedence over themselves at large game kills, recognising their authority as original landowners.',
+    desc: 'The AmaQithi held a position at the Rhodana court comparable to senior counsellors. Early Thembu chiefs gave San hunters precedence at large game kills, recognising their authority as original landowners.',
     citation: 'The Royal Lineage and San Heritage of the abaThembu, PDF pp. 2 [32, 34, 35]',
   },
 ];
@@ -95,7 +96,7 @@ const sanChiefs = [
   {
     name: 'AmaQithi — the search for Qithi',
     region: 'Quthing (Lesotho) → White Kei River Basin',
-    detail: 'Oral tradition says Ntande had twins, Qithi and Cube, accepted through black-cow slaughter rites. We have not yet found a matching colonial record confirming that twin detail in writing. What is clear: the root "Qithi" connects Quthing in Lesotho, emaQithini in Lady Frere, and the ritual Ingqithi — which contains the word "qithi" and was, according to George Stow, "almost universal" among San (Bushman) tribes.',
+    detail: 'Oral tradition says Ntande had twins, Qithi and Cube, accepted through black-cow slaughter rites. We have not yet found a matching colonial record confirming that twin detail in writing. New oral history also says Quthing is linked to Quu, not named from AmaQithi.',
     citation: 'The San-Phuti Matrix (AmaQithi Research Archive, 2026); Stow, The Native Races of South Africa, Ch. IX, p. 170; Stanford (Macquarrie 1962:31)',
   },
   {
@@ -125,13 +126,13 @@ const sanChiefs = [
   {
     name: 'Quu',
     region: 'Difaqane-era Mountains',
-    detail: "San leader who formalised the Phuthi-San alliance when Moorosi's father Mokuoane married his sister — making Moorosi himself part San. That kinship is why San fighters used 'Moroa' (Bushman) as the password to Moorosi's mountain stronghold in 1879.",
+    detail: "San leader in oral history. Current oral account says Quu was Moorosi's father-in-law and that Quthing is linked to Quu. We are holding this as oral evidence pending audio publication.",
     citation: 'update1.md §4',
   },
   {
     name: 'Nqabayo (Ngqabayi)',
     region: 'Xuka & Mooi Rivers · Drakensberg Base',
-    detail: 'Led a band of 43 men near the Xuka and Mooi Rivers. Notable for controlling the preparation of arrow poison. His people were attacked at Gubenxa in 1857 after a dispute with Thembu chief Mgudhluwa. Gubenxa is today one of the Ngcobo villages where AmaQithi families are documented to live.',
+    detail: 'Led a band of 43 men near the Xuka and Mooi Rivers. Oral history places Glen Grey San groups under Ngqabayi in the same period as nearby Madolo groups. Oral memory also says conflict with Jumba-linked Thembu groups broke out during drought when San rainmakers were blamed for no rain.',
     citation: 'update1.md §4; Stanford records',
   },
   {
@@ -152,7 +153,7 @@ const timeline = [
   { year: '1850–1853', event: 'War of Mlanjeni. San marksmen serve as elite units alongside Thembu forces defending the Xonxa and Rhodana mountains.' },
   { year: '1856', event: 'Chief Madolo, aged approximately 80, retreats into the Maloti-Drakensberg with the remnant of his San band. They disappear from the colonial record.' },
   { year: '1869', event: 'San painter \'Gcu-wa (brother of chief Mada\'kane) is still recorded living in the White Kei area, carrying paint pots on his belt. One of the last recorded practising San artists in the Eastern Cape.' },
-  { year: '1879', event: 'Moorosi\'s War. San bowmen fight alongside Moorosi, and local villagers in Quthing replenish food on the mountain by night. Basotho auxiliaries fight with colonial forces. The password is "Moroa" (Bushman). Our family reading links Qwabi Joka\'s sons\' names, Molosi and Bushman, to this same world.' },
+  { year: '1879', event: 'Moorosi\'s War. San bowmen fight alongside Moorosi, and local villagers in Quthing replenish food on the mountain by night. Basotho auxiliaries fight with colonial forces. The password is "Moroa" (Bushman). New oral-history wording also gives Moorosi\'s San name as Qengha (Qenya in isiXhosa).' },
   { year: '1888', event: 'Sir Walter Stanford photographs San leader Luhayi in the Tsolo district — one of the last photographic records of a San leader in the Eastern Cape.' },
 ];
 
@@ -310,12 +311,13 @@ export default function SanPage() {
             <h2 style={h2}>The praise names of AmaQithi — in our own voices.</h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '40px' }}>
               <div>
-                <p style={{ fontFamily: 'var(--font-display), Cormorant Garamond, serif', fontSize: 'clamp(1.1rem, 2vw, 1.35rem)', fontStyle: 'italic', color: '#E8A857', lineHeight: 2, marginBottom: '16px' }}>
-                  Ndinga, Mnono, Rhadu, Mlebe,<br />
-                  Nomsobodwana,<br />
-                  Sopitsho Ngqolomsila,<br />
-                  Yemyem.<br />
-                  NgamaQithi amahle neenzipho zawo.
+                <p style={{ fontFamily: 'var(--font-display), Cormorant Garamond, serif', fontSize: 'clamp(1.55rem, 3vw, 2.4rem)', fontStyle: 'normal', fontWeight: 700, color: '#F5E6C8', lineHeight: 1.35, marginBottom: '16px', textTransform: 'uppercase', letterSpacing: '0.03em' }}>
+                  UMQITHI, NDINGA, RHADU, MNONO, UMLEBE,<br />
+                  NOMSOBONDWANA,<br />
+                  U NKOMO AYIZALI IZALA NGOKU MISELWA,<br />
+                  SOPITSHO, YEM YEM, NGQOLOMSILA,<br />
+                  VELA BAMBHENTSELE, AMANTANDE,<br />
+                  NGAMAQITHI AMAHLE NEENZIPHO ZAWO.
                 </p>
                 <p style={{ fontFamily: 'var(--font-body), Inter, sans-serif', fontSize: '0.82rem', color: '#9E8C7A', fontStyle: 'italic', lineHeight: 1.7 }}>
                   &ldquo;The AmaQithi — beautiful, with their nails.&rdquo; You say this when you introduce yourself. You say it when you arrive somewhere and need to be known.
@@ -328,6 +330,24 @@ export default function SanPage() {
                 <p style={{ ...body, color: '#9E8C7A' }}>
                   The AmaQithi izibongo survived the colonial years, the forced moves, and everything done to make San people forget who they were. They are still being said today. That counts for something.
                 </p>
+                <Link
+                  href="/iziduko-izibongo-clan-names"
+                  style={{
+                    display: 'inline-block',
+                    marginTop: '12px',
+                    fontFamily: 'var(--font-body), Inter, sans-serif',
+                    fontSize: '0.8rem',
+                    fontWeight: 600,
+                    letterSpacing: '0.09em',
+                    textTransform: 'uppercase',
+                    color: '#C4622D',
+                    textDecoration: 'none',
+                    borderBottom: '1px solid rgba(196,98,45,0.45)',
+                    paddingBottom: '2px',
+                  }}
+                >
+                  See full iziduko authority page
+                </Link>
               </div>
             </div>
           </div>

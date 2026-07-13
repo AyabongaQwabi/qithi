@@ -98,7 +98,7 @@ export default function IdentityTeaser() {
                 marginBottom: '14px',
               }}
             >
-              In Quthing (the Sotho way of saying <em>emaQithini</em>), Thembu, Phuthi, and San communities lived together under Chief Moorosi until the colonial forces took the mountain in November 1879. Survivors dispersed south into the Eastern Cape — bringing the name AmaQithi with them. They served as rainmakers, marksmen, and counsellors. They were not servants. They were partners.
+              In Quthing, Thembu, Phuthi, and San communities lived together under Chief Moorosi until the colonial forces took the mountain in November 1879. Survivors dispersed south into the Eastern Cape. Our latest oral-history correction says Quthing is linked to Quu, and gives Moorosi&apos;s San name as Qengha (Qenya in isiXhosa).
             </p>
             <p
               style={{
@@ -195,9 +195,9 @@ export default function IdentityTeaser() {
                 marginBottom: '20px',
               }}
             >
-              "At about this time a number of Thembu groups living on the White Kei, including
+              &ldquo;At about this time a number of Thembu groups living on the White Kei, including
               &lsquo;Jumba&rsquo;, were on comparatively friendly terms with San families and clans
-              living in that area."
+              living in that area.&rdquo;
             </p>
             <cite
               style={{

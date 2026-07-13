@@ -50,6 +50,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.95,
     },
+    {
+      url: `${BASE}/iziduko-izibongo-clan-names`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.94,
+    },
 
     // Tier 2 — heritage knowledge pages
     {

@@ -113,7 +113,7 @@ const timelineItems = [
   {
     year: "~1850",
     event:
-      'Walter Stanford records Silayi\'s testimony: Thembu groups on the White Kei — including chief Jumba and chief Mgudlwa — are on "comparatively friendly terms with San families and clans" in the area.',
+      'Walter Stanford records Silayi\'s testimony of friendly terms between Jumba-linked Thembu groups and San families on the White Kei. Oral history also says relations later broke under drought pressure when San rainmakers were blamed for no rain and conflict followed.',
   },
   {
     year: "1850–1853",
@@ -138,7 +138,7 @@ const timelineItems = [
   {
     year: "1879",
     event:
-      'Moorosi\'s War. Documented sources say San fighters and local Quthing villagers (described as Bathepu/Thembu) supported the mountain by night, while Basotho auxiliaries fought on the colonial side. The fortress password was "Moroa" ("Bushman"). We read Qwabi Joka\'s sons\' names — Molosi and Bushman — as memory of that same world.',
+      'Moorosi\'s War. Documented sources say San fighters and local Quthing villagers supported the mountain by night, while Basotho auxiliaries fought on the colonial side. The fortress password was "Moroa" ("Bushman"). Oral history also gives Moorosi\'s San name as Qengha (Qenya in isiXhosa).',
   },
   {
     year: "1880",
@@ -169,6 +169,25 @@ export default function WhoWeArePage() {
         <div style={{ background: "#1A0F0A", paddingTop: "8px" }}>
           <Breadcrumb items={[{ label: "Who We Are" }]} />
         </div>
+
+        <section
+          className="cave-section cave-bg"
+          style={{ ...section, background: "#0F0904", paddingTop: "36px", paddingBottom: "36px" }}
+        >
+          <div style={inner}>
+            <p style={eyebrow}>Update · 13 July 2026</p>
+            <p style={{ ...body, marginBottom: "8px", maxWidth: "820px" }}>
+              We have corrected this page. The current position is that AmaQithi
+              in Lady Frere are a San group assimilated into the Thembu nation.
+            </p>
+            <p style={{ ...body, color: "#9E8C7A", marginBottom: 0, maxWidth: "820px" }}>
+              This update also reflects oral-history claims that Quthing is linked
+              to Quu, and that Moorosi&apos;s San name was Qengha (pronounced
+              Qenya in isiXhosa). Audio evidence will be published in the next
+              update cycle.
+            </p>
+          </div>
+        </section>
 
         {/* Why this claim */}
         <section
@@ -295,7 +314,7 @@ export default function WhoWeArePage() {
             <p style={body}>
               The Lesotho link is historical, not symbolic. Documented work on
               the 1879 siege says San fighters supported Moorosi, and local
-              Thembu (Bathepu) in Quthing supplied the mountain under darkness.
+              villagers in Quthing supplied the mountain under darkness.
             </p>
             <p style={body}>
               Oral tradition says Ntande&apos;s twins, Qithi and Cube, were born
@@ -304,9 +323,9 @@ export default function WhoWeArePage() {
               into the nation, not descending from the main royal line.
             </p>
             <p style={{ ...body, color: "#9E8C7A" }}>
-              Recorded accounts also say Moshoeshoe I settled Quthing mainly
-              with Bathepu people. Read the full section for the citations and
-              where we keep the documented/oral/hypothesis line visible.
+              In our latest oral-history correction, we treat Quthing as linked
+              to Quu, not as a place named from AmaQithi. We keep this marked as
+              oral-history update while we prepare supporting audio publication.
             </p>
             <Link
               href="/who-we-are/sections/lesotho-connection"
@@ -344,10 +363,11 @@ export default function WhoWeArePage() {
             >
               <div>
                 <p style={body}>
-                  Qwabi Joka is part of the post-1879 trail. I believe he was a
-                  Bathepu (Quthing Thembu) ally in Moorosi&apos;s local support
-                  world. His descendants, village links, and naming patterns are
-                  some of the strongest anchors in the current archive.
+                  Qwabi Joka is part of the post-1879 trail. In our current
+                  reading, he belongs to the San groups in Glen Grey who were
+                  drawn into Thembu political life.
+                  His descendants, village links, and naming patterns are some of
+                  the strongest anchors in the current archive.
                 </p>
                 <p style={body}>
                   This gives us a practical method: keep tracing the families we
@@ -562,14 +582,46 @@ export default function WhoWeArePage() {
               </div>
               <div>
                 <p style={body}>
-                  What is clearer is the name web: Quthing, emaQithini naming in
-                  Lady Frere, and ingqithi ritual continuity. These are
-                  independent strands pointing to one shared historical field.
+                  What is clearer is the living memory web: Quthing in Lesotho,
+                  local naming in Lady Frere, and ingqithi ritual continuity.
+                  These are independent strands pointing to one shared historical
+                  field, even while exact place-name origins remain contested.
                 </p>
                 <p style={{ ...body, color: "#9E8C7A" }}>
                   If you hold oral records on Qithi, Ntande, or early settlement
                   naming in Rhodana and KwaTshatshu, this archive needs your
                   contribution.
+                </p>
+                <div
+                  style={{
+                    marginTop: "14px",
+                    border: "1px solid rgba(196,98,45,0.25)",
+                    overflow: "hidden",
+                  }}
+                >
+                  <img
+                    src="/ingqithi.jpg"
+                    alt="Ingqithi mark image in the name-evidence section for AmaQithi history"
+                    style={{
+                      width: "100%",
+                      display: "block",
+                      filter: "brightness(0.94) contrast(1.06)",
+                    }}
+                    loading="lazy"
+                  />
+                </div>
+                <p
+                  style={{
+                    fontFamily: "var(--font-body), Inter, sans-serif",
+                    fontSize: "0.72rem",
+                    color: "#6B5A4E",
+                    fontStyle: "italic",
+                    lineHeight: 1.5,
+                    marginTop: "8px",
+                  }}
+                >
+                  Ingqithi mark reference used where ritual continuity is named as
+                  evidence.
                 </p>
               </div>
             </div>
@@ -617,7 +669,7 @@ export default function WhoWeArePage() {
                 {
                   name: "Quu — Lesotho",
                   detail:
-                    "A key San leader in the Phuthi-San alliance period, linked to kinship and military relationships that defined the mountain sanctuary world before its destruction.",
+                    "A key San leader in oral history. Current clan memory says Quthing is named from Quu, and that Quu was Moorosi's father-in-law through marriage ties.",
                 },
                 {
                   name: "Mada'kane — Lady Frere region",
@@ -705,22 +757,27 @@ export default function WhoWeArePage() {
                   style={{
                     fontFamily:
                       "var(--font-display), Cormorant Garamond, serif",
-                    fontSize: "clamp(1.1rem, 2vw, 1.35rem)",
-                    fontStyle: "italic",
-                    color: "#E8A857",
-                    lineHeight: 2,
+                    fontSize: "clamp(1.5rem, 3vw, 2.3rem)",
+                    fontStyle: "normal",
+                    fontWeight: 700,
+                    color: "#F5E6C8",
+                    lineHeight: 1.35,
                     marginBottom: "16px",
+                    textTransform: "uppercase",
+                    letterSpacing: "0.03em",
                   }}
                 >
-                  Ndinga, Mnono, Rhadu, Mlebe,
+                  UMQITHI, NDINGA, RHADU, MNONO, UMLEBE,
                   <br />
-                  Nomsobodwana,
+                  NOMSOBONDWANA,
                   <br />
-                  Sopitsho Ngqolomsila,
+                  U NKOMO AYIZALI IZALA NGOKU MISELWA,
                   <br />
-                  Yemyem.
+                  SOPITSHO, YEM YEM, NGQOLOMSILA,
                   <br />
-                  NgamaQithi amahle neenzipho zawo.
+                  VELA BAMBHENTSELE, AMANTANDE,
+                  <br />
+                  NGAMAQITHI AMAHLE NEENZIPHO ZAWO.
                 </p>
                 <p
                   style={{
@@ -753,6 +810,9 @@ export default function WhoWeArePage() {
             </div>
             <Link href="/who-we-are/sections/izibongo" style={readMoreLink}>
               Read more
+            </Link>
+            <Link href="/iziduko-izibongo-clan-names" style={{ ...readMoreLink, marginLeft: "16px" }}>
+              Full iziduko page
             </Link>
           </div>
         </section>

@@ -87,13 +87,13 @@ export const posts: Post[] = [
       'Eight months of siege ended on 20 November 1879 when colonial forces took Mount Moorosi in Quthing, Lesotho. The Phuthi, Thembu, and San communities living there scattered south. That is where the AmaQithi dispersal starts.',
     body: `
       <p>Mount Moorosi sits above the Quthing valley in what is now southern Lesotho. By the 1860s it had become home to a mixed community: Phuthi people under Chief Moorosi, local Thembu groups, and San families in the Maluti mountains. Conz (2017) records that Moorosi was reported to have San descent on his mother's side, which fits this mixed frontier world.</p>
-      <p>The AmaQithi were among those Thembu groups. Their oral tradition places them in Quthing before the war. One community member's <em>inkaba</em> (ancestral cord-burial site) is in Lesotho. The Sotho name Quthing is the locative form of <em>emaQithini</em> in isiXhosa: the place of the AmaQithi. The name of the valley is the name of the clan.</p>
+      <p>The AmaQithi were among the San-linked families in that frontier world. Oral tradition places them in Quthing before the war. One community member's <em>inkaba</em> (ancestral cord-burial site) is in Lesotho. Our latest oral-history correction says Quthing is linked to Quu, not named from AmaQithi.</p>
       <h3>Eight months</h3>
       <p>The Cape Colony had been pushing to disarm Sotho chiefs. Moorosi refused. In April 1879, colonial forces began a siege of the mountain. King and Challis (2017) say San fighters fought with the Phuthi and local villagers replenished food on the mountain under darkness, while Basotho auxiliaries fought on the colonial side. On 20 November 1879, the mountain fell.</p>
       <p>Three lines carried the AmaQithi south: Ngcongolo's line went to eNgcobo, other families to Cofimvaba, and the Qhwabi line to Mkapusi in Lady Frere, where they founded the village now called <em>emaQithini</em> — Mqithi Village. Three routes, three districts, one clan name across all of them.</p>
       <h3>What survived the mountain</h3>
       <p>Our research suggests the split was not panic. Spreading across several districts made it harder for colonial authorities to find and tax the group as a single unit. The families that scattered were still in contact with each other — the name, izibongo, and ingqithi custom held across all three lines.</p>
-      <p>Our family history says Qwabi Joka, who settled at Mkapusi, was part of the Bathepu (Quthing Thembu) world around that war. I believe he named one son Molosi from Moorosi and another son Bushman to keep that memory alive. Both names are still in the family.</p>
+      <p>Our family history says Qwabi Joka, who settled at Mkapusi, came through that mixed San-Phuthi-Thembu war world. Oral history also gives Moorosi's San name as Qengha (Qenya in isiXhosa). I believe he named one son Molosi from Moorosi and another son Bushman to keep that memory alive. Both names are still in the family.</p>
     `,
   },
   {

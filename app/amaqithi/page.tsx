@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import Nav from '@/components/Nav';
 import PageHero from '@/components/PageHero';
 import Breadcrumb from '@/components/Breadcrumb';
@@ -11,7 +12,7 @@ const BASE = 'https://qithi.co.za';
 export const metadata: Metadata = {
   title: 'AmaQithi Clan — Mqithi History, Qithi Meaning, Iziduko & Clan Names',
   description:
-    'AmaQithi clan: Thembu-San lineage rooted in Quthing, Lesotho. Read the wider heritage context of Qing, Khoboko, Soai, and the San-Phuthi-Sotho-Thembu matrix, plus Qithi meaning in Xhosa, iziduko, and clan names from Ngcobo to Lady Frere.',
+    'AmaQithi clan: a San group assimilated into Thembu history in the Eastern Cape. Read the wider heritage context of Qing, Khoboko, Soai, and the San-Phuthi-Sotho-Thembu matrix, plus Qithi meaning in Xhosa, iziduko, and clan names from Ngcobo to Lady Frere.',
   keywords: [
     'AmaQithi clan names',
     'AmaQithi iziduko',
@@ -91,7 +92,7 @@ const qwabiGenerations = [
     gen: 'Generation 1',
     name: 'Qwabi Joka',
     dates: 'b. 1842 · d. 1915 · Mkapusi',
-    detail: 'Born in the White Kei basin. Lived through Moorosi\'s War (1879) and later settled in Mkapusi, Lady Frere, where he died in 1915. I believe he was part of the Bathepu-linked Quthing world that supported the mountain. He named one son Molosi and another Bushman (Boesman), which we read as memory of that alliance history.',
+    detail: 'Born in the White Kei basin. Lived through Moorosi\'s War (1879) and later settled in Mkapusi, Lady Frere, where he died in 1915. I read him as part of a mixed San-Phuthi-Thembu frontier world. He named one son Molosi and another Bushman (Boesman), which we read as memory of that alliance history.',
   },
   {
     gen: 'Generation 2',
@@ -234,7 +235,7 @@ export default function AmaQithiPage() {
                   Oral tradition says Ntande had twins, Qithi and Cube, born of commoner mothers and accepted through black-cow slaughter. We have not yet found a colonial document that confirms this twin detail in writing. In that same branch, <strong style={{ color: '#E8A857' }}>Mnguti</strong> remains the most clearly documented name in written material.
                 </p>
                 <p style={body}>
-                  What we can say is this: <strong style={{ color: '#E8A857' }}>the name itself carries clues</strong>. The root word <em>Qithi</em> appears in places that connect the San, the land, and the Thembu in ways that are hard to dismiss. The valley of <strong style={{ color: '#E8A857' }}>Quthing</strong> in Lesotho — where San people lived under Chief Moorosi until 1879 — is the Sotho way of pronouncing <em>emaQithini</em> in Xhosa. The same root, the same sound, from the same region.
+                  What we can say is this: <strong style={{ color: '#E8A857' }}>the name web still needs careful handling</strong>. Qithi appears in clan memory, ingqithi remains a strong San-linked ritual layer, and Quthing stays central in Lesotho history. Our latest oral-history update says Quthing is linked to Quu, not named from AmaQithi.
                 </p>
                 <p style={{ ...body, color: '#9E8C7A' }}>
                   And then there is the ritual. <strong style={{ color: '#D4A96A' }}>Ingqithi</strong> — the finger-cut custom that defines this clan — contains the word <em>qithi</em> inside it. George Stow, writing in the 1800s, recorded that &ldquo;among the Bushman tribes the custom of cutting off the terminal joint of the little finger was almost universal.&rdquo; The AmaQithi may carry that practice as a direct thread connecting them to the San — whether through a man named Qithi, or through the land and the people the name belongs to.
@@ -252,6 +253,17 @@ export default function AmaQithiPage() {
                 </p>
                 <p style={{ fontFamily: 'var(--font-body), Inter, sans-serif', fontSize: '0.72rem', color: '#6B5A4E', fontStyle: 'italic', lineHeight: 1.5 }}>
                   Sources: The San-Phuti Matrix (AmaQithi Research Archive, 2026); Stow, <em>The Native Races of South Africa</em>, Ch. IX, p. 170; Stanford (Macquarrie 1962:31); oral history
+                </p>
+                <div style={{ marginTop: '14px', border: '1px solid rgba(196,98,45,0.25)', overflow: 'hidden' }}>
+                  <img
+                    src="/ingqithi.jpg"
+                    alt="Ingqithi mark used as cultural evidence in AmaQithi oral and written history"
+                    style={{ width: '100%', display: 'block', filter: 'brightness(0.94) contrast(1.06)' }}
+                    loading="lazy"
+                  />
+                </div>
+                <p style={{ fontFamily: 'var(--font-body), Inter, sans-serif', fontSize: '0.72rem', color: '#6B5A4E', fontStyle: 'italic', lineHeight: 1.5, marginTop: '8px' }}>
+                  Ingqithi mark reference image in the section where the ritual evidence is discussed.
                 </p>
               </div>
             </div>
@@ -279,7 +291,7 @@ export default function AmaQithiPage() {
                   On <strong style={{ color: '#E8A857' }}>20 November 1879</strong>, colonial forces took the mountain. Basotho auxiliaries were on the colonial side, while local alliance networks on the mountain side were broken. Families then dispersed into South Africa in separate lines for survival.
                 </p>
                 <p style={{ ...body, color: '#9E8C7A' }}>
-                  Our family history says Qwabi Joka, born in 1842, belonged to that same Quthing world. I believe he was Bathepu, and that he kept memory through names: <strong style={{ color: '#D4A96A' }}>Molosi</strong> and <strong style={{ color: '#D4A96A' }}>Bushman (Boesman)</strong>.
+                  Our family history says Qwabi Joka, born in 1842, belonged to that same Quthing world. I treat him as part of a San line that was assimilated into Thembu history. He kept memory through names: <strong style={{ color: '#D4A96A' }}>Molosi</strong> and <strong style={{ color: '#D4A96A' }}>Bushman (Boesman)</strong>.
                 </p>
                 <p style={{ fontFamily: 'var(--font-body), Inter, sans-serif', fontSize: '0.72rem', color: '#6B5A4E', fontStyle: 'italic', lineHeight: 1.5, marginBottom: '20px' }}>
                   Sources: King & Challis (2017), pp. 232-233; Conz (2017), p. 115; oral history
@@ -294,7 +306,7 @@ export default function AmaQithiPage() {
                   />
                 </div>
                 <p style={{ fontFamily: 'var(--font-body), Inter, sans-serif', fontSize: '0.72rem', color: '#6B5A4E', fontStyle: 'italic', lineHeight: 1.5, marginTop: '8px' }}>
-                  Quthing district, Lesotho — 46 minutes from the Mount Moorosi stronghold to Mkapusi in Lady Frere. The valley known as Quthing is the Sotho pronunciation of <em>emaQithini</em> in Xhosa.
+                  Quthing district, Lesotho — 46 minutes from the Mount Moorosi stronghold to Mkapusi in Lady Frere. Current oral-history correction says the place name is linked to Quu.
                 </p>
               </div>
             </div>
@@ -598,13 +610,13 @@ eNgcobo  Cofimvaba  Mkapusi (Lady Frere)
             <h2 style={h2}>The call names of AmaQithi.</h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '40px' }}>
               <div>
-                <p style={{ fontFamily: 'var(--font-display), Cormorant Garamond, serif', fontSize: 'clamp(1.1rem, 2vw, 1.35rem)', fontStyle: 'italic', color: '#E8A857', lineHeight: 2, marginBottom: '16px' }}>
-                  Ndinga, Rhadu, Mnono, Mlebe,<br />
-                  Nomsobodwana,<br />
-                  Sopitsho Ngqolomsila,<br />
-                  Yemyem.<br />
-                  Nkomo ayizali izala ngokumiselwa.<br />
-                  NgamaQithi amahle neenzipho zawo.
+                <p style={{ fontFamily: 'var(--font-display), Cormorant Garamond, serif', fontSize: 'clamp(1.55rem, 3vw, 2.4rem)', fontStyle: 'normal', fontWeight: 700, color: '#F5E6C8', lineHeight: 1.35, marginBottom: '16px', textTransform: 'uppercase', letterSpacing: '0.03em' }}>
+                  UMQITHI, NDINGA, RHADU, MNONO, UMLEBE,<br />
+                  NOMSOBONDWANA,<br />
+                  U NKOMO AYIZALI IZALA NGOKU MISELWA,<br />
+                  SOPITSHO, YEM YEM, NGQOLOMSILA,<br />
+                  VELA BAMBHENTSELE, AMANTANDE,<br />
+                  NGAMAQITHI AMAHLE NEENZIPHO ZAWO.
                 </p>
                 <p style={{ fontFamily: 'var(--font-body), Inter, sans-serif', fontSize: '0.82rem', color: '#9E8C7A', fontStyle: 'italic', lineHeight: 1.7 }}>
                   &ldquo;Cattle do not give birth by decree. The AmaQithi — beautiful, with their nails.&rdquo;
@@ -620,6 +632,24 @@ eNgcobo  Cofimvaba  Mkapusi (Lady Frere)
                 <p style={{ ...body, color: '#9E8C7A' }}>
                   The AmaQithi iziduko survived the colonial years, the forced moves, Moorosi&apos;s War, and the diaspora. They are still being said today. The lineage they carry is still traceable. That is what this site is for.
                 </p>
+                <Link
+                  href="/iziduko-izibongo-clan-names"
+                  style={{
+                    display: 'inline-block',
+                    marginTop: '12px',
+                    fontFamily: 'var(--font-body), Inter, sans-serif',
+                    fontSize: '0.8rem',
+                    fontWeight: 600,
+                    letterSpacing: '0.09em',
+                    textTransform: 'uppercase',
+                    color: '#C4622D',
+                    textDecoration: 'none',
+                    borderBottom: '1px solid rgba(196,98,45,0.45)',
+                    paddingBottom: '2px',
+                  }}
+                >
+                  See full iziduko authority page
+                </Link>
               </div>
             </div>
           </div>

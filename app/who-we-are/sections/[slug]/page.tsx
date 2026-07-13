@@ -82,12 +82,12 @@ const sections: SectionContent[] = [
     eyebrow: "Section Deep Dive",
     title: "Who Qwabi Joka is, and why this line is a strong anchor",
     intro:
-      "Qwabi Joka is not the whole clan. He is one traceable line. Our hypothesis is that he was Bathepu from the Quthing world linked to Moorosi's final alliance period.",
+      "Qwabi Joka is not the whole clan. He is one traceable line. Our current reading is that he belonged to San groups in the Glen Grey-Lady Frere zone that were assimilated into Thembu political life.",
     blocks: [
       {
         heading: "Who he is in the record",
         text:
-          "Documented: Qwabi Joka (1842-1915) is tied to the post-1879 period and the Lady Frere-Mkapusi landscape. Our hypothesis: he was Bathepu (Quthing Thembu) linked to the local support world around Moorosi.",
+          "Documented: Qwabi Joka (1842-1915) is tied to the post-1879 period and the Lady Frere-Mkapusi landscape. Current oral-history framing: he belongs to San lineages in Glen Grey that later sat inside Thembu history.",
       },
       {
         heading: "Why descendants matter",
@@ -155,7 +155,7 @@ const sections: SectionContent[] = [
       {
         heading: "Quthing",
         text:
-          "Quthing is treated as a layered frontier toponym, with click-bearing sound roots and a Sotho locative ending. It reflects prolonged language contact rather than one-language origin purity.",
+          "Current oral-history correction says Quthing is linked to Quu. We keep this marked as oral-history evidence while audio publication and further source checks are pending.",
       },
       {
         heading: "Qwabi and Qwas",
@@ -184,7 +184,7 @@ const sections: SectionContent[] = [
       {
         heading: "What is strongly supported",
         text:
-          "The name web linking Quthing, emaQithini naming, and ingqithi continuity is repeatedly present across sources and oral records.",
+          "The strongest support remains in San-Thembu contact history, ingqithi continuity, and living clan memory in the Lady Frere corridor.",
       },
       {
         heading: "What is not yet confirmed",
@@ -218,7 +218,7 @@ const sections: SectionContent[] = [
       {
         heading: "Eastern Cape side: Mada'kane and Madolo",
         text:
-          "These leaders represent White Kei and Black Kei frontier leadership, where San survival strategies, local settlements, and Thembu interaction are repeatedly documented.",
+          "These leaders represent White Kei and Black Kei frontier leadership, including Glen Grey San groups under Ngqabayi and nearby Madolo groups in the same conflict landscape. Oral history says drought-era tension with Jumba-linked Thembu groups grew from rainmaker blame and became open feud.",
       },
       {
         heading: "Why this matters for AmaQithi",
@@ -237,7 +237,7 @@ const sections: SectionContent[] = [
     eyebrow: "Section Deep Dive",
     title: "AmaQithi izibongo and mixed memory layers",
     intro:
-      "Current AmaQithi izibongo are treated as living memory that carries both San-linked continuity and Thembu historical layering.",
+      "Current AmaQithi izibongo are treated as living memory that carries both San-linked continuity and Thembu historical layering: UMQITHI, NDINGA, RHADU, MNONO, NOMSOBONDWANA, UMLEBE, U NKOMO AYIZALI IZALA NGOKU MISELWA, SOPITSHO, YEM YEM, NGQOLOMSILA, VELA BAMBHENTSELE, AMANTANDE.",
     blocks: [
       {
         heading: "Why mixed layers are expected",
@@ -451,6 +451,9 @@ export default async function WhoWeAreSectionPage({
                   <p style={{ fontFamily: "var(--font-body), Inter, sans-serif", fontSize: "0.92rem", color: "#9E8C7A", lineHeight: 1.75, marginBottom: "10px" }}>
                     <strong style={{ color: "#F5E6C8" }}>Documented:</strong> The same literature records the mountain password as Moroa (Bushman), and places Basotho auxiliaries with the colonial side in the siege campaign (King and Challis 2017, pp. 232-233; Basutoland Records V references).
                   </p>
+                  <p style={{ fontFamily: "var(--font-body), Inter, sans-serif", fontSize: "0.92rem", color: "#9E8C7A", lineHeight: 1.75, marginBottom: "10px" }}>
+                    <strong style={{ color: "#F5E6C8" }}>Oral-history update:</strong> Our latest oral account gives Moorosi&apos;s San name as Qengha, pronounced Qenya in isiXhosa. We are holding this as oral evidence until audio publication.
+                  </p>
                   <p style={{ fontFamily: "var(--font-body), Inter, sans-serif", fontSize: "0.92rem", color: "#9E8C7A", lineHeight: 1.75, margin: 0 }}>
                     <strong style={{ color: "#F5E6C8" }}>Oral tradition:</strong> Accounts hold that San and Phuthi households shared social life, including painting and refuge ties across the Quthing caves.
                   </p>
@@ -461,13 +464,13 @@ export default async function WhoWeAreSectionPage({
                     4) The Qithi connection: Qwabi
                   </h2>
                   <p style={{ fontFamily: "var(--font-body), Inter, sans-serif", fontSize: "0.92rem", color: "#9E8C7A", lineHeight: 1.75, marginBottom: "10px" }}>
-                    <strong style={{ color: "#F5E6C8" }}>Documented baseline:</strong> By 1879, the mountain defense included San fighters and local villagers from the district. Recorded accounts also say Moshoeshoe I settled Quthing mainly with Bathepu people.
+                    <strong style={{ color: "#F5E6C8" }}>Documented baseline:</strong> By 1879, the mountain defense included San fighters and local villagers from the district.
                   </p>
                   <p style={{ fontFamily: "var(--font-body), Inter, sans-serif", fontSize: "0.92rem", color: "#9E8C7A", lineHeight: 1.75, marginBottom: "10px" }}>
                     <strong style={{ color: "#F5E6C8" }}>Documented linguistics:</strong> r-to-l shifts are common in cross-language naming in southern Africa, so Moorosi-to-Molosi is a plausible sound shift.
                   </p>
                   <p style={{ fontFamily: "var(--font-body), Inter, sans-serif", fontSize: "0.92rem", color: "#9E8C7A", lineHeight: 1.75, margin: 0 }}>
-                    <strong style={{ color: "#F5E6C8" }}>Our hypothesis:</strong> I believe <Link href="/who-we-are/sections/qwabi-line" style={{ color: "#E8A857" }}>Qwabi</Link> was Bathepu, a Quthing Thembu in this local alliance world. I also believe his sons&apos; names, Molosi and Bushman, preserve that memory.
+                    <strong style={{ color: "#F5E6C8" }}>Our hypothesis:</strong> I believe <Link href="/who-we-are/sections/qwabi-line" style={{ color: "#E8A857" }}>Qwabi</Link> came from the same mixed San-Phuthi-Thembu world around Quthing, and that his sons&apos; names, Molosi and Bushman, preserve that memory.
                   </p>
                 </article>
 
@@ -619,6 +622,65 @@ export default async function WhoWeAreSectionPage({
                   maxWidth: "780px",
                 }}
               >
+                {section.slug === "izibongo" && (
+                  <div
+                    style={{
+                      marginBottom: "20px",
+                      background: "#1A0F0A",
+                      border: "1px solid rgba(196,98,45,0.28)",
+                      padding: "16px",
+                    }}
+                  >
+                    <p
+                      style={{
+                        fontFamily: "var(--font-body), Inter, sans-serif",
+                        fontSize: "0.72rem",
+                        fontWeight: 600,
+                        letterSpacing: "0.12em",
+                        textTransform: "uppercase",
+                        color: "#C4622D",
+                        marginBottom: "8px",
+                      }}
+                    >
+                      Full caps set
+                    </p>
+                    <p
+                      style={{
+                        fontFamily: "var(--font-display), Cormorant Garamond, serif",
+                        fontSize: "clamp(1.35rem, 2.4vw, 2rem)",
+                        fontWeight: 700,
+                        color: "#F5E6C8",
+                        lineHeight: 1.32,
+                        textTransform: "uppercase",
+                        letterSpacing: "0.03em",
+                        marginBottom: "10px",
+                      }}
+                    >
+                      UMQITHI, NDINGA, RHADU, MNONO, NOMSOBONDWANA, UMLEBE,
+                      U NKOMO AYIZALI IZALA NGOKU MISELWA, SOPITSHO, YEM YEM,
+                      NGQOLOMSILA, VELA BAMBHENTSELE, AMANTANDE, NGAMAQITHI
+                      AMAHLE NEENZIPHO ZAWO.
+                    </p>
+                    <Link
+                      href="/iziduko-izibongo-clan-names"
+                      style={{
+                        display: "inline-flex",
+                        alignItems: "center",
+                        fontFamily: "var(--font-body), Inter, sans-serif",
+                        fontSize: "0.78rem",
+                        fontWeight: 600,
+                        letterSpacing: "0.09em",
+                        textTransform: "uppercase",
+                        color: "#C4622D",
+                        textDecoration: "none",
+                        borderBottom: "1px solid rgba(196,98,45,0.5)",
+                        paddingBottom: "2px",
+                      }}
+                    >
+                      Open full iziduko authority page
+                    </Link>
+                  </div>
+                )}
                 <p
                   style={{
                     fontFamily: "var(--font-body), Inter, sans-serif",

@@ -70,7 +70,7 @@ const regions = [
     name: 'Lady Frere & Rhodana',
     villages: ['Qithi Village (Location 17/18)', 'Mkapusi', 'Agnes', 'Esikhwanqeni', 'Lower Seplan', 'Qugqwaru', 'Bholoto', 'Tsembeyi', 'Hala 2', 'Ngcuka'],
     surnames: ['Qwabi', 'Qithi', 'Mqithi', 'Manimani', 'Skampula'],
-    note: 'The founding axis. Rhodana is where Qithi place-memory and Thembu political geography meet. Our family reading says Qwabi Joka (1842-1915) carried a Bathepu-linked Quthing memory into this Lady Frere line.',
+    note: 'The founding axis. Rhodana is where Qithi place-memory and Thembu political geography meet. Our current reading says Qwabi Joka (1842-1915) carried San memory from the wider Quthing frontier world into this Lady Frere line.',
   },
   {
     name: 'Ngcobo',
