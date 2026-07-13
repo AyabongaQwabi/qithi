@@ -200,6 +200,17 @@ export default function ThembuPage() {
                 </div>
               ))}
             </div>
+            <div style={{ marginTop: '20px', maxWidth: '760px', border: '1px solid rgba(196,98,45,0.25)', overflow: 'hidden' }}>
+              <img
+                src="/ingqithi.jpg"
+                alt="Ingqithi mark reference image in the San-Thembu ritual section"
+                style={{ width: '100%', display: 'block', filter: 'brightness(0.94) contrast(1.06)' }}
+                loading="lazy"
+              />
+            </div>
+            <p style={{ fontFamily: 'var(--font-body), Inter, sans-serif', fontSize: '0.72rem', color: '#6B5A4E', fontStyle: 'italic', lineHeight: 1.5, marginTop: '8px', maxWidth: '760px' }}>
+              Ingqithi image reference shown where the ritual is explained as a San-Thembu continuity marker.
+            </p>
           </div>
         </section>
 
